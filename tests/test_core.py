@@ -146,3 +146,41 @@ def test_llm_events_require_verbatim_evidence(monkeypatch):
     assert len(discovery.parse_llm_events("```json\n" + good + "\n```", page, "https://x.test")) == 1
     assert discovery.parse_llm_events(bad, page, "https://x.test") == []
     assert discovery.parse_llm_events("not json", page, "https://x.test") == []
+
+
+# ---------------------------------------------------------------- crossweb snapshot fallback
+def test_crossweb_falls_back_to_snapshot_and_flags_stale(monkeypatch, tmp_path):
+    from krkhack import snapshot
+    monkeypatch.setattr(snapshot, "FILE", tmp_path / "snap.json")
+    snapshot.write([Cand(title="Snap Hackathon", url="https://crossweb.pl/wydarzenia/snap/", source="crossweb",
+                         start=dt.date.today() + dt.timedelta(days=20), location="Kraków")])
+    # Cloudflare blocks the cloud: live fetch yields nothing
+    monkeypatch.setattr(crossweb, "fetch_live", lambda cfg, warn: ([], False))
+    warns = []
+    got = crossweb.fetch({}, warns.append)
+    assert [c.title for c in got] == ["Snap Hackathon"]
+    assert not any(w.startswith("!") for w in warns)          # fresh snapshot: fine
+    # make the snapshot 12 days old -> the home job has stopped -> human-attention flag
+    import json
+    d = json.loads(snapshot.FILE.read_text(encoding="utf-8"))
+    d["generated"] = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=12)).isoformat(timespec="seconds")
+    snapshot.FILE.write_text(json.dumps(d), encoding="utf-8")
+    warns.clear()
+    crossweb.fetch({}, warns.append)
+    assert any(w.startswith("!") and "snapshot" in w for w in warns)
+
+
+def test_crossweb_without_snapshot_raises(monkeypatch, tmp_path):
+    from krkhack import snapshot
+    monkeypatch.setattr(snapshot, "FILE", tmp_path / "none.json")
+    monkeypatch.setattr(crossweb, "fetch_live", lambda cfg, warn: ([], False))
+    import pytest
+    with pytest.raises(RuntimeError):
+        crossweb.fetch({}, lambda w: None)
+
+
+def test_flagged_warning_marks_source_unhealthy():
+    res = {"discovery": {"ok": True, "cands": [], "error": None, "warnings": ["x", "! add TAVILY key"], "secs": 0}}
+    out = pipeline.update_health(res, {}, {"health": {"degraded_after_runs": 1}}, {})
+    assert out["sources"]["discovery"]["status"] == "degraded"
+    assert out["sources"]["discovery"]["flag"] == "add TAVILY key"

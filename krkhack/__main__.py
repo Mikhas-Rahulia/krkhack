@@ -32,14 +32,14 @@ def main(argv=None) -> int:
     print(f"events: {len(conf)} confirmed {by_tier}, {len(ev) - len(conf)} expected")
     bad = {n: h["status"] for n, h in result["health"]["sources"].items() if h["status"] != "ok"}
     for n, h in result["health"]["sources"].items():
-        print(f"  {n:14s} {h['status']:9s} raw={h['raw']:<4} kept={h['kept']:<3} {h.get('error') or ''}")
-    if bad:
-        Path("data").mkdir(exist_ok=True)
+        print(f"  {n:14s} {h['status']:9s} raw={h['raw']:<4} kept={h['kept']:<3} {h.get('error') or h.get('flag') or ''}")
     alerts = {n: s for n, s in bad.items() if s in ("degraded", "down")}
+    def why(n):
+        h = result["health"]["sources"][n]
+        return h.get("flag") or h.get("error") or "returning far fewer items than usual"
     Path("data/alerts.md").write_text(
-        "" if not alerts else "Sources needing attention:\n" + "\n".join(
-            f"- **{n}**: {s} - {result['health']['sources'][n].get('error') or 'returning far fewer items than usual'}"
-            for n, s in alerts.items()) + "\n", encoding="utf-8")
+        "" if not alerts else "These sources have been unhealthy for several runs in a row:\n\n" + "\n".join(
+            f"- **{n}** ({s}): {why(n)}" for n, s in alerts.items()) + "\n", encoding="utf-8")
     if not a.no_notify:
         fresh = notify.new_events(ev)
         if fresh:

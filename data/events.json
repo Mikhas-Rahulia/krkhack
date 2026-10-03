@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T00:03:37+00:00",
+ "generated": "2026-10-03T00:08:36+00:00",
  "events": [
   {
    "title": "MDBA Youth Blockchain Hackathon",
@@ -1083,8 +1083,7 @@
    "series": "hackyeah",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "hackyeah-2026-2026-10-bb2a",
-   "stale": true
+   "id": "hackyeah-2026-2026-10-bb2a"
   },
   {
    "title": "Kurukshetra CTF",
@@ -1224,8 +1223,7 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "solana-warsaw-build-station-2026-10-206c",
-   "stale": true
+   "id": "solana-warsaw-build-station-2026-10-206c"
   },
   {
    "title": "United Hackathons V1",
@@ -1326,6 +1324,7 @@
    "summary": "Nightack to wydarzenie w którym uczestniczą osoby zarówno będące aktywnymi członkami hackerspace, jak i te które chciałyby dowiedzieć się jak hackerspace działa i co tutaj robimy. Jesteśmy dla Was dostępni od 20:00, ale nie musicie wcale przchodzić punktualnie! == Co robimy na nighackach? == Pracujemy nad własnymi projektami - np. ktoś frezuje radiator do komputera aby mógł w nim zmieścić rezystor…",
    "audience": "open",
    "sources": [
+    "crossweb",
     "ics:Hackerspace Kraków",
     "page:Hackerspace Kraków"
    ],
@@ -1333,6 +1332,10 @@
     {
      "source": "page:Hackerspace Kraków",
      "url": "https://www.meetup.com/hackerspacekrakow/events/316626986/"
+    },
+    {
+     "source": "crossweb",
+     "url": "https://crossweb.pl/wydarzenia/nighthack-wpadnij-razem-z-nami-ciac-lutowac-i-kodowac-9-pazdziernik-2026/"
     }
    ],
    "series": null,
@@ -1479,8 +1482,7 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "the-hack-summit-2026-2026-10-e790",
-   "stale": true
+   "id": "the-hack-summit-2026-2026-10-e790"
   },
   {
    "title": "Warsaw Demo Day",
@@ -1508,8 +1510,7 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "warsaw-demo-day-2026-10-cf2a",
-   "stale": true
+   "id": "warsaw-demo-day-2026-10-cf2a"
   },
   {
    "title": "Film Spring Open Hackathon 2026",
@@ -1621,8 +1622,7 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "wud-szczecin-2026-konferencja-ux-ui-nocny-hackat-2026-10-71e6",
-   "stale": true
+   "id": "wud-szczecin-2026-konferencja-ux-ui-nocny-hackat-2026-10-71e6"
   },
   {
    "title": "STEMergent Hacks 2026",
@@ -1835,6 +1835,7 @@
    "summary": "Masz pomysł, jak ułatwić młodym osobom wejście w dorosłość? A może dopiero chcesz go znaleźć? Dołącz solo lub z zespołem - udział jest bezpłatny.",
    "audience": "open",
    "sources": [
+    "crossweb",
     "manual",
     "series:growup"
    ],
@@ -1842,6 +1843,10 @@
     {
      "source": "manual",
      "url": "https://growuphackathon.pl/"
+    },
+    {
+     "source": "crossweb",
+     "url": "https://crossweb.pl/wydarzenia/growup-hackathon-2026/"
     }
    ],
    "series": "growup",
@@ -1976,12 +1981,17 @@
    "summary": "Cybersecurity / InfoSec conference in Warsaw, Poland",
    "audience": "open",
    "sources": [
+    "crossweb",
     "page:dev.events PL"
    ],
    "links": [
     {
      "source": "page:dev.events PL",
      "url": "https://dev.events/conferences/oh-my-hack-2026-xigqjzxk"
+    },
+    {
+     "source": "crossweb",
+     "url": "https://crossweb.pl/wydarzenia/oh-my-hack-2026/"
     }
    ],
    "series": null,

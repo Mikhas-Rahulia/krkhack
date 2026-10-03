@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["config.yml", "data/series.yml", "data/manual.yml", "krkhack/**", "templates/**"]
+    paths: ["config.yml", "data/series.yml", "data/manual.yml", "data/crossweb_snapshot.json", "krkhack/**", "templates/**"]
 
 permissions:
   contents: write

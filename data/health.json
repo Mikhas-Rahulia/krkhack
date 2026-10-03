@@ -4,25 +4,24 @@
    "history": [
     173,
     173,
-    null
+    null,
+    173
    ],
-   "bad_streak": 1,
-   "raw": 0,
-   "kept": 0,
-   "error": "/wyszukiwarka/?fraza=hackathon: GET https://crossweb.pl/wyszukiwarka/?fraza=hackathon: HTTP Error 403: ; /wyszukiwarka/?fraza=hakaton: GET https://crossweb.pl/wyszukiwarka/?fraza=hakaton: HTTP Error 403: ; /wyszukiwarka/?fraza=game+jam: GET https://crossweb.pl/wyszukiwarka/?fraza=game+jam: HTTP Erro",
-   "warnings": [
-    "/wyszukiwarka/?fraza=hackathon: GET https://crossweb.pl/wyszukiwarka/?fraza=hackathon: HTTP Error 403: ",
-    "/wyszukiwarka/?fraza=hakaton: GET https://crossweb.pl/wyszukiwarka/?fraza=hakaton: HTTP Error 403: ",
-    "/wyszukiwarka/?fraza=game+jam: GET https://crossweb.pl/wyszukiwarka/?fraza=game+jam: HTTP Error 403: "
-   ],
-   "secs": 32.4,
+   "bad_streak": 0,
+   "raw": 173,
+   "kept": 16,
+   "error": null,
+   "warnings": [],
+   "secs": 2.9,
    "median": 173.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-02T23:59:18+00:00",
-   "status": "warning"
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "devpost": {
    "history": [
+    60,
     60,
     60,
     60
@@ -32,14 +31,16 @@
    "kept": 57,
    "error": null,
    "warnings": [],
-   "secs": 1.7,
-   "median": 60.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 2.9,
+   "median": 60,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "luma": {
    "history": [
+    8,
     8,
     8,
     8
@@ -49,16 +50,18 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 1.5,
-   "median": 8.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 4.0,
+   "median": 8,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "mlh": {
    "history": [
     0,
     0,
+    0,
     0
    ],
    "bad_streak": 0,
@@ -66,16 +69,18 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 3.9,
-   "median": 0.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 5.7,
+   "median": 0,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "devfolio": {
    "history": [
     0,
     0,
+    0,
     0
    ],
    "bad_streak": 0,
@@ -83,14 +88,16 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 2.1,
-   "median": 0.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 2.8,
+   "median": 0,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "gdg": {
    "history": [
+    68,
     68,
     68,
     68
@@ -100,14 +107,16 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.6,
-   "median": 68.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 1.1,
+   "median": 68,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "ctftime": {
    "history": [
+    0,
     0,
     0,
     0
@@ -117,14 +126,16 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 1.2,
-   "median": 0.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 0.5,
+   "median": 0,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "ics": {
    "history": [
+    12,
     12,
     12,
     12
@@ -134,16 +145,18 @@
    "kept": 10,
    "error": null,
    "warnings": [],
-   "secs": 3.8,
-   "median": 12.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 3.3,
+   "median": 12,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "pages": {
    "history": [
     65,
     65,
+    64,
     64
    ],
    "bad_streak": 0,
@@ -151,14 +164,16 @@
    "kept": 19,
    "error": null,
    "warnings": [],
-   "secs": 2.0,
-   "median": 65.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "secs": 0.6,
+   "median": 65,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "manual": {
    "history": [
+    7,
     7,
     7,
     7
@@ -169,13 +184,15 @@
    "error": null,
    "warnings": [],
    "secs": 0.0,
-   "median": 7.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "median": 7,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "series_pages": {
    "history": [
+    1,
     1,
     1,
     1
@@ -185,16 +202,15 @@
    "kept": 1,
    "error": null,
    "warnings": [
-    "kosciuszkon https://crossweb.pl/wydarzenia/kosciuszkon-iv-2026/: GET https://crossweb.pl/wydarzenia/kosciuszkon-iv-2026/: 403 Client Error: Forbidden for url: https://crossweb.pl/wydarz",
     "blockchainhack https://luma.com/superteam-poland: GET https://luma.com/superteam-poland: 404 Client Error: Not Found for url: https://luma.com/superteam-poland",
-    "ggj https://globalgamejam.org/jam-sites: GET https://globalgamejam.org/jam-sites: 403 Client Error: Forbidden for url: https://globalgamejam.org/jam-sites",
     "spaceapps https://www.spaceappschallenge.org/: GET https://www.spaceappschallenge.org/: HTTPSConnectionPool(host='www.spaceappschallenge.org', port=443): Max retries e"
    ],
    "secs": 0,
-   "median": 1.0,
-   "last_run": "2026-10-03T00:03:37+00:00",
-   "last_ok": "2026-10-03T00:03:37+00:00",
-   "status": "ok"
+   "median": 1,
+   "last_run": "2026-10-03T00:08:36+00:00",
+   "last_ok": "2026-10-03T00:08:36+00:00",
+   "status": "ok",
+   "flag": ""
   },
   "discovery": {
    "history": [
@@ -213,5 +229,5 @@
    "status": "warning"
   }
  },
- "generated": "2026-10-03T00:03:37+00:00"
+ "generated": "2026-10-03T00:08:36+00:00"
 }

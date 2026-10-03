@@ -37,7 +37,10 @@ def search(query: str, n: int = 8) -> list[dict]:
 
 
 def _ddg(query: str, n: int) -> list[dict]:
-    body = http("https://html.duckduckgo.com/html/", params={"q": query, "kl": "pl-pl"}).text
+    r = http("https://html.duckduckgo.com/html/", params={"q": query, "kl": "pl-pl"})
+    body = r.text
+    if r.status_code == 202 or "bots use DuckDuckGo" in body:
+        raise RuntimeError("DuckDuckGo bot check (datacenter IPs are blocked)")
     out = []
     for m in re.finditer(r'class="result__a" href="([^"]+)">(.*?)</a>', body, re.S):
         href = m.group(1)
@@ -150,12 +153,18 @@ def run(cfg: dict, warn, known_urls: set[str], extra_queries: list[str] | None =
     now = dt.datetime.now(dt.timezone.utc)
     out: list[Cand] = []
     fetched = 0
+    total_results, failed = 0, 0
     for q in queries:
         try:
             results = search(q, int(cfg.get("results_per_query", 8)))
         except Exception as ex:  # noqa: BLE001
-            warn(f"search '{q}': {ex}")
+            failed += 1
+            if failed <= 2:
+                warn(f"search '{q}': {str(ex)[:120]}")
+            if failed >= 3 and total_results == 0:
+                break  # blocked: stop hammering
             continue
+        total_results += len(results)
         for r in results:
             url = r["url"]
             host = urllib.parse.urlparse(url).netloc.lower()
@@ -172,6 +181,11 @@ def run(cfg: dict, warn, known_urls: set[str], extra_queries: list[str] | None =
                 got = []
             cache[url] = {"ts": now.isoformat(), "n": len(got)}
             out += got
+    if queries and total_results == 0 and not os.getenv("TAVILY_API_KEY"):
+        warn("! web search returns nothing from this network (DuckDuckGo blocks datacenter IPs) - "
+             "add the free TAVILY_API_KEY repo secret to enable discovery")
+    elif queries and total_results == 0:
+        warn("! web search returned no results at all - check the Tavily key/quota")
     # prune cache
     cache = {u: v for u, v in cache.items() if (now - dt.datetime.fromisoformat(v["ts"])).days < 60}
     CACHE.parent.mkdir(exist_ok=True)

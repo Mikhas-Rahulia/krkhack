@@ -24,8 +24,8 @@ So the feed is layered, and each layer covers for the others:
 ## Self-healing
 * Every source is isolated; one failing never breaks the build.
 * Events that vanish from sources are kept for 14 days (flaky parsers, paging).
-* Plain HTTP blocked by Cloudflare → transparently retried with Chrome TLS impersonation (`curl_cffi`).
-* Crossweb has an HTML path *and* an RSS path; if the HTML parser matches 0 rows it warns and RSS covers.
+* Plain HTTP blocked by Cloudflare → transparently retried with Chrome TLS impersonation (`curl_cffi`) — works from a home IP.
+* Crossweb: live HTML → live RSS → last snapshot; if the HTML parser matches 0 rows it raises a flag (markup changed).
 * `data/health.json` tracks each source's item-count history; a source returning 0 / <25% of its median for 3 runs
   turns `degraded`, and the workflow opens (and later auto-closes) a GitHub issue **"Hackathon sources need attention"**.
 * Committing `data/` every run stops GitHub from disabling the schedule after 60 inactive days.

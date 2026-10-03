@@ -207,11 +207,13 @@ def update_health(results: dict[str, dict], kept: dict[str, int], cfg: dict, hea
         raw = len(r["cands"])
         hist = [x for x in h["history"] if x is not None]
         med = statistics.median(hist[-10:]) if hist else 0
-        bad = (not r["ok"]) or (med > 0 and raw == 0) or (med >= 4 and raw < 0.25 * med)
+        r["warnings"] = sorted(r["warnings"], key=lambda w: not w.startswith("!"))  # "!" = needs a human, show first
+        flagged = next((w for w in r["warnings"] if w.startswith("!")), None)
+        bad = (not r["ok"]) or bool(flagged) or (med > 0 and raw == 0) or (med >= 4 and raw < 0.25 * med)
         h["bad_streak"] = h["bad_streak"] + 1 if bad else 0
         h["history"] = (h["history"] + [raw if r["ok"] else None])[-30:]
         h.update(raw=raw, kept=kept.get(name, 0), error=r["error"], warnings=r["warnings"][:5], secs=r["secs"],
-                 median=med, last_run=now)
+                 median=med, last_run=now, flag=(flagged or "")[1:].strip())
         if r["ok"] and not bad:
             h["last_ok"] = now
         h["status"] = ("down" if not r["ok"] and h["bad_streak"] >= need else

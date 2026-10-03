@@ -92,6 +92,33 @@ def parse_rss(xml_text: str) -> list[Cand]:
 
 
 def fetch(cfg: dict, warn) -> list[Cand]:
+    """Live fetch; when Cloudflare blocks this network, fall back to the snapshot a home-IP job pushes."""
+    from .. import snapshot
+    try:
+        live, html_ok = fetch_live(cfg, warn)
+    except Exception as ex:  # noqa: BLE001
+        live, html_ok = [], False
+        warn(f"live fetch failed: {str(ex)[:120]}")
+    if html_ok:
+        return live
+    snap = snapshot.read()
+    if not snap:
+        if live:
+            return live
+        raise RuntimeError("Crossweb blocked and no snapshot exists - run `python -m krkhack.snapshot` on a home PC")
+    cands, age = snap
+    by_url = {c.url: c for c in cands}
+    for c in live:  # RSS rows are fresher than the snapshot
+        by_url[c.url] = c
+    if age > 8:
+        warn(f"! Crossweb is blocked here and the snapshot is {age:.0f} days old - the home refresh job has stopped")
+    else:
+        warn(f"Crossweb blocked from this network; using {age:.1f}-day-old snapshot ({len(cands)} items)")
+    return list(by_url.values())
+
+
+def fetch_live(cfg: dict, warn) -> tuple[list[Cand], bool]:
+    """-> (candidates, html_ok). html_ok = at least one HTML page loaded AND parsed rows."""
     found: dict[str, Cand] = {}
     errors = []
     loaded = 0
@@ -111,9 +138,7 @@ def fetch(cfg: dict, warn) -> list[Cand]:
     except Exception as ex:  # noqa: BLE001
         errors.append(f"rss: {ex}")
     if loaded and html_count == 0:
-        warn("HTML pages loaded but parser extracted 0 rows - markup probably changed; RSS fallback used")
-    for e in errors[:3]:
-        warn(e)
-    if not found and errors:
-        raise RuntimeError("; ".join(errors[:3]))
-    return list(found.values())
+        warn("! HTML pages loaded but parser extracted 0 rows - markup probably changed; RSS fallback used")
+    for e in errors[:2]:
+        warn(e[:160])
+    return list(found.values()), bool(loaded and html_count)
