@@ -1,91 +1,216 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kraków hackathons — always up to date</title>
-<meta name="description" content="Auto-updated list of hackathons, game jams and CTFs in and around Kraków.">
-<link rel="alternate" type="application/rss+xml" title="New Kraków hackathons" href="feed.xml">
+<title>Hackathony Kraków — zawsze aktualne</title>
+<meta name="description" content="Samoaktualizująca się lista hackathonów, game jamów i CTF-ów w Krakowie i okolicy.">
+<meta name="theme-color" content="#0e1320">
+<link rel="alternate" type="application/rss+xml" title="Nowe hackathony w Krakowie" href="feed.xml">
 <style>
-  :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e8eaf0;--mut:#98a0b3;--acc:#ff5a5f;--ok:#3ecf8e;--warn:#f5a524}
-  @media (prefers-color-scheme:light){:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ec;--fg:#14171f;--mut:#5b6478}}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
-  h1{font-size:28px;margin:0 0 4px} h1 b{color:var(--acc)}
-  .sub{color:var(--mut);margin:0 0 18px}
-  .bar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;align-items:center}
-  .btn{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:7px 12px;border-radius:9px;text-decoration:none;font-size:14px}
-  .btn:hover{border-color:var(--acc)}
-  label.chk{font-size:14px;color:var(--mut);margin-left:auto;cursor:pointer;user-select:none}
-  h2{font-size:19px;margin:34px 0 2px} .hint{color:var(--mut);font-size:14px;margin:0 0 12px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 10px}
-  .card a.t{color:var(--fg);font-weight:600;font-size:17px;text-decoration:none}
-  .card a.t:hover{color:var(--acc)}
-  .when{color:var(--acc);font-weight:600;font-size:14px}
+  :root{
+    --bg:#0b1020;--bg2:#10172b;--card:#141b30;--card2:#19223c;--line:#252f4d;--fg:#eef1fb;--mut:#9aa6c7;
+    --red:#ff4d5e;--gold:#ffc857;--teal:#36d6b0;--blue:#6aa7ff;--warn:#ffb020;
+    --r:16px;--shadow:0 8px 30px rgba(0,0,0,.28)
+  }
+  @media (prefers-color-scheme:light){:root{
+    --bg:#f4f6fb;--bg2:#eaeefb;--card:#ffffff;--card2:#f6f8ff;--line:#dfe5f5;--fg:#12182b;--mut:#5a6685;--shadow:0 8px 24px rgba(30,45,90,.10)}}
+  *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:70px}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden;padding:54px 0 70px;
+    background:radial-gradient(900px 380px at 85% -10%,rgba(255,77,94,.28),transparent 60%),
+               radial-gradient(700px 360px at 5% 0%,rgba(106,167,255,.22),transparent 60%),var(--bg2);
+    border-bottom:1px solid var(--line)}
+  .hero:after{content:"";position:absolute;inset:auto 0 0 0;height:90px;opacity:.5;
+    background:linear-gradient(transparent,var(--bg))}
+  .eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+  .eyebrow i{width:8px;height:8px;border-radius:99px;background:var(--teal);box-shadow:0 0 0 4px rgba(54,214,176,.2)}
+  h1{font-size:clamp(34px,6vw,58px);line-height:1.04;margin:12px 0 10px;letter-spacing:-.02em}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--red),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{max-width:640px;color:var(--mut);font-size:18px;margin:0 0 26px}
+  .cta{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-flex;gap:8px;align-items:center;padding:11px 16px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px;
+    border:1px solid var(--line);background:var(--card);transition:.15s}
+  .btn:hover{transform:translateY(-1px);border-color:var(--red)}
+  .btn.primary{background:linear-gradient(135deg,var(--red),#ff7a45);border-color:transparent;color:#fff;box-shadow:0 6px 20px rgba(255,77,94,.35)}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:-34px 0 6px;position:relative;z-index:2}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;box-shadow:var(--shadow)}
+  .stat b{display:block;font-size:30px;line-height:1.1}
+  .stat span{color:var(--mut);font-size:13px}
+  .stat.hot b{color:var(--red)}
+
+  /* ---------- nav ---------- */
+  nav.tabs{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);margin:22px 0 0}
+  nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;align-items:center}
+  nav.tabs a{white-space:nowrap;text-decoration:none;color:var(--mut);font-weight:600;font-size:14px;padding:7px 12px;border-radius:99px;border:1px solid transparent}
+  nav.tabs a:hover{color:var(--fg);border-color:var(--line);background:var(--card)}
+  nav.tabs a small{opacity:.7;margin-left:4px}
+  label.chk{margin-left:auto;white-space:nowrap;font-size:13px;color:var(--mut);cursor:pointer;user-select:none;display:flex;gap:7px;align-items:center}
+
+  /* ---------- sections & cards ---------- */
+  section{margin:44px 0 0}
+  section>h2{font-size:24px;margin:0;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+  section>h2 .n{font-size:13px;font-weight:700;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:99px;padding:2px 10px}
+  .hint{color:var(--mut);margin:2px 0 16px;font-size:14.5px}
+  .card{display:grid;grid-template-columns:78px 1fr;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    padding:14px 16px 14px 14px;margin:0 0 12px;transition:.15s;position:relative}
+  .card:hover{border-color:color-mix(in srgb,var(--red) 55%,var(--line));transform:translateY(-2px);box-shadow:var(--shadow)}
+  .date{border-radius:13px;background:linear-gradient(160deg,var(--card2),var(--bg2));border:1px solid var(--line);text-align:center;padding:8px 4px;align-self:start}
+  .date .t{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--red)}
+  .date .b{font-size:24px;font-weight:800;line-height:1.1;margin:2px 0;white-space:nowrap}
+  .date .s{font-size:11px;color:var(--mut)}
+  .card.exp{border-style:dashed;background:transparent}
+  .card.exp .date{background:transparent;border-style:dashed}
+  .card h3{margin:0;font-size:18px;line-height:1.3}
+  .card h3 a{text-decoration:none}
+  .card h3 a:hover{color:var(--red)}
   .meta{color:var(--mut);font-size:14px;margin-top:2px}
-  .sum{font-size:14px;margin-top:6px;color:var(--mut)}
-  .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin-right:5px;vertical-align:middle}
-  .tag.new{background:var(--acc);color:#fff;border-color:var(--acc)} .tag.stu{border-color:var(--warn);color:var(--warn)}
-  .card.exp{border-style:dashed}
-  details{margin-top:30px} summary{cursor:pointer;font-size:19px;font-weight:600}
-  .empty{color:var(--mut);padding:10px 0}
-  table{width:100%;border-collapse:collapse;font-size:13px} td,th{text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
-  .s-ok{color:var(--ok)} .s-warning{color:var(--warn)} .s-degraded,.s-down{color:var(--acc)}
-  footer{margin-top:40px;color:var(--mut);font-size:13px}
+  .sum{font-size:14.5px;color:var(--mut);margin-top:6px}
+  .row{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;align-items:center}
+  .tag{font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:99px;border:1px solid var(--line);color:var(--mut);background:var(--bg2)}
+  .tag.new{background:var(--red);border-color:var(--red);color:#fff}
+  .tag.aud{border-color:var(--warn);color:var(--warn);background:transparent}
+  .tag.kind{border-color:var(--blue);color:var(--blue);background:transparent}
+  .chip{font-size:12px;text-decoration:none;color:var(--mut);padding:2px 9px;border-radius:8px;border:1px solid var(--line)}
+  .chip:hover{color:var(--fg);border-color:var(--teal)}
+  .empty{color:var(--mut);padding:18px;border:1px dashed var(--line);border-radius:var(--r);text-align:center}
+  details>summary{cursor:pointer;list-style:none;font-size:24px;font-weight:700;display:flex;gap:10px;align-items:center}
+  details>summary::-webkit-details-marker{display:none}
+  details>summary:after{content:"▾";font-size:16px;color:var(--mut);margin-left:auto}
+  details[open]>summary:after{content:"▴"}
   body.hide-restricted .card[data-aud="students"],body.hide-restricted .card[data-aud="pupils"]{display:none}
+
+  /* ---------- sources ---------- */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
+  .src{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+  .src h4{margin:0;font-size:16px;display:flex;gap:8px;align-items:center}
+  .src h4 a{text-decoration:none} .src h4 a:hover{color:var(--red)}
+  .dot{width:10px;height:10px;border-radius:99px;background:var(--mut);flex:none}
+  .dot.ok{background:var(--teal);box-shadow:0 0 0 3px rgba(54,214,176,.18)}
+  .dot.warning{background:var(--warn);box-shadow:0 0 0 3px rgba(255,176,32,.18)}
+  .dot.degraded,.dot.down{background:var(--red);box-shadow:0 0 0 3px rgba(255,77,94,.2)}
+  .src p{margin:0;font-size:13.5px;color:var(--mut)}
+  .kv{font-size:12.5px;color:var(--mut);display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin-top:4px}
+  .kv b{color:var(--fg);font-weight:600}
+  .flag{font-size:12.5px;color:var(--warn)}
+
+  footer{margin:60px 0 40px;padding-top:22px;border-top:1px solid var(--line);color:var(--mut);font-size:13.5px}
+  @media (max-width:560px){.card{grid-template-columns:62px 1fr;gap:12px}.date .b{font-size:20px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>Kraków <b>hackathons</b></h1>
-  <p class="sub">{{ n_local }} on-site in Kraków &amp; nearby · {{ n_confirmed }} confirmed in total · updated {{ generated[:16].replace('T',' ') }} UTC (refreshes itself daily)</p>
-  <div class="bar">
-    <a class="btn" href="krakow-hackathons.ics">📅 Subscribe (calendar)</a>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow"><i></i> aktualizuje się samo, codziennie</span>
+  <h1>Hackathony <em>Kraków</em></h1>
+  <p class="lead">Hackathony, game jamy i CTF-y w Krakowie i okolicy — zebrane z {{ n_sources }} źródeł. Zasubskrybuj kalendarz raz, a nowe wydarzenia pojawią się u Ciebie same.</p>
+  <div class="cta">
+    <a class="btn primary" href="krakow-hackathons.ics">📅 Subskrybuj kalendarz</a>
     <a class="btn" href="feed.xml">RSS</a>
     <a class="btn" href="events.json">JSON</a>
-    <label class="chk"><input type="checkbox" id="hide"> hide student-only / school-only</label>
+    <a class="btn" href="#zrodla">Źródła</a>
   </div>
+</div></header>
+
+<main class="wrap">
+  <div class="stats">
+    <div class="stat hot"><b>{{ n_krakow }}</b><span>w Krakowie</span></div>
+    <div class="stat"><b>{{ n_local }}</b><span>Kraków + okolica</span></div>
+    <div class="stat"><b>{{ n_confirmed }}</b><span>potwierdzonych razem</span></div>
+    <div class="stat"><b>{{ n_expected }}</b><span>oczekiwanych cyklicznych</span></div>
+  </div>
+</main>
+
+<nav class="tabs"><div class="wrap">
+  <a href="#krakow">W Krakowie<small>{{ groups['krakow']|length }}</small></a>
+  <a href="#nearby">W okolicy<small>{{ groups['nearby']|length }}</small></a>
+  <a href="#poland">Polska<small>{{ groups['poland']|length }}</small></a>
+  <a href="#expected">Oczekiwane<small>{{ expected|length }}</small></a>
+  <a href="#online">Online<small>{{ groups['online']|length }}</small></a>
+  <a href="#zrodla">Źródła<small>{{ n_sources }}</small></a>
+  <label class="chk"><input type="checkbox" id="hide"> ukryj tylko dla studentów/uczniów</label>
+</div></nav>
 
 {% macro card(e) %}
-  <div class="card{% if e.status=='expected' %} exp{% endif %}" data-aud="{{ e.audience }}">
-    <div><a class="t" href="{{ e.url }}" rel="noopener">{{ e.title }}</a>
-      {% if e.is_new %}<span class="tag new">NEW</span>{% endif %}
-      {% if e.kind!='hackathon' %}<span class="tag">{{ {'ctf':'CTF','gamejam':'game jam','hacknight':'hack night'}.get(e.kind,e.kind) }}</span>{% endif %}
-      {% if e.audience=='students' %}<span class="tag stu">students</span>{% elif e.audience=='pupils' %}<span class="tag stu">school pupils</span>{% endif %}
-      {% if e.online and e.tier!='online' %}<span class="tag">hybrid</span>{% endif %}
-    </div>
-    <div class="when">{{ e.when }}{% if e.more %} <span class="tag">+{{ e.more }} more</span>{% endif %}</div>
-    <div class="meta">{{ e.location }}{% if e.location %} · {% endif %}{{ e.sources|join(', ')|replace('page:','')|replace('series:','')|replace('ics:','') }}</div>
+<article class="card{% if e.status=='expected' %} exp{% endif %}" data-aud="{{ e.audience }}">
+  <div class="date"><div class="t">{{ e.badge.top }}</div><div class="b">{{ e.badge.big }}</div><div class="s">{{ e.badge.sub }}</div></div>
+  <div>
+    <h3><a href="{{ e.url }}" rel="noopener">{{ e.title }}</a></h3>
+    <div class="meta">{{ e.when }}{% if e.location %} · 📍 {{ e.location }}{% endif %}</div>
     {% if e.summary %}<div class="sum">{{ e.summary }}</div>{% endif %}
+    <div class="row">
+      {% if e.is_new %}<span class="tag new">NOWE</span>{% endif %}
+      {% if e.status=='expected' %}<span class="tag">cykliczne · czekamy na termin</span>{% endif %}
+      {% if e.kind_pl %}<span class="tag kind">{{ e.kind_pl }}</span>{% endif %}
+      {% if e.aud_pl %}<span class="tag aud">{{ e.aud_pl }}</span>{% endif %}
+      {% if e.online and e.tier!='online' %}<span class="tag">hybrydowo</span>{% endif %}
+      {% if e.more %}<span class="tag">+{{ e.more }} kolejnych terminów</span>{% endif %}
+      {% for c in e.chips %}<a class="chip" href="{{ c.url }}" rel="noopener">{{ c.label }} ↗</a>{% endfor %}
+    </div>
   </div>
+</article>
 {% endmacro %}
 
+<main class="wrap">
 {% for tier in ['krakow','nearby','poland'] %}
-  <h2>{{ tiers[tier][0] }}</h2><p class="hint">{{ tiers[tier][1] }}</p>
-  {% for e in groups[tier] %}{{ card(e) }}{% else %}<div class="empty">Nothing confirmed right now — see “Expected” below.</div>{% endfor %}
+  <section id="{{ tier }}">
+    <h2>{{ tiers[tier][0] }} <span class="n">{{ groups[tier]|length }}</span></h2>
+    <p class="hint">{{ tiers[tier][1] }}</p>
+    {% for e in groups[tier] %}{{ card(e) }}{% else %}<div class="empty">Na razie nic potwierdzonego — zajrzyj do sekcji „Oczekiwane”.</div>{% endfor %}
+  </section>
 {% endfor %}
 
-  <h2>Expected (annual series, dates not announced yet)</h2>
-  <p class="hint">These recur every year. The page upgrades them to real listings automatically as soon as dates appear anywhere.</p>
-  {% for e in expected %}{{ card(e) }}{% else %}<div class="empty">None in the next months.</div>{% endfor %}
+  <section id="expected">
+    <h2>Oczekiwane <span class="n">{{ expected|length }}</span></h2>
+    <p class="hint">Cykliczne imprezy, które wracają co roku. Gdy tylko gdziekolwiek pojawi się prawdziwy termin, wpis zamieni się w potwierdzony — automatycznie.</p>
+    {% for e in expected %}{{ card(e) }}{% else %}<div class="empty">Brak w najbliższych miesiącach.</div>{% endfor %}
+  </section>
 
-  <details>
-    <summary>{{ tiers['online'][0] }} ({{ groups['online']|length }})</summary>
-    <p class="hint">{{ tiers['online'][1] }}</p>
-    {% for e in groups['online'] %}{{ card(e) }}{% endfor %}
-  </details>
+  <section id="online">
+    <details>
+      <summary>{{ tiers['online'][0] }} <span class="n" style="font-size:13px;color:var(--mut)">{{ groups['online']|length }}</span></summary>
+      <p class="hint">{{ tiers['online'][1] }}</p>
+      {% for e in groups['online'] %}{{ card(e) }}{% endfor %}
+    </details>
+  </section>
 
-  <details>
-    <summary>Source health</summary>
-    <table><tr><th>source</th><th>status</th><th>raw</th><th>kept</th><th>last ok</th></tr>
-    {% for name, h in health.items() %}
-      <tr><td>{{ name }}</td><td class="s-{{ h.status }}">{{ h.status }}{% if h.error %} — {{ h.error[:80] }}{% endif %}</td><td>{{ h.raw }}</td><td>{{ h.kept }}</td><td>{{ (h.last_ok or '')[:10] }}</td></tr>
-    {% endfor %}</table>
-  </details>
+  <section id="zrodla">
+    <h2>Źródła <span class="n">{{ n_sources }}</span></h2>
+    <p class="hint">Skąd bierzemy dane i czy dziś działają. Status odświeża się przy każdej aktualizacji; gdy źródło psuje się kilka razy z rzędu, repozytorium samo zgłasza problem.</p>
+    <div class="grid">
+    {% for s in sources %}
+      <div class="src">
+        <h4><span class="dot {{ s.status }}"></span><a href="{{ s.url }}" rel="noopener">{{ s.name }} ↗</a></h4>
+        <p>{{ s.desc }}</p>
+        <div class="kv">
+          <span>Metoda</span><b>{{ s.method }}</b>
+          <span>Chmura</span><b>{{ s.cloud }}</b>
+          <span>Status</span><b>{{ s.status_pl }}{% if s.last_ok != '—' %} · ostatnio OK {{ s.last_ok }}{% endif %}</b>
+          {% if s.scanned is not none %}<span>Ostatni przebieg</span><b>przejrzano {{ s.scanned }}, użyto {{ s.kept }}</b>{% endif %}
+        </div>
+        {% if s.flag %}<div class="flag">⚠ {{ s.flag }}</div>{% endif %}
+      </div>
+    {% endfor %}
+      <div class="src">
+        <h4><span class="dot ok"></span><a href="https://github.com/Mikhas-Rahulia/krkhack/blob/main/data/series.yml" rel="noopener">Lista cykli ↗</a></h4>
+        <p>~22 coroczne imprezy (HackYeah, BITEhack, Hacknarök, Kościuszkon, Global Game Jam…) z typowym miesiącem — pokazywane jako „Oczekiwane”, aż pojawi się prawdziwy termin.</p>
+        <div class="kv"><span>Metoda</span><b>plik data/series.yml</b><span>Chmura</span><b>działa w chmurze</b></div>
+      </div>
+    </div>
+  </section>
 
-  <footer>Aggregated from Crossweb, Devpost, Luma, MLH, Devfolio, CTFtime, GDG, Meetup calendars, organizers' own sites and web search. Always check the organizer's page before you go — dates change.</footer>
-</div>
+  <footer>
+    Zawsze sprawdź stronę organizatora przed wyjazdem — terminy się zmieniają. Ostatnia aktualizacja: {{ generated[:16].replace('T',' ') }} UTC ·
+    <a href="https://github.com/Mikhas-Rahulia/krkhack">kod na GitHubie</a> · <a href="health.json">health.json</a>
+  </footer>
+</main>
+
 <script>
   const b=document.body,k=document.getElementById('hide');
   k.checked=localStorage.getItem('hideRestricted')==='1';b.classList.toggle('hide-restricted',k.checked);

@@ -5,7 +5,7 @@ import json
 import re
 
 from ..model import Cand
-from ..util import http, parse_iso, today
+from ..util import http, parse_iso, seen, today
 
 _DATA = re.compile(r'<script data-page="app" type="application/json">(.*?)</script>', re.S)
 
@@ -23,6 +23,7 @@ def fetch(cfg: dict, warn) -> list[Cand]:
             warn(f"season {year}: embedded JSON not found (markup changed?)")
             continue
         props = json.loads(m.group(1)).get("props", {})
+        seen(warn, len(props.get("upcomingEvents", [])) + len(props.get("pastEvents", [])))
         for e in props.get("upcomingEvents", []):
             va = e.get("venueAddress") or {}
             digital = e.get("formatType") == "digital"

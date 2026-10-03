@@ -4,7 +4,7 @@ from __future__ import annotations
 import datetime as dt
 
 from ..model import Cand
-from ..util import clean_text, http, parse_iso, today
+from ..util import clean_text, http, parse_iso, seen, today
 
 
 def fetch(cfg: dict, warn) -> list[Cand]:
@@ -12,6 +12,7 @@ def fetch(cfg: dict, warn) -> list[Cand]:
     finish = start + dt.timedelta(days=400)
     rows = http("https://ctftime.org/api/v1/events/",
                 params={"limit": 200, "start": int(start.timestamp()), "finish": int(finish.timestamp())}).json()
+    seen(warn, len(rows))
     out = []
     for r in rows:
         loc = r.get("location") or ""

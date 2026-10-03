@@ -17,7 +17,7 @@ from . import discovery, series as series_mod
 from .classify import audience_of, kind_of, locate
 from .model import Cand
 from .sources import REGISTRY
-from .util import as_date, iso, log, today
+from .util import Reporter, as_date, iso, log, today
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -184,14 +184,16 @@ def run_sources(cfg: dict) -> dict[str, dict]:
     """Run all enabled sources in parallel; never raise."""
     def one(name: str):
         scfg = cfg["sources"][name]
-        warns: list[str] = []
+        rep = Reporter()
         t0 = time.time()
         try:
-            cands = REGISTRY[name](scfg, warns.append)
-            return name, {"ok": True, "cands": cands, "error": None, "warnings": warns, "secs": round(time.time() - t0, 1)}
+            cands = REGISTRY[name](scfg, rep)
+            return name, {"ok": True, "cands": cands, "error": None, "warnings": rep.warnings,
+                          "scanned": rep.scanned or len(cands), "secs": round(time.time() - t0, 1)}
         except Exception as ex:  # noqa: BLE001
             log.warning("source %s failed: %s", name, ex)
-            return name, {"ok": False, "cands": [], "error": str(ex)[:300], "warnings": warns, "secs": round(time.time() - t0, 1)}
+            return name, {"ok": False, "cands": [], "error": str(ex)[:300], "warnings": rep.warnings,
+                          "scanned": 0, "secs": round(time.time() - t0, 1)}
 
     names = [n for n, c in cfg["sources"].items() if c.get("enabled", True) and n in REGISTRY]
     with ThreadPoolExecutor(max_workers=6) as ex:
@@ -204,7 +206,8 @@ def update_health(results: dict[str, dict], kept: dict[str, int], cfg: dict, hea
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     for name, r in results.items():
         h = srcs.setdefault(name, {"history": [], "bad_streak": 0})
-        raw = len(r["cands"])
+        raw = r.get("scanned") if r.get("scanned") is not None else len(r["cands"])
+        raw = raw or len(r["cands"])
         hist = [x for x in h["history"] if x is not None]
         med = statistics.median(hist[-10:]) if hist else 0
         r["warnings"] = sorted(r["warnings"], key=lambda w: not w.startswith("!"))  # "!" = needs a human, show first

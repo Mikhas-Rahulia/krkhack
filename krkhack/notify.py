@@ -16,7 +16,7 @@ def new_events(events: list[dict], days: int = 1) -> list[dict]:
 
 
 def digest(events: list[dict]) -> str:
-    lines = ["\U0001F195 New Krak\u00f3w-area hackathons:"]
+    lines = ["\U0001F195 Nowe hackathony w Krakowie i okolicy:"]
     for e in events[:12]:
         lines.append(f"\u2022 {e['title']} \u2014 {fmt_when(e)} ({e.get('location') or e['tier']})\n  {e['url']}")
     return "\n".join(lines)

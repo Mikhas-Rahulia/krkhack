@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from ..model import Cand
-from ..util import clean_text, http, parse_iso
+from ..util import clean_text, http, parse_iso, seen
 
 
 def fetch(cfg: dict, warn) -> list[Cand]:
@@ -14,6 +14,7 @@ def fetch(cfg: dict, warn) -> list[Cand]:
         hits = [h["_source"] for h in d.get("hits", {}).get("hits", [])]
         if not hits:
             break
+        seen(warn, len(hits))
         for h in hits:
             if h.get("country") != "Poland":
                 continue

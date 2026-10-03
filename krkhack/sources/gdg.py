@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from ..model import Cand
-from ..util import clean_text, http, parse_iso
+from ..util import clean_text, http, parse_iso, seen
 
 
 def fetch(cfg: dict, warn) -> list[Cand]:
@@ -11,6 +11,7 @@ def fetch(cfg: dict, warn) -> list[Cand]:
         try:
             # (the API 400s on unknown query params; the bare endpoint returns the chapter's events)
             d = http(f"https://gdg.community.dev/api/event_slim/for_chapter/{ch['id']}/").json()
+            seen(warn, len(d.get("results", [])))
             for e in d.get("results", []):
                 start = parse_iso(e.get("start_date"))
                 if not start:

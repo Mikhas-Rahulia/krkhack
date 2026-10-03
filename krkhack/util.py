@@ -22,6 +22,28 @@ class FetchError(RuntimeError):
     pass
 
 
+class Reporter:
+    """Passed to every source adapter as `warn`. Call it with a message to warn ("!" prefix = needs a
+    human). Call .seen(n) with the number of raw records the endpoint returned BEFORE filtering: that
+    is the real liveness signal (a healthy source may legitimately yield 0 Krakow events)."""
+
+    def __init__(self) -> None:
+        self.warnings: list[str] = []
+        self.scanned = 0
+
+    def __call__(self, msg: str) -> None:
+        self.warnings.append(msg)
+
+    def seen(self, n: int) -> None:
+        self.scanned += n
+
+
+def seen(warn, n: int) -> None:
+    f = getattr(warn, "seen", None)
+    if f:
+        f(n)
+
+
 def http(url: str, *, method: str = "GET", params=None, json=None, headers=None,
          timeout: int = 30, retries: int = 2, impersonate: bool = False) -> requests.Response:
     """GET/POST with retries. If a plain request is blocked (403/429/503, typically

@@ -1,31 +1,31 @@
-# Hand-curated events - for things only announced on Facebook/Discord/LinkedIn.
-# Add a block, commit, done. Past events are dropped automatically.
-# Required: title, url, start. Optional: end, location, online, summary, kind (hackathon|ctf|gamejam), country.
+# Ręcznie dodawane wydarzenia — dla rzeczy widocznych tylko na Facebooku/Discordzie/LinkedInie.
+# Dopisz blok, zrób commit, gotowe. Wydarzenia z przeszłości znikają same.
+# Wymagane: title, url, start. Opcjonalne: end, location, online, summary, kind (hackathon|ctf|gamejam), country.
 
 - title: Studencki Hackathon AI in Pharma 2026
   url: https://www.aiinpharma.pl/hackathon-2026/
   start: 2026-10-25
   location: AGH, Pawilon B-1, Kraków
-  summary: Free, English, limited spots. ISPE Poland + AGH, powered by AWS.
+  summary: Bezpłatny, po angielsku, ograniczona liczba miejsc. ISPE Poland + AGH, powered by AWS.
 - title: Film Spring Open Hackathon 2026
   url: https://filmspringopen.eu/edukacja/hackathon-film-spring-open-2026/
   start: 2026-10-16
   end: 2026-10-18
   location: Kraków
-  summary: Film-tech hackathon (Microsoft, Lenovo, AB S.A.).
+  summary: Hackathon technologii filmowych (Microsoft, Lenovo, AB S.A.).
 - title: EPICURE HPC/AI Hackathon
   url: https://www.cyfronet.pl/en/training/epicure-hackaton
   start: 2026-10-07
   end: 2026-10-09
   location: ACK Cyfronet AGH, Kraków
-  summary: Code-optimisation hackathon on HPC systems.
-- title: Blockchain Hack Kraków (autumn)
+  summary: Hackathon optymalizacji kodu na superkomputerach HPC.
+- title: Blockchain Hack Kraków (jesień)
   url: https://crossweb.pl/wydarzenia/blockchain-hack-krakow-pazdziernik-2026/
   start: 2026-10-17
   end: 2026-10-18
   location: Zabłocie, Kraków
   summary: Superteam Poland x Klaster Zabłocie.
-- title: AGH Cyber Kampus 4.0 (CTF + conference)
+- title: AGH Cyber Kampus 4.0 (CTF + konferencja)
   url: https://www.informatyka.agh.edu.pl/en/blog/save-the-date-agh-cyber-kampus-returns-this-november/
   start: 2026-11-25
   location: AGH, Kraków
@@ -34,11 +34,11 @@
   url: https://growuphackathon.pl/
   start: 2026-11-12
   end: 2027-01-14
-  location: Online rounds + live final in Kraków (14 Jan 2027)
-  summary: Applications close 20 Oct. Solo or teams up to 5.
-- title: Mobilna pomoc - prosty robot ratunkowy (vocational school pupils only)
+  location: Rundy online + finał na żywo w Krakowie (14 stycznia 2027)
+  summary: Zgłoszenia do 20 października. Solo lub zespoły do 5 osób.
+- title: Mobilna pomoc — prosty robot ratunkowy (tylko uczniowie szkół zawodowych)
   url: https://malopolskauczy.pl/festiwal-uczelni/hackathon
   start: 2026-12-01
   end: 2026-12-02
   location: EXPO Kraków
-  summary: Only vocational secondary-school students from Małopolska.
+  summary: Tylko dla uczniów małopolskich szkół zawodowych.

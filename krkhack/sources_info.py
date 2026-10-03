@@ -1,0 +1,43 @@
+"""Human-readable (Polish) description of every source, shown in the 'Źródła' section of the site.
+`key` matches the key in data/health.json so each card can show live status."""
+
+SOURCES = [
+    {"key": "crossweb", "name": "Crossweb.pl", "url": "https://crossweb.pl/wydarzenia/hackathon/",
+     "desc": "Największa polska baza wydarzeń IT: hackathony, konferencje, meetupy. Główne źródło dla Krakowa i całej Polski.",
+     "method": "HTML + RSS (+ migawka awaryjna)", "cloud": "przez Tavily / migawkę (Cloudflare blokuje serwery GitHub)"},
+    {"key": "devpost", "name": "Devpost", "url": "https://devpost.com/hackathons",
+     "desc": "Największa światowa platforma hackathonów. Szukamy po hasłach: Kraków, Cracow, AGH, Zabłocie, Hacknarök oraz wydarzeń online otwartych dla każdego.",
+     "method": "publiczne API JSON", "cloud": "działa w chmurze"},
+    {"key": "luma", "name": "Luma", "url": "https://lu.ma/",
+     "desc": "Platforma wydarzeń społeczności tech (m.in. Superteam, meetupy AI). Feed wokół współrzędnych Krakowa + wyszukiwanie haseł.",
+     "method": "API discover (współrzędne GPS)", "cloud": "działa w chmurze"},
+    {"key": "mlh", "name": "Major League Hacking", "url": "https://www.mlh.com/seasons/2027/events",
+     "desc": "Oficjalny sezon studenckich hackathonów MLH. Bierzemy wydarzenia online i te w Polsce.",
+     "method": "JSON osadzony na stronie sezonu", "cloud": "działa w chmurze"},
+    {"key": "devfolio", "name": "Devfolio", "url": "https://devfolio.co/hackathons",
+     "desc": "Platforma hackathonów (głównie Indie i Web3); filtrujemy tylko wydarzenia w Polsce.",
+     "method": "publiczne API wyszukiwania", "cloud": "działa w chmurze"},
+    {"key": "gdg", "name": "GDG Kraków", "url": "https://gdg.community.dev/gdg-krakow/",
+     "desc": "Wydarzenia Google Developer Group Kraków (DevFest, Build with AI). Zostają tylko te z hackathonem w tytule.",
+     "method": "API Bevy (JSON)", "cloud": "działa w chmurze"},
+    {"key": "ctftime", "name": "CTFtime", "url": "https://ctftime.org/event/list/upcoming",
+     "desc": "Kalendarz zawodów CTF (cyberbezpieczeństwo). Bierzemy stacjonarne CTF-y w Polsce.",
+     "method": "publiczne API JSON", "cloud": "działa w chmurze"},
+    {"key": "ics", "name": "Kalendarze iCal (Meetup)", "url": "https://www.meetup.com/hackerspacekrakow/",
+     "desc": "Subskrypcje kalendarzy grup: Hackerspace Kraków (Nighthack), Flutter Cracow, GoCracow, Pykonik, PyData Kraków, AWS UG Kraków.",
+     "method": "iCalendar (.ics)", "cloud": "działa w chmurze"},
+    {"key": "pages", "name": "Strony ze schema.org", "url": "https://dev.events/EU/PL",
+     "desc": "dev.events (Polska + hackathony) i strony grup — czytamy ustrukturyzowane dane Event (JSON-LD).",
+     "method": "JSON-LD", "cloud": "działa w chmurze"},
+    {"key": "series_pages", "name": "Strony organizatorów cykli", "url": "https://hackyeah.pl/",
+     "desc": "Własne strony HackYeah, Hacknarök, BITEhack, Kościuszkon itd. — sprawdzane codziennie pod kątem nowych terminów.",
+     "method": "JSON-LD na stronach cykli", "cloud": "działa w chmurze"},
+    {"key": "discovery", "name": "Wyszukiwarka + AI", "url": "https://tavily.com/",
+     "desc": "Codzienne zapytania „hackathon Kraków”, „hakaton Małopolska” itp. oraz celowe szukanie następnej edycji cykli. Strony są odczytywane przez AI, a data musi być dosłownie zacytowana ze strony.",
+     "method": "Tavily API + LLM", "cloud": "wymaga klucza TAVILY_API_KEY"},
+    {"key": "manual", "name": "Lista ręczna", "url": "https://github.com/Mikhas-Rahulia/krkhack/blob/main/data/manual.yml",
+     "desc": "Wydarzenia widoczne tylko na Facebooku, Discordzie lub LinkedInie — dopisujesz 5 linijek w pliku.",
+     "method": "plik data/manual.yml", "cloud": "działa w chmurze"},
+]
+
+STATUS_PL = {"ok": "działa", "warning": "uwaga", "degraded": "podejrzana awaria", "down": "nie działa"}
