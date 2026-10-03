@@ -1,0 +1,59 @@
+# krkhack configuration. Everything here has sane defaults; edit only to tune.
+horizon_days: 400          # drop events starting further out than this
+show_past_days: 0          # keep events that ended at most N days ago
+
+# Sources run independently. A failing source never breaks the build; it is reported in health.json
+# and the previous run's events from that source are kept (see pipeline.carry_forward).
+sources:
+  crossweb: {enabled: true}              # biggest Polish IT-events DB (HTML + RSS, Cloudflare -> curl_cffi)
+  devpost:  {enabled: true, online: true}
+  luma:     {enabled: true}
+  mlh:      {enabled: true}
+  devfolio: {enabled: true}
+  gdg:
+    enabled: true
+    chapters:
+      - {id: 578, name: "GDG Kraków", city: "Kraków"}
+  ctftime:  {enabled: true}
+  ics:                                   # iCal subscriptions (Meetup groups etc.) - rock solid format
+    enabled: true
+    feeds:
+      - {name: "Hackerspace Kraków", url: "https://www.meetup.com/hackerspacekrakow/events/ical/", default_location: "Kraków"}
+      - {name: "Flutter Cracow",     url: "https://www.meetup.com/flutter-cracow/events/ical/",     default_location: "Kraków"}
+      - {name: "GoCracow",           url: "https://www.meetup.com/GoCracow/events/ical/",           default_location: "Kraków"}
+      - {name: "Pykonik",            url: "https://www.meetup.com/pykonik/events/ical/",            default_location: "Kraków"}
+      - {name: "PyData Kraków",      url: "https://www.meetup.com/pydata-krakow/events/ical/",      default_location: "Kraków"}
+      - {name: "AWS UG Kraków",      url: "https://www.meetup.com/AWS-User-Group-Krakow/events/ical/", default_location: "Kraków"}
+  pages:                                 # schema.org JSON-LD pages
+    enabled: true
+    pages:
+      - {name: "dev.events PL",       url: "https://dev.events/EU/PL"}
+      - {name: "dev.events hackathons", url: "https://dev.events/hackathons"}
+      - {name: "Hackerspace Kraków",  url: "https://www.meetup.com/hackerspacekrakow/", country: "PL"}
+  manual:   {enabled: true}              # data/manual.yml
+
+# Check each recurring series' own website for schema.org events (data/series.yml)
+series_check: true
+
+# Web-search discovery for the long tail. Works keyless (DuckDuckGo + JSON-LD); set secrets
+# TAVILY_API_KEY and LLM_API_KEY (+ LLM_BASE_URL, LLM_MODEL) in GitHub for much better recall.
+discovery:
+  enabled: true
+  max_pages: 25
+  results_per_query: 8
+  recheck_days: 7
+  series_lookahead_days: 120     # also search for the next edition of series whose window is near
+  queries:
+    - "hackathon Kraków {year}"
+    - "hackathon Kraków {next_year}"
+    - "hakaton Kraków {year}"
+    - "hakaton Kraków {next_year}"
+    - "hackathon Małopolska {next_year}"
+    - "hackathon Polska {next_year} zapisy"
+    - "game jam Kraków {next_year}"
+    - "CTF Kraków {next_year}"
+    - "hackathon Poland {next_year} register"
+
+# Health/alerts
+health:
+  degraded_after_runs: 3         # consecutive "suspiciously low" runs before alerting

@@ -1,0 +1,177 @@
+# Recurring Krakow-area hackathon series (from research/organizers.md).
+# For each: when it usually happens -> the site lists it as EXPECTED until real dates are found
+# by any source (title must match `match`). To add a series, append a block; nothing else to change.
+# months: typical start months. horizon_days: how far ahead to show the placeholder (default 200).
+
+- id: hackyeah
+  name: HackYeah
+  match: "hackyeah"
+  months: [9, 10]
+  url: https://hackyeah.pl/
+  location: TAURON Arena Kraków
+  note: Poland's biggest hackathon (24h, ~3000 people). Registration typically closes in summer - sign up early.
+- id: bitehack
+  name: BITEhack (BEST AGH)
+  match: "bitehack"
+  months: [1, 12]
+  url: https://best.krakow.pl/en/bitehack/
+  location: AGH, Kraków
+  audience: students
+  note: Student hackathon by BEST AGH, usually January.
+- id: hacknarok
+  name: Hacknarök (EESTEC AGH)
+  match: "hacknar"
+  months: [4]
+  url: https://hacknarok.pl/
+  location: AGH, Kraków
+  audience: students
+  note: Spring hackathon run by EESTEC LC Kraków; also listed on Devpost.
+- id: kosciuszkon
+  name: Kosciuszkon (Politechnika Krakowska)
+  match: "ko[sś]ciuszkon"
+  months: [5, 6]
+  url: https://crossweb.pl/wydarzenia/kosciuszkon-iv-2026/
+  location: Politechnika Krakowska
+  audience: students
+  note: PK's annual hackathon.
+- id: ensembleai
+  name: EnsembleAI Hackathon
+  match: "ensemble ?ai"
+  months: [3]
+  url: https://ensembleaihackathon.pl/
+  location: Kraków / Warszawa (alternates)
+  tier: poland
+  note: AI/ML hackathon; was in Kraków in 2025, alternates with Warsaw.
+- id: eudis
+  name: EUDIS Defence Hackathon (KPT)
+  match: "eudis"
+  months: [3, 4, 5]
+  url: https://media.kpt.krakow.pl/
+  location: Krakowski Park Technologiczny
+  note: Defence-tech hackathon with Krakow Technology Park (check Taikai listing).
+- id: fpga
+  name: Nokia FPGA Hackathon
+  match: "fpga hackathon"
+  months: [4, 5, 9]
+  url: https://fpgahackathon.com/
+  location: Nokia, Kraków
+  note: Hardware/FPGA hackathon at Nokia Kraków.
+- id: blockchainhack
+  name: Blockchain Hack Kraków (Superteam)
+  match: "blockchain hack"
+  months: [3, 9, 10]
+  url: https://luma.com/superteam-poland
+  location: Zabłocie, Kraków
+  note: Twice yearly (spring + autumn). Announced on Luma/Crossweb/Telegram.
+- id: hackathon-malopolska
+  name: Hackathon dla Małopolski
+  match: "hackathon dla małopolski|hackathon dla malopolski"
+  months: [5, 6, 11]
+  url: https://hackathon-dla-malopolski.kpt.krakow.pl/
+  tier: krakow
+  location: Kraków
+  note: Regional-government civic hackathon with KPT.
+- id: aghcyber
+  name: AGH Cyber Kampus CTF
+  match: "cyber kampus|agh cyber"
+  months: [11]
+  url: https://cybermadeinpoland.pl/agh_cyber_kampus/
+  kind: ctf
+  location: AGH, Kraków
+  note: CTF + cybersecurity conference every November.
+- id: hack4krak
+  name: Hack4Krak CTF
+  match: "hack4krak"
+  months: [3, 4]
+  url: https://hack4krak.pl/
+  kind: ctf
+  audience: pupils
+  location: Kraków
+  note: CTF for school students.
+- id: ggj
+  name: Global Game Jam - Kraków sites
+  match: "global game jam|krakjam|krak[oó]w game jam"
+  months: [1]
+  url: https://globalgamejam.org/jam-sites
+  kind: gamejam
+  location: Kraków (several sites)
+  note: Last weekend of January. KrakJam (KPT/Digital Dragons) and Zabłocie Space are the usual hosts.
+- id: idays
+  name: EIT Health i-Days Kraków
+  match: "i-?days"
+  months: [10, 11]
+  url: https://idays.lifescience.pl/
+  location: Kraków
+  note: Health/life-science innovation hackathon.
+- id: sdg-city-challenge
+  name: "#SDG City Challenge (UJ)"
+  match: "sdg city challenge"
+  months: [10, 11]
+  url: https://pkw.uj.edu.pl/aktualnosci
+  location: Uniwersytet Jagielloński
+  audience: students
+  note: Sustainability challenge, Oct-Dec.
+- id: gbs-hackathon
+  name: Hackathon GBS (Uniwersytet Ekonomiczny)
+  match: "hackathon gbs|gbs hackathon"
+  months: [3, 4]
+  url: https://gbs.uek.krakow.pl/
+  audience: students
+  location: UEK, Kraków
+  note: Business-services hackathon with the City of Kraków.
+- id: here-krakow
+  name: HERE Krakow Hackathon (AGH)
+  match: "here krak"
+  months: [6]
+  url: https://www.innoagh.pl/en/wydarzenia/
+  audience: students
+  location: AGH, Kraków
+  note: Geospatial hackathon with HERE Technologies.
+- id: swmansion
+  name: Software Mansion Hackathon
+  match: "software mansion"
+  months: [3, 4]
+  url: https://hackathon.swmansion.com/
+  location: Kraków
+  note: Irregular; spring editions seen.
+- id: growup
+  name: GrowUp Hackathon
+  match: "growup"
+  months: [11, 12]
+  url: https://growuphackathon.pl/
+  tier: poland
+  location: Online + live final in Kraków
+  note: Online rounds, final in Kraków in January.
+- id: spaceapps
+  name: NASA Space Apps Challenge (check for a Kraków node)
+  match: "space apps"
+  months: [10, 11]
+  url: https://www.spaceappschallenge.org/
+  tier: poland
+  location: Check local events page
+  note: Global weekend hackathon; Polish nodes vary per year.
+- id: hacknation
+  name: HackNation (Ministry of Digital Affairs)
+  match: "hack ?nation"
+  months: [11, 12]
+  url: https://hacknation.pl/
+  tier: poland
+  location: Poland
+  note: National GovTech hackathon.
+- id: hackheroes
+  name: Hack Heroes
+  match: "hack ?heroes"
+  months: [11]
+  url: https://hackheroes.pl/
+  tier: poland
+  audience: pupils
+  location: Poland / online
+  note: For school students.
+- id: cassini
+  name: CASSINI Hackathon Poland
+  match: "cassini"
+  months: [4, 11]
+  url: https://www.cassini.eu/hackathons/
+  tier: poland
+  location: Poland
+  note: EU space-data hackathon.

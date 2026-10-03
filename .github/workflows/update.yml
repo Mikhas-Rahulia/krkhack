@@ -1,0 +1,84 @@
+name: update
+
+on:
+  schedule:
+    - cron: "17 5 * * *"          # every day 05:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["config.yml", "data/series.yml", "data/manual.yml", "krkhack/**", "templates/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+  models: read                      # free GitHub Models endpoint for LLM extraction (best effort)
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Unit tests (only when code changed)
+        if: github.event_name == 'push'
+        run: python -m pytest -q
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build
+        run: python -m krkhack --out site --base-url "${{ steps.pages.outputs.base_url }}/"
+        env:
+          # All optional. Without them the build still works (keyless search + JSON-LD only).
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY || github.token }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL || 'https://models.github.ai/inference' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'openai/gpt-4.1-mini' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Commit refreshed data (also keeps the schedule alive)
+        run: |
+          git config user.name "krkhack-bot"
+          git config user.email "krkhack-bot@users.noreply.github.com"
+          git add data/events.json data/health.json data/state.json data/discovery_cache.json
+          git diff --cached --quiet || git commit -m "data: refresh $(date -u +%F)"
+          git pull --rebase --autostash || true
+          git push || true
+
+      - name: Open / update / close the "sources need attention" issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create source-health --color D93F0B --force >/dev/null 2>&1 || true
+          n=$(gh issue list --label source-health --state open --json number -q '.[0].number')
+          if [ -s data/alerts.md ]; then
+            if [ -n "$n" ]; then gh issue edit "$n" --body-file data/alerts.md
+            else gh issue create --label source-health --title "Hackathon sources need attention" --body-file data/alerts.md; fi
+          elif [ -n "$n" ]; then
+            gh issue close "$n" --comment "All sources healthy again."
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

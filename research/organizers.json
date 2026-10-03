@@ -1,0 +1,756 @@
+[
+  {
+    "name": "HackYeah (Proidea)",
+    "type": "hackathon (flagship, 24h, on-site, 3000 registrants)",
+    "scope": "krakow",
+    "cadence": "annual; last Sat-Sun of Sep / first weekend of Oct (2023-2026 all at TAURON Arena Krakow)",
+    "typicalMonth": "Sep/Oct",
+    "canonicalUrl": "https://hackyeah.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://hackyeah.pl/"},
+      {"kind": "crossweb", "url": "https://crossweb.pl/wydarzenia/hackyeah-2026/"},
+      {"kind": "eventory", "url": "https://eventory.cc/event/hackyeah-2026-cracow/tickets"},
+      {"kind": "facebook", "url": "https://www.facebook.com/HackYeahPL/"},
+      {"kind": "discord", "url": "https://hackyeah.pl/ (footer links to Discord; invite URL not captured)"},
+      {"kind": "linkedin", "url": "https://hackyeah.pl/ (footer)"},
+      {"kind": "venue", "url": "https://www.tauronarenakrakow.pl/event/hackyeah-2026/"},
+      {"kind": "proidea-calendar", "url": "https://proidea.pl/kalendarium/hackyeah-2026/"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://2024.hackyeah.pl/winners-2024/"},
+      {"year": 2024, "url": "https://www.krakow.pl/aktualnosci/287117,34,komunikat,krakow_gospodarzem_najwiekszego_hackathonu_w_europie.html"},
+      {"year": 2026, "url": "https://hackyeah.pl/"}
+    ],
+    "upcoming": [{"name": "HackYeah 2026 (12th ed.)", "date": "2026-10-03/04 (in progress at time of research)", "url": "https://hackyeah.pl/"}],
+    "confidence": "high",
+    "notes": "Each year's site is archived on a year sub-domain (2024.hackyeah.pl works; 2023.hackyeah.pl did not resolve for me) while the root domain is reused for the current edition - scrapers must expect URL churn; the 2025 page URL I had guessed returned 404. 2023 (9th ed): late Sep/1 Oct - not independently re-verified here. 2024 (10th ed): 28-29 Sep, 13 tasks, 240k+ PLN prizes, partners incl. Ministry of Digital Affairs, Ministry of Finance, IBM, Deloitte, Luxoft; City of Krakow 'CO2UNTER' task. 2025 (11th): 4-5 Oct, ~3000 registered / 2000+ on-site, 400+ projects, 140k PLN+ prizes. 2026: Open Tasks pool 145k PLN + Partner Tasks 96.3k PLN; includes CTF ('HackYeah 2084' with Hacknite/Unshade), She Hacks (women in tech) and a Host-City Krakow challenge 'Krakow bez barier' (5k PLN). Earlier history: 2017 inaugural Krakow; 2018 location conflicting in sources (DevEnv says Warsaw, the 2018 site footer says Tauron Arena Krakow) - UNVERIFIED; 2019 Ptak Warsaw Expo (Nadarzyn); 2020 online x3; 2021 hybrid Katowice Spodek; 2022 back to Krakow. Registration is ticket-based (Eventory); Registration page is eventory.cc."
+  },
+  {
+    "name": "BITEhack (BEST AGH Krakow)",
+    "type": "student hackathon, 24h, categories: Classic / Robotics / AI",
+    "scope": "krakow",
+    "cadence": "annual; usually January (registration Nov-Dec). VII edition appears to have been Dec 2024.",
+    "typicalMonth": "Jan (sometimes Dec)",
+    "canonicalUrl": "https://best.krakow.pl/en/bitehack/",
+    "channels": [
+      {"kind": "website", "url": "https://bitehack.best.krakow.pl/"},
+      {"kind": "website", "url": "https://best.krakow.pl/en/bitehack/"},
+      {"kind": "crossweb", "url": "https://crossweb.pl/wydarzenia/bitehack-2026/"},
+      {"kind": "linkedin", "url": "https://pl.linkedin.com/posts/bitehack_bitehack-hackathon-agh-activity-7397601014960410625-ox5h"},
+      {"kind": "facebook", "url": "https://www.facebook.com/bitehack (not verified - FB assumed from BEST AGH practice)"}
+    ],
+    "pastEditions": [
+      {"year": 2022, "url": "https://www.fxmag.pl/biznes/best-it-extended-hackathon-2022-juz-za-nami-studenci-i-milosnicy-nowoczesnych-technologii-po-24h-maratonie-zobacz-wyniki-bitehack"},
+      {"year": 2024, "url": "https://www.linkedin.com/posts/filip-rieger-35951827_aptiv-at-the-bitehack-student-hackathon-activity-7274378971654291456--Ryb"},
+      {"year": 2026, "url": "https://iet.agh.edu.pl/24-godziny-realne-wyzwania-i-konkretne-rozwiazania-studenci-wiet-na-best-it-extended/"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "VIII edition: 10-11 Jan 2026, Klub Studio (Budryka 4), 4-person teams, students 18-26 from all Polish universities. IX edition (expected Jan 2027) NOT announced as of 3 Oct 2026; expect registration to open Nov-Dec 2026. Each edition gets a new sub-domain/label ('BITEhack VIII'), site returned HTTP 500 to fetch tool. Sponsors seen: IBM, Sabre, Pega, UBS (2022); Aptiv (2024); WIET AGH main faculty partner (2026). 2023 edition exists in the series but was not individually verified."
+  },
+  {
+    "name": "Hacknarök (EESTEC AGH Krakow)",
+    "type": "student hackathon, 24h, Nordic-mythology theme, teams of exactly 4",
+    "scope": "krakow",
+    "cadence": "annual; April (registration Feb-Mar)",
+    "typicalMonth": "Apr",
+    "canonicalUrl": "https://hacknarok.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://hacknarok.pl/"},
+      {"kind": "devpost", "url": "https://hacknarok-180426.devpost.com/"},
+      {"kind": "crossweb", "url": "https://crossweb.pl/wydarzenia/hacknarok-2026/"},
+      {"kind": "facebook", "url": "Facebook group for team-matching (linked from hacknarok.pl; URL not captured)"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://hacknarok-ix.devpost.com/"},
+      {"year": 2025, "url": "https://crossweb.pl/wydarzenia/hacknarok-9/"},
+      {"year": 2026, "url": "https://hacknarok-180426.devpost.com/"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "IX: 12-13 Apr 2025 at Krakowski Park Technologiczny (67 participants, main sponsor Sprout Social). X (jubilee): 18-19 Apr 2026 at Lubicz Park (93 participants, tracks General + AIoT with Nordic nRF54L15-DK). Editions I-VIII (2016-2024) exist but weren't individually checked. Devpost slug changes each year."
+  },
+  {
+    "name": "Kosciuszkon (Politechnika Krakowska)",
+    "type": "student hackathon, 24h + CTF + FPGA + console tournament",
+    "scope": "krakow",
+    "cadence": "annual; May/June (Klub Kwadrat, Skarzynskiego 1)",
+    "typicalMonth": "May/Jun",
+    "canonicalUrl": "https://crossweb.pl/wydarzenia/kosciuszkon-iv-2026/",
+    "channels": [
+      {"kind": "crossweb", "url": "https://crossweb.pl/wydarzenia/kosciuszkon-iv-2026/"},
+      {"kind": "facebook", "url": "https://www.facebook.com/kosciuszkon"},
+      {"kind": "instagram", "url": "(linked from LinkedIn post, URL shortened)"},
+      {"kind": "linkedin", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7443370125963116544"},
+      {"kind": "institutional-news", "url": "https://www.pk.edu.pl/"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://www.pk.edu.pl/index.php?Itemid=1152&catid=49&id=5389%3Atrasowniczek-wygral-ii-kosciuszkon-politechniki-krakowskiej-studenci-programowali-dla-smart-city&lang=pl&option=com_content&view=article"},
+      {"year": 2025, "url": "https://www.pk.edu.pl/index.php?Itemid=1118&id=5842%3Akosciuszkon-2025-nasz-wyjatkowy-hackathon-juz-w-weekend&lang=pl&option=com_content&view=article"},
+      {"year": 2026, "url": "https://www.pk.edu.pl/index.php?Itemid=1152&catid=49&id=6193&lang=pl&option=com_content&view=article"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "(Kościuszkon; written without diacritics in this file.) II: 8-9 Jun 2024 (50 students); III: 31 May-1 Jun 2025 (89 students, 9000 PLN prizes, theme ecology/energy); IV: 9-10 May 2026 (32 teams / 100+ students, theme cybersecurity, diamond partner Honeywell). Organised by the Faculty student council (Informatyka i Matematyka PK), the faculty and Fundacja Politechniki Krakowskiej (earlier also KN Cosmo). Partners over years: Hitachi Energy, Koleje Malopolskie, Vention, Luxoft, Jakdojade, IBM, EPAM, Honeywell, Akamai. Registration on its own site (short link in LinkedIn; domain not captured)."
+  },
+  {
+    "name": "FPGA Hackathon (Nokia Krakow)",
+    "type": "corporate-run public hackathon, 24h, FPGA/hardware; selected teams (applications)",
+    "scope": "krakow",
+    "cadence": "annual; recently spring (Apr/May), 2026 moved to late September; hybrid on-site + online",
+    "typicalMonth": "Apr-May (2026: Sep)",
+    "canonicalUrl": "https://fpgahackathon.com/",
+    "channels": [
+      {"kind": "website", "url": "https://fpgahackathon.com/"},
+      {"kind": "institutional-news", "url": "https://nokiakrakow.pl/"},
+      {"kind": "institutional-news", "url": "https://matinf.uj.edu.pl/wydarzenia/-/journal_content/com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_SaA7HRzna0dW/758200/27899901"},
+      {"kind": "linkedin", "url": "Nokia Krakow / FPGA Hackathon pages (not captured)"}
+    ],
+    "pastEditions": [
+      {"year": 2022, "url": "https://fpgahackathon.com/archive-fpga-hackathon-and-conference-2022/"},
+      {"year": 2023, "url": "https://fpgahackathon.com/archive-fpga-hackathon-krakow-2023/"},
+      {"year": 2024, "url": "https://nokiakrakow.pl/2024/04/24/fpga-hackathon-2024-5-edycja-za-nami/"},
+      {"year": 2025, "url": "https://nokiakrakow.pl/2025/07/05/fpga-hackathon-2025-6-edycja-za-nami-444/"},
+      {"year": 2026, "url": "https://fpgahackathon.com/"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "III: 25-27 Nov 2022 (KPT + online); IV: 22-23 Apr 2023; V: 20-21 Apr 2024 (60 teams, 33 countries); VI: 24-25 May 2025 at Hala 100-lecia KS Cracovia (317 applications, 70 selected teams); VII: 26-27 Sep 2026 (240 participants, registration 18-31 May 2026) - already finished by 3 Oct 2026. Not a typical open-door event: pre-registration + selection."
+  },
+  {
+    "name": "EUDIS Defence Hackathon - Poland (KPT / FORT Krakow)",
+    "type": "defence/dual-use hackathon, 48h, part of an EU-wide parallel series",
+    "scope": "krakow",
+    "cadence": "annual; spring (May 2024, May 2025, Mar 2026)",
+    "typicalMonth": "Mar-Jun",
+    "canonicalUrl": "https://media.kpt.krakow.pl/",
+    "channels": [
+      {"kind": "taikai", "url": "https://taikai.network/eudisPOLAND/hackathons/EUDIS-POLAND"},
+      {"kind": "institutional-news", "url": "https://media.kpt.krakow.pl/447428-obrona-powietrzna-i-walka-z-dezinformacja-kolejna-edycja-eudis-defence-hackathon-w-marcu-w-krakowie"},
+      {"kind": "institutional-news", "url": "https://www.innoagh.pl/en/wydarzenia/eudis-hackathon-2025/"},
+      {"kind": "institutional-news", "url": "https://startup.pfr.pl/"},
+      {"kind": "linkedin", "url": "https://www.linkedin.com/showcase/fort-krakow/"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://www.cc.agh.edu.pl/aktualnosci/detail?cHash=632bd0e61821198f46ecdcb02e8fba1a&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=604"},
+      {"year": 2025, "url": "https://www.innoagh.pl/en/wydarzenia/eudis-hackathon-2025/"},
+      {"year": 2026, "url": "https://media.kpt.krakow.pl/452788-przeciwko-wrogim-dronom-i-wojnie-kognitywnej-za-nami-eudis-defence-hackathon-2026"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "2024: 31 May-2 Jun (65 participants, 16 projects, winner AquaHub). 2025: 9-11 May (KPT + online, 18 prototypes, 20k PLN). 2026: 26-28 Mar at KPT Podole 60 (118 participants, 32 projects, 10k EUR; largest of 8 parallel EU events; winner Rattlesnake). Run by Krakowski Park Technologiczny under FORT Krakow (KPT + AGH). Registration on Taikai (not Crossweb)."
+  },
+  {
+    "name": "AI KrakHack (KN AI Possibilities Lab, WSEI Krakow)",
+    "type": "student AI hackathon, 24h, Krakow-city data challenges",
+    "scope": "krakow",
+    "cadence": "annual (1st ed. Jun 2025; 2026 ed. 27-28 Mar). Numbering inconsistent in sources (one calls 2026 the 3rd edition).",
+    "typicalMonth": "Mar-Jun",
+    "canonicalUrl": "https://krakhack.info/",
+    "channels": [
+      {"kind": "website", "url": "https://krakhack.info/"},
+      {"kind": "linkedin", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7435320656214515712"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://www.linkedin.com/feed/update/urn:li:activity:7336621618187714560"},
+      {"year": 2026, "url": "https://krakhack.info/"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "2026: 27-28 Mar at WSEI, tracks 'Smart Infrastructure Challenge' and 'Process-to-Automation Copilot' (KYP.ai), 48 participants / 10 teams. 2025 (June): tram-network optimisation + culture assistant. krakhack.info returned 403 'Forbidden' to the fetch tool but is readable via search; keep a LinkedIn fallback. Not seen on Crossweb in my checks."
+  },
+  {
+    "name": "Blockchain Hack Krakow (Superteam Poland x Klaster Zablocie)",
+    "type": "crypto/Solana hackathon, weekend, prizes in USDC; feeder for Colosseum global hackathon",
+    "scope": "krakow",
+    "cadence": "2-3x per year recently (Sep 2025, Mar 2026, Oct 2026), tied to Colosseum hackathon calendar",
+    "typicalMonth": "Mar, Sep/Oct",
+    "canonicalUrl": "https://crossweb.pl/wydarzenia/blockchain-hack-krakow-pazdziernik-2026/",
+    "channels": [
+      {"kind": "luma", "url": "https://luma.com/BlockchainHackKRK"},
+      {"kind": "luma", "url": "https://luma.com/HACKKRAKOW"},
+      {"kind": "crossweb", "url": "https://crossweb.pl/wydarzenia/blockchain-hack-krakow-pazdziernik-2026/"},
+      {"kind": "devpost", "url": "https://blockchain-hack-krakow.devpost.com/"},
+      {"kind": "telegram", "url": "https://linktr.ee/superteampoland"},
+      {"kind": "institutional-news", "url": "https://klasterzablocie.um.krakow.pl/aktualnosci/blockchain-hackathon-w-krakowie"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://luma.com/BlockchainHackKRK"},
+      {"year": 2026, "url": "https://crossweb.pl/wydarzenia/blockchain-hack-krakow-marzec-2026/"}
+    ],
+    "upcoming": [{"name": "Blockchain Hack Krakow (Solana)", "date": "2026-10-17/18", "url": "https://crossweb.pl/wydarzenia/blockchain-hack-krakow-pazdziernik-2026/"}],
+    "confidence": "high",
+    "notes": "Sep 19-20 2025 ($2k pool, year inferred from weekday/Luma text), 28-29 Mar 2026 ($3k, Superteam called it its 'second edition'; Devpost showed very few participants), 17-18 Oct 2026 at Zablocie 20.22 (Crossweb: free, starts 10:00, pitch 18 Oct 18:00). Local winners must also enter global Colosseum hackathon; team-finding via Telegram. SCRAPING PITFALL: Crossweb classified the March 2026 edition as event type 'Meetup', 1 day (28.03 only), not 'Hackathon' - type filters alone would miss it. Related: Solana Ideathon Krakow (Superteam Poland + KPT, one evening, 24 Sep, six Polish cities; year likely 2025 - unverified) https://luma.com/IdeathonKrakow."
+  },
+  {
+    "name": "AGH Cyber Kampus (CTF 'Zero Day' + conference)",
+    "type": "CTF + conference (cybersecurity)",
+    "scope": "krakow",
+    "cadence": "annual; late November (CTF day 1, conference day 2)",
+    "typicalMonth": "Nov",
+    "canonicalUrl": "https://cybermadeinpoland.pl/agh_cyber_kampus/",
+    "channels": [
+      {"kind": "website", "url": "https://cybermadeinpoland.pl/agh_cyber_kampus/"},
+      {"kind": "institutional-news", "url": "https://www.informatyka.agh.edu.pl/en/blog/save-the-date-agh-cyber-kampus-returns-this-november/"},
+      {"kind": "evenea", "url": "https://app.evenea.pl/event/agh-cyber-kampus-3/"},
+      {"kind": "facebook", "url": "https://fb.me/e/3xS5CZzgU"},
+      {"kind": "linkedin", "url": "https://pl.linkedin.com/posts/clustercybermadeinpoland_cyber-cyber-ctf-activity-7402279218312708096-Z-AR"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://cybermadeinpoland.pl/aktualnosci/agh-cyber-kampus-3-0-zgromadzil-setki-studentow-i-ekspertow-dwa-dni-pelne-wiedzy-rywalizacji-i-networkingu/"}
+    ],
+    "upcoming": [{"name": "AGH Cyber Kampus 2026 - CTF (25 Nov) + conference (26 Nov)", "date": "2026-11-25/26", "url": "https://www.informatyka.agh.edu.pl/en/blog/save-the-date-agh-cyber-kampus-returns-this-november/"}],
+    "confidence": "high",
+    "notes": "3.0: 26-27 Nov 2025, 400+ attendees, CTF 82 participants (tasks by KN Zero Day AGH with Artixen, Eurofins, Hacknite, KGHM, P&G, Unshade). Organisers: AGH Faculty of Computer Science, Polish Cybersecurity Cluster #CyberMadeInPoland, AGH Cybersecurity Centre, KN Zero Day, Fundacja Try IT. 2026 (4th): 25 Nov CTF, 26 Nov conference; agenda/registration 'to be announced' on 3 Oct 2026. Earlier editions (1.0, 2.0) not checked."
+  },
+  {
+    "name": "Hack4Krak CTF (Fundacja Zerya / Ambasada Spolecznosci)",
+    "type": "CTF for school students (on-site, Jeopardy)",
+    "scope": "krakow",
+    "cadence": "ad hoc, growing: Feb 2025 (one school), May 2025 (primary schools), May 2026 (HS, UKEN), planned 20-21 Mar 2027 (V4 HS, ~200 students)",
+    "typicalMonth": "Feb-May (next: Mar 2027)",
+    "canonicalUrl": "https://hack4krak.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://hack4krak.pl/"},
+      {"kind": "ctftime", "url": "https://ctftime.org/event/3284/"},
+      {"kind": "github", "url": "https://github.com/Hack4Krak/Hack4KrakSite"},
+      {"kind": "linkedin", "url": "https://pl.linkedin.com/posts/hack4krak_strona-g%C5%82%C3%B3wna-hack4krak-ctf-activity-7326153920240631809-beNI"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://pl.linkedin.com/posts/hack4krak_strona-g%C5%82%C3%B3wna-hack4krak-ctf-activity-7326153920240631809-beNI"},
+      {"year": 2026, "url": "https://ctftime.org/event/3284/"}
+    ],
+    "upcoming": [{"name": "Hack4Krak V4 CTF (planned)", "date": "2027-03-20/21", "url": "https://hack4krak.pl/about_us"}],
+    "confidence": "high",
+    "notes": "2026 edition: 23-24 May at UKEN, 109-120+ participants, no CTFtime rating points, high-school teams only. Restricted audience (not general public) - include in feed with an 'audience: school students' tag."
+  },
+  {
+    "name": "KrakJam (Krakow Technology Park / Digital Dragons) - Global Game Jam site",
+    "type": "game jam, 48h",
+    "scope": "krakow",
+    "cadence": "annual, last weekend of January (GGJ). 2026 was online-only 'as an exception'.",
+    "typicalMonth": "Jan",
+    "canonicalUrl": "https://krakjam.digitaldragons.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://krakjam.digitaldragons.pl/"},
+      {"kind": "globalgamejam", "url": "https://globalgamejam.org/jam-sites/2026/krakjam-2026"},
+      {"kind": "institutional-news", "url": "https://media.kpt.krakow.pl/"},
+      {"kind": "discord", "url": "online edition run on Discord (invite not captured)"}
+    ],
+    "pastEditions": [
+      {"year": 2020, "url": "https://media.kpt.krakow.pl/85222-krakjam-2020-za-nami"},
+      {"year": 2021, "url": "https://media.kpt.krakow.pl/125823-krakjam-2021-online-najwiekszym-polskim-global-game-jamem"},
+      {"year": 2022, "url": "https://media.kpt.krakow.pl/175343-krakowski-krakjam-2022-po-raz-kolejny-okazal-sie-najwiekszym-polskim-global-game-jamem"},
+      {"year": 2023, "url": "https://media.kpt.krakow.pl/226104-powrot-do-korzeni-czyli-krakjam-ponownie-w-krakowskim-parku-technologicznym"},
+      {"year": 2024, "url": "https://globalgamejam.org/jam-sites/2024/krakjam-2024"},
+      {"year": 2026, "url": "https://globalgamejam.org/jam-sites/2026/krakjam-2026"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "Historically the biggest Polish GGJ site (2023 ~200 people in person; 2024 26-28 Jan at KPT). 2025 edition (24-26 Jan) was reported by a search summary but I did not open a primary source - UNVERIFIED. 2026: 30 Jan-1 Feb, online, 18 games, organisers Maciej Siwek, Daniel Marszalek, Leszek Nowak under KPT patronage - signals the industry downturn / KPT withdrawing venue support. Originated in KN Shader at AGH. 2027 GGJ is 25-31 Jan; site registration opens 1 Nov 2026."
+  },
+  {
+    "name": "Krakow Game Jam by Zablocie Space (City of Krakow, Wydzial Przedsiebiorczosci i Innowacji)",
+    "type": "game jam (48h) + junior game jam",
+    "scope": "krakow",
+    "cadence": "new in 2026 (Jan GGJ site + Mar junior jam), part of 'Krakow EXP Boost' gamedev programme",
+    "typicalMonth": "Jan, Mar",
+    "canonicalUrl": "https://globalgamejam.org/jam-sites/2026/krakow-game-jam-zablocie-space",
+    "channels": [
+      {"kind": "globalgamejam", "url": "https://globalgamejam.org/jam-sites/2026/krakow-game-jam-zablocie-space"},
+      {"kind": "globalgamejam", "url": "https://globalgamejam.org/jam-sites/2026/krakow-game-jam-junior-ggjn26"},
+      {"kind": "institutional-news", "url": "https://klasterzablocie.um.krakow.pl/aktualnosci/krakow-game-jam-by-zablocie-space"},
+      {"kind": "institutional-news", "url": "https://dlabiznesu.krakow.pl/aktualnosci/308508,1643,komunikat,pierwsza_edycja_krakow_game_jam_w_klastrze_innowacji_spoleczno-gospodarczych_zablocie_20_22.html"},
+      {"kind": "discord", "url": "https://discord.gg/xYPeDN8F (team-finding; link was rotated once)"},
+      {"kind": "luma", "url": "https://luma.com/bvfovr1s (XP Boost Academy - adjacent, non-jam)"}
+    ],
+    "pastEditions": [
+      {"year": 2026, "url": "https://globalgamejam.org/jam-sites/2026/krakow-game-jam-zablocie-space"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "30 Jan-1 Feb 2026: 66 participants, 15 prototypes, max team 6, 18+. Junior jam (GGJ Next) 16-22 Mar 2026 for secondary-school groups with Krakow Food Bank (serious games). Likely to host a 2027 GGJ site (UNVERIFIED) - watch globalgamejam.org after 1 Nov 2026."
+  },
+  {
+    "name": "Global Game Jam 2027 - Krakow sites (TBD)",
+    "type": "game jam (aggregate listing)",
+    "scope": "krakow",
+    "cadence": "annual, 25-31 Jan 2027; site registration opens 1 Nov 2026, jammer registration 1 Dec 2026",
+    "typicalMonth": "Jan",
+    "canonicalUrl": "https://globalgamejam.org/",
+    "channels": [
+      {"kind": "globalgamejam", "url": "https://globalgamejam.org/calendar"}
+    ],
+    "pastEditions": [
+      {"year": 2026, "url": "https://globalgamejam.org/global-game-jam-press-kit"}
+    ],
+    "upcoming": [{"name": "GGJ 2027 (any Krakow sites)", "date": "2027-01-25/31", "url": "https://globalgamejam.org/calendar"}],
+    "confidence": "medium",
+    "notes": "Single scrapable source for all GGJ sites (filter by city). Expect KrakJam and/or Zablocie Space to register after 1 Nov."
+  },
+  {
+    "name": "Hackathon dla Malopolski (Wojewodztwo Malopolskie + KPT)",
+    "type": "regional civic hackathon, 2 days; rotates venues across Malopolska",
+    "scope": "malopolska",
+    "cadence": "2x per year so far (Nov 2024; Jun 2025 Krakow; Nov 2025 Tarnow; May 2026 Nowy Sacz). 5th edition NOT announced.",
+    "typicalMonth": "Nov and May/Jun",
+    "canonicalUrl": "https://hackathon-dla-malopolski.kpt.krakow.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://hackathon-dla-malopolski.kpt.krakow.pl/"},
+      {"kind": "institutional-news", "url": "https://innowacyjna.malopolska.pl/pl/aktualnosci/hackathon-dla-malopolski-2026"},
+      {"kind": "institutional-news", "url": "https://www.malopolska.pl/"},
+      {"kind": "website", "url": "https://startupacademy.pl/hackathon-malopolska/"},
+      {"kind": "linkedin", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7459928948127363073"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://startupacademy.pl/case-study-hackathon-dla-malopolski/"},
+      {"year": 2025, "url": "https://faktykrakowa.pl/20250416342138/hackathon-dla-malopolski-2025-zglos-sie-i-tworz-innowacyjne-rozwiazania-art-14"},
+      {"year": 2026, "url": "https://innowacyjna.malopolska.pl/pl/aktualnosci/iv-edycja-hackathonu-dla-malopolski-za-nami"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "Only the Jun 7-8 2025 edition was in Krakow (Klub Arka). Registration is a web form on the event site. Because each edition lives on a different promo page, key off 'hackathon-dla-malopolski' string + malopolska.pl news."
+  },
+  {
+    "name": "EIT Health i-Days Krakow (Klaster LifeScience Krakow + Krakow Miastem Startupow)",
+    "type": "health/city innovation hackathon, 1 day, students",
+    "scope": "krakow",
+    "cadence": "annual; EIT Health i-Days window 4 Oct-11 Nov (Krakow 3rd edition 25 Oct 2025)",
+    "typicalMonth": "Oct/Nov",
+    "canonicalUrl": "https://idays.lifescience.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://idays.lifescience.pl/"},
+      {"kind": "institutional-news", "url": "https://lifescience.pl/wydarzenie-klastra/hackathon-i-days-w-krakowie-stworzmy-razem-zdrowe-i-inteligentne-miasta/"},
+      {"kind": "website", "url": "https://eithealth.eu/programmes/i-days/"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://idays.lifescience.pl/"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "2025: Zablocie 20.22, 12 challenges (Healthy Cities), 12k PLN, winners to Paris final. 2026 Krakow i-Days NOT found as of 3 Oct 2026 - plausible but unannounced (UNVERIFIED). Two earlier Krakow editions (2023, 2024) implied by 'third edition' wording."
+  },
+  {
+    "name": "#SDG City Challenge (UJ Przestrzenie Kreatywnej Wspolpracy + Urzad Miasta Krakowa)",
+    "type": "semester-long student hackathon (6 weeks) with 2-day finale; Jagiellonian students only",
+    "scope": "krakow",
+    "cadence": "annual; opens Oct (registration ~7-15 Oct), finale Dec",
+    "typicalMonth": "Oct-Dec",
+    "canonicalUrl": "https://pkw.uj.edu.pl/aktualnosci",
+    "channels": [
+      {"kind": "institutional-news", "url": "https://pkw.uj.edu.pl/aktualnosc/3703-nabor-sdg-city-challenge-2025"},
+      {"kind": "email", "url": "pkw@uj.edu.pl"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://pkw.uj.edu.pl/aktualnosc/1867-sdg-2024-city-challenge"},
+      {"year": 2025, "url": "https://pkw.uj.edu.pl/aktualnosc/3703-nabor-sdg-city-challenge-2025"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "2025: 4th edition, signup 7-14 Oct, opening 17 Oct, finale 12-13 Dec ('City Challenge Be Active' page https://pkw.uj.edu.pl/aktualnosc/3925-city-challange-be-active). 2026 call not yet published on 3 Oct 2026 but based on pattern should appear within days (UNVERIFIED). Registration via MS Forms (not scrapable as listing)."
+  },
+  {
+    "name": "Hackathon GBS (Uniwersytet Ekonomiczny w Krakowie + City of Krakow + GBS firms)",
+    "type": "student business-idea hackathon (non-coding), 4 days over 2 weekends",
+    "scope": "krakow",
+    "cadence": "annual; Mar-Apr (3rd ed. 2025)",
+    "typicalMonth": "Mar/Apr",
+    "canonicalUrl": "https://gbs.uek.krakow.pl/",
+    "channels": [
+      {"kind": "institutional-news", "url": "https://uek.krakow.pl/artykuly/studenci/hackaton-gbs-2025-maraton-mlodych-innowatorow-w-krakowie"},
+      {"kind": "institutional-news", "url": "https://gbs.uek.krakow.pl/2025/04/08/hackathon-gbs-ii-edycja/"},
+      {"kind": "institutional-news", "url": "https://kariery.uek.krakow.pl/"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://uek.krakow.pl/artykuly/studenci/hackaton-gbs-2025-maraton-mlodych-innowatorow-w-krakowie"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "2025: 27-28 Mar + 3-4 Apr at Zablocie 20.22; mentors from ABB, Cisco, Jacobs, Genpact, Zurich, Heineken, Kimberly-Clark, AbbVie. No 2026 edition found. UEK also ran D4PACK Transnational Online Hackathon (22 Apr 2026, online) and ENTEEF hackathon (20 May 2026, international, online/hybrid) - these show up on uek.krakow.pl but are not Krakow-venue events."
+  },
+  {
+    "name": "HERE Krakow Hackathon (HERE Technologies + AGH WGGiOS)",
+    "type": "corporate-academic geospatial hackathon, 2 days",
+    "scope": "krakow",
+    "cadence": "seen once (12-13 Jun 2025); no 2026 edition found",
+    "typicalMonth": "Jun",
+    "canonicalUrl": "https://www.innoagh.pl/en/wydarzenia/here-krakow-hackathon-2025/",
+    "channels": [
+      {"kind": "institutional-news", "url": "https://www.innoagh.pl/en/wydarzenia/here-krakow-hackathon-2025/"},
+      {"kind": "email", "url": "krakowhackathon@here.com"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://www.innoagh.pl/en/wydarzenia/here-krakow-hackathon-2025/"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "AGH building A-0; prize: up to 12-week paid internship; partners Placematic, Traficar."
+  },
+  {
+    "name": "AI in Pharma Student Hackathon (ISPE Poland + AGH, powered by AWS)",
+    "type": "industry-challenge AI hackathon, 1 day, in English, students from across Poland",
+    "scope": "krakow",
+    "cadence": "annual with the AI in Pharma conference; 2025 edition was held in Poznan, 2026 in Krakow",
+    "typicalMonth": "Oct",
+    "canonicalUrl": "https://www.aiinpharma.pl/hackathon-2026/",
+    "channels": [
+      {"kind": "website", "url": "https://www.aiinpharma.pl/hackathon-2026/"},
+      {"kind": "institutional-news", "url": "https://eaiib.agh.edu.pl/studencki-hackathon-ai-in-pharma-2026-dolacz-do-tworzenia-innowacji/"},
+      {"kind": "linkedin", "url": "https://pl.linkedin.com/posts/ispe-poland-affiliate_aiinpharma-hackathon-pharma-activity-7498318372208644096-jPdx"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://www.aiinpharma.pl/hackathon-2026/ (page shows 'Hackathon 2025 - Poznan')"}
+    ],
+    "upcoming": [{"name": "AI in Pharma Student Hackathon", "date": "2026-10-25", "url": "https://www.aiinpharma.pl/hackathon-2026/"}],
+    "confidence": "high",
+    "notes": "Free registration, limited spots, winners get free entry to conference 26-27 Oct. Challenges submitted by pharma/biotech/medtech companies."
+  },
+  {
+    "name": "EPICURE Hackathon (ACK Cyfronet AGH + INESC TEC)",
+    "type": "HPC/AI code-optimisation hackathon (research/pro teams), 3 days hybrid",
+    "scope": "krakow",
+    "cadence": "recurring (5th edition Oct 2026); earlier venues not checked",
+    "typicalMonth": "varies",
+    "canonicalUrl": "https://www.cyfronet.pl/en/training/epicure-hackaton",
+    "channels": [
+      {"kind": "institutional-news", "url": "https://www.cyfronet.pl/en/training/epicure-hackaton"},
+      {"kind": "website", "url": "registration on partner INESC TEC site (URL not captured)"}
+    ],
+    "pastEditions": [],
+    "upcoming": [{"name": "EPICURE Hackathon - Code Optimisation for HPC and AI Workloads (5th ed.)", "date": "2026-10-07/09", "url": "https://www.cyfronet.pl/en/training/epicure-hackaton"}],
+    "confidence": "medium",
+    "notes": "Targeted at research teams, HPC/AI professionals; requires an existing code base; registration on the partner's site, so a Krakow listing has to link out. Cyfronet also lists 'European AI Hackathon' (hybrid, 6-29 Oct 2026, startups/SMEs/research teams, EU-based) at https://www.cyfronet.pl/en/training/european-ai-hackaton."
+  },
+  {
+    "name": "EnsembleAI Hackathon (KN BIT AGH + KN Golem AGH + KN Data Science PW + KNUM UW + MLinPL)",
+    "type": "student ML hackathon (24h); rotating city between Warsaw and Krakow",
+    "scope": "national-krakow-leg",
+    "cadence": "annual; March. 2024 Warsaw (1st), 2025 Krakow AGH 15-16 Mar (2nd), 2026 Warsaw PW 13-14 Mar (3rd; one source says 14-15)",
+    "typicalMonth": "Mar",
+    "canonicalUrl": "https://ensembleaihackathon.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://ensembleaihackathon.pl/"},
+      {"kind": "institutional-news", "url": "https://www.agh.edu.pl/wydarzenia/detail/s/ensembleai-hackathon"},
+      {"kind": "linkedin", "url": "https://www.linkedin.com/posts/kolo-naukowe-data-science_activity-7404497405309792256-C_Ct"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://www.agh.edu.pl/wydarzenia/detail/s/ensembleai-hackathon"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "Krakow only hosted in 2025 (about 200 people / 46 teams). 2027 location unknown - could return to Krakow."
+  },
+  {
+    "name": "KN BIT AGH (BIT Student Scientific Group) company hackathons",
+    "type": "student-club hackathons with company partners (AI / algorithmics)",
+    "scope": "krakow",
+    "cadence": "ad hoc, 1-3 per year (e.g. 3 Dec 2025 DISKovery x ADATA at D17; 9 Jan 2026 AI hackathon with Upside)",
+    "typicalMonth": "varies (Dec, Jan seen)",
+    "canonicalUrl": "https://pl.linkedin.com/posts/bit-scientific-group-at-agh-university_ostatnie-24h-do-diskovery-hackaton-activity-7401673201040297984-NGf8",
+    "channels": [
+      {"kind": "facebook", "url": "KN BIT Facebook profile (named in LinkedIn post, URL not captured)"},
+      {"kind": "linkedin", "url": "https://www.linkedin.com/posts/bit-scientific-group-at-agh-university_congratulations-to-the-winners-and-all-participants-activity-7417311480125239296-AdtB"},
+      {"kind": "website", "url": "event page via lnkd.in short link (DISKovery) - not captured"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://pl.linkedin.com/posts/bit-scientific-group-at-agh-university_ostatnie-24h-do-diskovery-hackaton-activity-7401673201040297984-NGf8"},
+      {"year": 2026, "url": "https://www.linkedin.com/feed/update/urn:li:activity:7417143152698081281"}
+    ],
+    "upcoming": [],
+    "confidence": "low",
+    "notes": "Prime example of a social-first series: announced on Facebook/LinkedIn, tiny audience, no persistent site. Also co-runs EnsembleAI. Other AGH clubs seen: KNSI Golem, KN Zero Day, EESTEC AGH (Hacknarok), BEST AGH (BITEhack), URSS (HackAGH)."
+  },
+  {
+    "name": "HackAGH (Uczelniana Rada Samorzadu Studentow AGH)",
+    "type": "student hackathon, 12h, theme revealed on the day; partner Capgemini Engineering (automotive)",
+    "scope": "krakow",
+    "cadence": "seen once: 22 Apr 2023 (D17). No later edition found.",
+    "typicalMonth": "Apr (2023)",
+    "canonicalUrl": "https://hack.samorzad.agh.edu.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://hack.samorzad.agh.edu.pl/"}
+    ],
+    "pastEditions": [
+      {"year": 2023, "url": "https://hack.samorzad.agh.edu.pl/"}
+    ],
+    "upcoming": [],
+    "confidence": "low",
+    "notes": "Site footer: 'first such hackathon at AGH'; 12h, 22 Apr 2023, AGH D17; winners' repos on GitHub (AutoTrack 3rd place). Site did not load from my machine (timeout) but is indexed by search. LinkedIn thanks post says 'see you at the next edition' - none found. Likely discontinued or moved to social-only announcements (UNVERIFIED)."
+  },
+  {
+    "name": "Software Mansion Hackathon",
+    "type": "company-hosted open/student hackathon (AI tracks + game jam)",
+    "scope": "krakow",
+    "cadence": "irregular: 2024 (student, Krakow-themed apps, 60 participants/13 teams), 28 Mar 2026 'SWM x Gemini'",
+    "typicalMonth": "Mar/spring",
+    "canonicalUrl": "https://hackathon.swmansion.com/",
+    "channels": [
+      {"kind": "website", "url": "https://hackathon.swmansion.com/"},
+      {"kind": "institutional-news", "url": "https://www.informatyka.agh.edu.pl/pl/blog/zaproszenie-na-hackathon-swm-x-gemini/"},
+      {"kind": "institutional-news", "url": "https://swmansion.com/blog/software-mansion-hackathon-2024-677594b46e2c/"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://swmansion.com/blog/software-mansion-hackathon-2024-677594b46e2c/"},
+      {"year": 2026, "url": "https://www.informatyka.agh.edu.pl/pl/blog/zaproszenie-na-hackathon-swm-x-gemini/"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "2026: Software Mansion office Zablocie 43B, tracks Hybrid Intelligence / Real-Time Multimodal AI / game jam, Gemini tokens; AGH Faculty of CS was community partner. Best example of a corporate-hosted Krakow hackathon announced mainly on university + own site."
+  },
+  {
+    "name": "NASA Space Apps Challenge - Krakow local event",
+    "type": "global hackathon, local node",
+    "scope": "krakow",
+    "cadence": "global event annually (Oct 2024-2025; Nov 14-15 2026). Krakow node existed 2024 (after ~11 year gap); no 2025 or 2026 Krakow node found.",
+    "typicalMonth": "Oct/Nov",
+    "canonicalUrl": "https://www.spaceappschallenge.org/2026/",
+    "channels": [
+      {"kind": "website", "url": "https://www.spaceappschallenge.org/2026/"},
+      {"kind": "website", "url": "https://nasaspaceapps.pl"},
+      {"kind": "institutional-news", "url": "https://www.krakow.pl/aktualnosci/284824,34,komunikat,hackathon_nasa_w_pazdzierniku_w_krakowie.html"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://kosmonauta.net/2024/07/zaproszenie-na-nasa-space-apps-challenge-krakow/"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "2024: 5-6 Oct at AGH by ThinkHackR + AGH + KPT. Polish 2026 local events found: Poznan and Stalowa Wola (14-15 Nov); none for Krakow. Beware aggregator blog laczymybiznes.pl which wrongly lists Krakow/Warsaw/Wroclaw for Oct 2026. Re-check spaceappschallenge.org 'Local Events' map in mid-Oct."
+  },
+  {
+    "name": "CASSINI Hackathon - Poland (organised by Krakowski Park Technologiczny until 2025)",
+    "type": "EU space data hackathon (48h), Poland leg",
+    "scope": "national-not-krakow",
+    "cadence": "twice a year (spring + autumn). Krakow only in Nov 2023 (6th ed). 10th Nov 2025 and 11th Apr 2026 in Wroclaw; 12th, 27-29 Nov 2026, in Gdansk (Blue Dot Solutions).",
+    "typicalMonth": "Apr, Nov",
+    "canonicalUrl": "https://www.cassini.eu/hackathons/",
+    "channels": [
+      {"kind": "website", "url": "https://www.cassini.eu/hackathons/"},
+      {"kind": "challengerocket", "url": "https://challengerocket.com/cassini"},
+      {"kind": "institutional-news", "url": "https://media.kpt.krakow.pl/272429-siegneli-gwiazd-i-kosmicznych-danych-6-edycja-cassini-hackathon"}
+    ],
+    "pastEditions": [
+      {"year": 2023, "url": "https://media.kpt.krakow.pl/272429-siegneli-gwiazd-i-kosmicznych-danych-6-edycja-cassini-hackathon"},
+      {"year": 2025, "url": "https://media.kpt.krakow.pl/427233-kosmiczne-wyzwania-czekaja-10th-cassini-hackathon-juz-w-listopadzie"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "Candidate for the 'widen to Poland' feed, not a Krakow event any more."
+  },
+  {
+    "name": "DATASPRINT Hackathon (Visa)",
+    "type": "corporate data/analytics hackathon with business + city + academia conference",
+    "scope": "krakow",
+    "cadence": "unknown (single 2026 edition found); 29-30 Sep 2026 at Klub Studio, Krakow",
+    "typicalMonth": "Sep",
+    "canonicalUrl": "https://visadatasprint.com/",
+    "channels": [
+      {"kind": "website", "url": "https://visadatasprint.com/"}
+    ],
+    "pastEditions": [
+      {"year": 2026, "url": "https://visadatasprint.com/"}
+    ],
+    "upcoming": [],
+    "confidence": "low",
+    "notes": "Found only via search snippet; participation rules (open vs invite) not verified. Partners listed: Visa, Ministry of Digital Affairs (TBC), Politechnika Krakowska, SGH, Uber, Sophilution. Finished 3 days before this research."
+  },
+  {
+    "name": "Film Spring Open Hackathon (Microsoft + Lenovo + AB S.A. + Fundacja Film Spring Open)",
+    "type": "AI x film hackathon, 3 days, hybrid (Krakow + online)",
+    "scope": "krakow",
+    "cadence": "single 2026 edition found; part of annual Film Spring Open workshops in Krakow",
+    "typicalMonth": "Oct",
+    "canonicalUrl": "https://filmspringopen.eu/edukacja/hackathon-film-spring-open-2026/",
+    "channels": [
+      {"kind": "website", "url": "https://filmspringopen.eu/edukacja/hackathon-film-spring-open-2026/"}
+    ],
+    "pastEditions": [],
+    "upcoming": [{"name": "Hackathon Film Spring Open 2026 'Kino szuka nowej formy'", "date": "2026-10-16/18", "url": "https://filmspringopen.eu/edukacja/hackathon-film-spring-open-2026/"}],
+    "confidence": "medium",
+    "notes": "Hotel Forest, ul. Jodlowa 13 (or online); film-makers + developers teams; prizes Lenovo ThinkPad P16s Copilot+ PC and monitor. Registration open at time of research. Niche audience."
+  },
+  {
+    "name": "GrowUp Hackathon (Fundacja DeepKind)",
+    "type": "national youth (18-26) social-innovation hackathon; online with Krakow live final",
+    "scope": "national-krakow-leg",
+    "cadence": "annual (2026: apply 3 Sep-20 Oct; online 12 Nov-Dec; final 14 Jan 2027 in Krakow)",
+    "typicalMonth": "Nov-Jan",
+    "canonicalUrl": "https://growuphackathon.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://growuphackathon.pl/"},
+      {"kind": "crossweb", "url": "https://crossweb.pl/en/events/growup-hackathon-2026/"},
+      {"kind": "allhackathons", "url": "https://pl.allhackathons.com/hackathon/growup-hackathon/"},
+      {"kind": "linkedin", "url": "https://pl.linkedin.com/posts/krakow-miastem-startupow_growuphackathon-deepkind-innowacjespo%C5%82eczne-activity-7503119981392572416-ZwWL"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://growuphackathon.pl/ (site cites 70+ participants, 15 teams from an earlier edition; year not confirmed)"}
+    ],
+    "upcoming": [{"name": "GrowUp Hackathon 2026 (final in Krakow)", "date": "applications to 2026-10-20; final 2027-01-14", "url": "https://growuphackathon.pl/"}],
+    "confidence": "medium",
+    "notes": "No coding required; Krakow Miastem Startupow supports. Crossweb lists it as 'Online' dated 20.10.2026 (the deadline) - a mis-dated listing; use own site dates."
+  },
+  {
+    "name": "Re: Lacz Hackathon (Krakow smart-city / AI)",
+    "type": "city hackathon, 3 days (Fri-Sun)",
+    "scope": "krakow",
+    "cadence": "single edition found: 6-8 Mar 2026, Zablocie 20.22 (~30 participants, 5 teams)",
+    "typicalMonth": "Mar",
+    "canonicalUrl": "https://axiosaccel.com/hackathony",
+    "channels": [
+      {"kind": "website", "url": "https://axiosaccel.com/hackathony"}
+    ],
+    "pastEditions": [
+      {"year": 2026, "url": "https://axiosaccel.com/hackathony"}
+    ],
+    "upcoming": [],
+    "confidence": "low",
+    "notes": "Organiser identity unclear (looks like a consultant/organiser personal site, event hosted at Klaster Zablocie). Example of an event only discoverable through a single non-obvious page."
+  },
+  {
+    "name": "Mlodziezowy Hackathon Biznesowy (Targi Pracy i Przedsiebiorczosci, Krakow Miastem Startupow)",
+    "type": "youth business hackathon, 8h (non-coding)",
+    "scope": "krakow",
+    "cadence": "single 2026 edition found: 11 Mar 2026 at TAURON Arena; 3000 PLN",
+    "typicalMonth": "Mar",
+    "canonicalUrl": "https://pl.linkedin.com/posts/krakow-miastem-startupow_hackathon-przedsi%C4%99biorczo%C5%9B%C4%87-kompetencjeprzysz%C5%82o%C5%9Bci-activity-7432104162387083264-_oaf",
+    "channels": [
+      {"kind": "linkedin", "url": "https://pl.linkedin.com/posts/krakow-miastem-startupow_hackathon-przedsi%C4%99biorczo%C5%9B%C4%87-kompetencjeprzysz%C5%82o%C5%9Bci-activity-7432104162387083264-_oaf"}
+    ],
+    "pastEditions": [
+      {"year": 2026, "url": "https://pl.linkedin.com/posts/krakow-miastem-startupow_hackathon-przedsi%C4%99biorczo%C5%9B%C4%87-kompetencjeprzysz%C5%82o%C5%9Bci-activity-7432104162387083264-_oaf"}
+    ],
+    "upcoming": [],
+    "confidence": "low",
+    "notes": "LinkedIn-only in my search results - 'hard to scrape' class."
+  },
+  {
+    "name": "Mobilna pomoc - prosty robot ratunkowy (Festiwal Malopolska Przyszlosci)",
+    "type": "robotics/making hackathon for vocational-school pupils, 2 days, 30 seats",
+    "scope": "krakow",
+    "cadence": "single edition found: 1-2 Dec 2026, EXPO Krakow; applications 2 Oct-1 Nov 2026 by e-mail",
+    "typicalMonth": "Dec",
+    "canonicalUrl": "https://malopolskauczy.pl/festiwal-uczelni/hackathon",
+    "channels": [
+      {"kind": "website", "url": "https://malopolskauczy.pl/festiwal-uczelni/hackathon"},
+      {"kind": "email", "url": "Festiwaluczelni@umwm.malopolska.pl"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://www.malopolskauczy.pl/images/Festiwal-Uczelni/2025/warsztaty-i-wyk%C5%82ady-/27-listopada-warsztaty-wykady.pdf (2025 festival had a 'Hackathon Spoleczny' workshop run by UJ - a workshop, not a full hackathon)"}
+    ],
+    "upcoming": [{"name": "Mobilna pomoc - prosty robot ratunkowy", "date": "2026-12-01/02", "url": "https://malopolskauczy.pl/festiwal-uczelni/hackathon"}],
+    "confidence": "medium",
+    "notes": "Restricted audience (Malopolska vocational secondary students); organised by Urzad Marszalkowski with FabLab Chrzanow, patron AGH Dept. of Robotics and Mechatronics. Likely excluded from a general feed (or tagged school-only)."
+  },
+  {
+    "name": "Hackerspace Krakow (Fundacja Hackerspace Krakow)",
+    "type": "makerspace / hacker community; weekly Nighthack, occasional jams",
+    "scope": "non-hackathon",
+    "cadence": "weekly Friday 'Nighthack' from 20:00 (Limanowskiego 46/LU1); not a hackathon",
+    "typicalMonth": "weekly",
+    "canonicalUrl": "https://www.meetup.com/hackerspacekrakow/",
+    "channels": [
+      {"kind": "meetup", "url": "https://www.meetup.com/hackerspacekrakow/"},
+      {"kind": "crossweb", "url": "https://crossweb.pl/wydarzenia/nighthack-wpadnij-razem-z-nami-ciac-lutowac-i-kodowac-25-grudzien-2026/"},
+      {"kind": "telegram", "url": "https://t.me/hackerspace_krk"},
+      {"kind": "facebook", "url": "https://fb.me/msg/HackerspaceKrakow"}
+    ],
+    "pastEditions": [],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "2,502 Meetup members. Crossweb mirrors Meetup events (Nighthack appears in the Krakow hackathon-category listing) - must be filtered out by title/description to avoid false positives. Meetup events page is JS-rendered (my fetch returned only the header)."
+  },
+  {
+    "name": "Meetup/user groups in Krakow (Pykonik, PyData Krakow, AWS User Group Krakow, GDG Krakow, Flutter Cracow, WomenTech Network Krakow)",
+    "type": "tech communities (talks/workshops); no recurring hackathons found",
+    "scope": "non-hackathon",
+    "cadence": "monthly meetups; GDG DevFest Krakow 10 Oct 2026 (conference, Zablocie 20.22)",
+    "typicalMonth": "monthly",
+    "canonicalUrl": "https://gdg.community.dev/gdg-krakow/",
+    "channels": [
+      {"kind": "meetup", "url": "https://www.meetup.com/pykonik/"},
+      {"kind": "meetup", "url": "https://www.meetup.com/pydata-krakow/"},
+      {"kind": "meetup", "url": "https://www.meetup.com/aws-user-group-krakow/"},
+      {"kind": "website", "url": "https://gdg.community.dev/gdg-krakow/"},
+      {"kind": "website", "url": "https://devfestkrakow.pl/"},
+      {"kind": "website", "url": "https://www.womentech.net/en-gb/events/women-in-tech-krakow-2025"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://gdg.community.dev/events/details/google-gdg-krakow-presents-devfest-krakow-2025/"}
+    ],
+    "upcoming": [{"name": "DevFest Krakow 2026 (conference, not a hackathon)", "date": "2026-10-10", "url": "https://devfestkrakow.pl/"}],
+    "confidence": "medium",
+    "notes": "Pykonik Tech Talks #86 on 24 Sep 2026; AWS UG KRK meetup #77 on 19 May 2026 (Intellias); GDG ran 'Build With AI #6' (9 Jun 2026) and 'Eskadra Bielika' RAG workshops. Not verified: Krakow JS, Krakow Node, Cracow Tech Meetup (no hackathon evidence found). Girls Who Code / Women Who Code: no Krakow chapter hackathons found; HackYeah 'She Hacks' is the main women-in-tech hackathon track."
+  },
+  {
+    "name": "Corporate hackathons with Krakow hubs - internal / not public",
+    "type": "employee-only hackathons (Motorola Solutions Open Innovation Hackathon; others)",
+    "scope": "internal",
+    "cadence": "Motorola: annual 48h global event (Jul 2025; 2-3 Jun 2026) with Krakow as an on-site hub; results only via employee LinkedIn posts",
+    "typicalMonth": "Jun/Jul",
+    "canonicalUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7468300628998459395",
+    "channels": [
+      {"kind": "linkedin", "url": "https://www.linkedin.com/posts/maciej-stawiszynski_krakow-and-uk-are-hacking-today-and-tomorrow-activity-7467589328211415040-RVf_"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://www.linkedin.com/posts/orlowiczg_motorolasolutions-hackathon-innovation-activity-7354524350022070272-8ma-"},
+      {"year": 2026, "url": "https://www.linkedin.com/posts/orangebackpack_hackathon-activity-7482809194346082305-rUU6"}
+    ],
+    "upcoming": [],
+    "confidence": "medium",
+    "notes": "Not feed-worthy (cannot be joined). Companies in the brief with NO public Krakow hackathon found for 2023-2026 (checked via web search; absence of evidence only): Google (Google for Startups campus events are in Warsaw), Capgemini (partner of HackAGH 2023), Sabre/UBS/IBM/Pega (BITEhack sponsors), Comarch, Luxoft/DXC, Amazon, Shell, Aptiv (mentor at BITEhack), Ocado (hosts AWS UG meetups only), Goldman Sachs (Warsaw Hackathon, Krakow students attend), Credit Suisse, State Street (State Street Academy, not a hackathon), HSBC, ING, Cisco/Splunk (Splunk4Students workshop), Hitachi/Honeywell/Akamai (Kosciuszkon partners), Philip Morris, Atlassian/Spartez, STX Next (AI Summer LAB was Warsaw 27-28 Aug 2026), 10Clouds, Netguru, ABB (GBS mentor), Tyro."
+  },
+  {
+    "name": "HackNation (Ministry of Digital Affairs / GovTech Polska)",
+    "type": "national GovTech implementation hackathon (24h)",
+    "scope": "national-not-krakow",
+    "cadence": "annual; Dec 2025 (Bydgoszcz) and 21-22 Nov 2026 (Bydgoszcz). Promoted by AGH, but not held in Krakow.",
+    "typicalMonth": "Nov/Dec",
+    "canonicalUrl": "https://hacknation.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://hacknation.pl/"},
+      {"kind": "institutional-news", "url": "https://www.gov.pl/web/cyfryzacja/hackathon-hacknation-2026-wraca-do-bydgoszczy"},
+      {"kind": "institutional-news", "url": "https://www.agh.edu.pl/studenci/wydarzenia/detail/s/hacknation-hackathon-wdrozeniowy-dla-innowacji-w-administracji"}
+    ],
+    "pastEditions": [
+      {"year": 2025, "url": "https://www.agh.edu.pl/studenci/wydarzenia/detail/s/hacknation-hackathon-wdrozeniowy-dla-innowacji-w-administracji"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "Candidate for 'Poland' widening. Note HackYeah 2023 was 'powered by GovTech'."
+  },
+  {
+    "name": "Hack Heroes (Fundacja Media 3.0 + SAP)",
+    "type": "national online programming contest for secondary-school pupils (2 weeks)",
+    "scope": "national-not-krakow",
+    "cadence": "annual; Nov (2025: 10-25 Nov, X edition); gala in Warsaw in Jan",
+    "typicalMonth": "Nov",
+    "canonicalUrl": "https://hackheroes.pl/",
+    "channels": [
+      {"kind": "website", "url": "https://hackheroes.pl/"},
+      {"kind": "institutional-news", "url": "https://www.kuratorium.opole.pl/x-jubileuszowa-edycja-ogolnopolskiego-konkursu-programistycznego-dla-uczniow-szkol-ponadpodstawowych-hack-heroes/"}
+    ],
+    "pastEditions": [
+      {"year": 2024, "url": "https://hackheroes.pl/"},
+      {"year": 2025, "url": "https://www.ko.olsztyn.pl/2025/11/06/ogolnopolski-konkurs-programistyczny-dla-uczniow-szkol-srednich-hack-heroes-2025/"}
+    ],
+    "upcoming": [],
+    "confidence": "high",
+    "notes": "Not Krakow-specific (despite being in the brief). 2026 (XI) edition expected Nov 2026 - UNVERIFIED."
+  },
+  {
+    "name": "Other national/global programmes touching Krakow (watch-list)",
+    "type": "global/online hackathons with possible Krakow nodes",
+    "scope": "national-krakow-leg",
+    "cadence": "varies",
+    "typicalMonth": "Sep-Nov",
+    "canonicalUrl": "https://www.starhacks.org/ibm-z-datathon-2026",
+    "channels": [
+      {"kind": "website", "url": "https://www.starhacks.org/ibm-z-datathon-2026"},
+      {"kind": "website", "url": "https://poland.aitinkerers.org/p/agents-everywhere-bots-channels-more-global-hackathon"},
+      {"kind": "website", "url": "https://startup.pfr.pl/wydarzenie/warsawai-hackathon"}
+    ],
+    "pastEditions": [],
+    "upcoming": [{"name": "IBM Z Datathon 2026 (global; Krakow participation UNVERIFIED)", "date": "2026-10-17/18", "url": "https://www.starhacks.org/ibm-z-datathon-2026"}],
+    "confidence": "low",
+    "notes": "AI Tinkerers Poland global hackathon with OpenAI (12 Sep 2026) was by application and in Warsaw. Warsaw.AI Hackathon 29-30 Nov 2025 (Google for Startups Campus Warsaw; partners include ACK Cyfronet AGH, KN Golem). Searched and found NO Krakow link for: Hack4Good, Hack4Health (Montenegro/Zurich), Hack the Hood (Oakland), Ludum Dare Krakow meetups, KrakowCTF/'Cracow CTF' (Hack4Krak is the only local on-site CTF besides AGH Cyber Kampus), Venture Cafe Krakow, Startup Poland (no hackathon feed found)."
+  }
+]

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+scratch/
+.env
+site/
+research/samples-pl/batch/
+research/samples-pl/*.html
+research/samples-pl/*.out
+research/samples-pl/*.xml
+
+research/samples/
+research/samples-pl/

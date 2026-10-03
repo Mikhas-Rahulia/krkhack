@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kraków hackathons — always up to date</title>
+<meta name="description" content="Auto-updated list of hackathons, game jams and CTFs in and around Kraków.">
+<link rel="alternate" type="application/rss+xml" title="New Kraków hackathons" href="feed.xml">
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e8eaf0;--mut:#98a0b3;--acc:#ff5a5f;--ok:#3ecf8e;--warn:#f5a524}
+  @media (prefers-color-scheme:light){:root{--bg:#f6f7f9;--card:#fff;--line:#e3e6ec;--fg:#14171f;--mut:#5b6478}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
+  h1{font-size:28px;margin:0 0 4px} h1 b{color:var(--acc)}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .bar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;align-items:center}
+  .btn{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:7px 12px;border-radius:9px;text-decoration:none;font-size:14px}
+  .btn:hover{border-color:var(--acc)}
+  label.chk{font-size:14px;color:var(--mut);margin-left:auto;cursor:pointer;user-select:none}
+  h2{font-size:19px;margin:34px 0 2px} .hint{color:var(--mut);font-size:14px;margin:0 0 12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 10px}
+  .card a.t{color:var(--fg);font-weight:600;font-size:17px;text-decoration:none}
+  .card a.t:hover{color:var(--acc)}
+  .when{color:var(--acc);font-weight:600;font-size:14px}
+  .meta{color:var(--mut);font-size:14px;margin-top:2px}
+  .sum{font-size:14px;margin-top:6px;color:var(--mut)}
+  .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin-right:5px;vertical-align:middle}
+  .tag.new{background:var(--acc);color:#fff;border-color:var(--acc)} .tag.stu{border-color:var(--warn);color:var(--warn)}
+  .card.exp{border-style:dashed}
+  details{margin-top:30px} summary{cursor:pointer;font-size:19px;font-weight:600}
+  .empty{color:var(--mut);padding:10px 0}
+  table{width:100%;border-collapse:collapse;font-size:13px} td,th{text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
+  .s-ok{color:var(--ok)} .s-warning{color:var(--warn)} .s-degraded,.s-down{color:var(--acc)}
+  footer{margin-top:40px;color:var(--mut);font-size:13px}
+  body.hide-restricted .card[data-aud="students"],body.hide-restricted .card[data-aud="pupils"]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Kraków <b>hackathons</b></h1>
+  <p class="sub">{{ n_local }} on-site in Kraków &amp; nearby · {{ n_confirmed }} confirmed in total · updated {{ generated[:16].replace('T',' ') }} UTC (refreshes itself daily)</p>
+  <div class="bar">
+    <a class="btn" href="krakow-hackathons.ics">📅 Subscribe (calendar)</a>
+    <a class="btn" href="feed.xml">RSS</a>
+    <a class="btn" href="events.json">JSON</a>
+    <label class="chk"><input type="checkbox" id="hide"> hide student-only / school-only</label>
+  </div>
+
+{% macro card(e) %}
+  <div class="card{% if e.status=='expected' %} exp{% endif %}" data-aud="{{ e.audience }}">
+    <div><a class="t" href="{{ e.url }}" rel="noopener">{{ e.title }}</a>
+      {% if e.is_new %}<span class="tag new">NEW</span>{% endif %}
+      {% if e.kind!='hackathon' %}<span class="tag">{{ {'ctf':'CTF','gamejam':'game jam','hacknight':'hack night'}.get(e.kind,e.kind) }}</span>{% endif %}
+      {% if e.audience=='students' %}<span class="tag stu">students</span>{% elif e.audience=='pupils' %}<span class="tag stu">school pupils</span>{% endif %}
+      {% if e.online and e.tier!='online' %}<span class="tag">hybrid</span>{% endif %}
+    </div>
+    <div class="when">{{ e.when }}{% if e.more %} <span class="tag">+{{ e.more }} more</span>{% endif %}</div>
+    <div class="meta">{{ e.location }}{% if e.location %} · {% endif %}{{ e.sources|join(', ')|replace('page:','')|replace('series:','')|replace('ics:','') }}</div>
+    {% if e.summary %}<div class="sum">{{ e.summary }}</div>{% endif %}
+  </div>
+{% endmacro %}
+
+{% for tier in ['krakow','nearby','poland'] %}
+  <h2>{{ tiers[tier][0] }}</h2><p class="hint">{{ tiers[tier][1] }}</p>
+  {% for e in groups[tier] %}{{ card(e) }}{% else %}<div class="empty">Nothing confirmed right now — see “Expected” below.</div>{% endfor %}
+{% endfor %}
+
+  <h2>Expected (annual series, dates not announced yet)</h2>
+  <p class="hint">These recur every year. The page upgrades them to real listings automatically as soon as dates appear anywhere.</p>
+  {% for e in expected %}{{ card(e) }}{% else %}<div class="empty">None in the next months.</div>{% endfor %}
+
+  <details>
+    <summary>{{ tiers['online'][0] }} ({{ groups['online']|length }})</summary>
+    <p class="hint">{{ tiers['online'][1] }}</p>
+    {% for e in groups['online'] %}{{ card(e) }}{% endfor %}
+  </details>
+
+  <details>
+    <summary>Source health</summary>
+    <table><tr><th>source</th><th>status</th><th>raw</th><th>kept</th><th>last ok</th></tr>
+    {% for name, h in health.items() %}
+      <tr><td>{{ name }}</td><td class="s-{{ h.status }}">{{ h.status }}{% if h.error %} — {{ h.error[:80] }}{% endif %}</td><td>{{ h.raw }}</td><td>{{ h.kept }}</td><td>{{ (h.last_ok or '')[:10] }}</td></tr>
+    {% endfor %}</table>
+  </details>
+
+  <footer>Aggregated from Crossweb, Devpost, Luma, MLH, Devfolio, CTFtime, GDG, Meetup calendars, organizers' own sites and web search. Always check the organizer's page before you go — dates change.</footer>
+</div>
+<script>
+  const b=document.body,k=document.getElementById('hide');
+  k.checked=localStorage.getItem('hideRestricted')==='1';b.classList.toggle('hide-restricted',k.checked);
+  k.addEventListener('change',()=>{localStorage.setItem('hideRestricted',k.checked?'1':'0');b.classList.toggle('hide-restricted',k.checked)});
+</script>
+</body>
+</html>
