@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-02T23:59:18+00:00",
+ "generated": "2026-10-03T00:03:37+00:00",
  "events": [
   {
    "title": "MDBA Youth Blockchain Hackathon",
@@ -1083,7 +1083,8 @@
    "series": "hackyeah",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "hackyeah-2026-2026-10-bb2a"
+   "id": "hackyeah-2026-2026-10-bb2a",
+   "stale": true
   },
   {
    "title": "Kurukshetra CTF",
@@ -1223,7 +1224,8 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "solana-warsaw-build-station-2026-10-206c"
+   "id": "solana-warsaw-build-station-2026-10-206c",
+   "stale": true
   },
   {
    "title": "United Hackathons V1",
@@ -1324,7 +1326,6 @@
    "summary": "Nightack to wydarzenie w którym uczestniczą osoby zarówno będące aktywnymi członkami hackerspace, jak i te które chciałyby dowiedzieć się jak hackerspace działa i co tutaj robimy. Jesteśmy dla Was dostępni od 20:00, ale nie musicie wcale przchodzić punktualnie! == Co robimy na nighackach? == Pracujemy nad własnymi projektami - np. ktoś frezuje radiator do komputera aby mógł w nim zmieścić rezystor…",
    "audience": "open",
    "sources": [
-    "crossweb",
     "ics:Hackerspace Kraków",
     "page:Hackerspace Kraków"
    ],
@@ -1332,10 +1333,6 @@
     {
      "source": "page:Hackerspace Kraków",
      "url": "https://www.meetup.com/hackerspacekrakow/events/316626986/"
-    },
-    {
-     "source": "crossweb",
-     "url": "https://crossweb.pl/wydarzenia/nighthack-wpadnij-razem-z-nami-ciac-lutowac-i-kodowac-9-pazdziernik-2026/"
     }
    ],
    "series": null,
@@ -1401,6 +1398,34 @@
    "id": "evohacks2026-2026-10-bc88"
   },
   {
+   "title": "InfiniSynapse Vibe Coding Hackathon 2026",
+   "url": "https://dev.events/conferences/infini-synapse-vibe-coding-hackathon-2026-3gh6wjqh",
+   "start": "2026-10-10T02:00",
+   "end": "2026-11-01T01:00",
+   "all_day": false,
+   "precision": "day",
+   "location": "",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Tech hackathon Online",
+   "audience": "open",
+   "sources": [
+    "page:dev.events hackathons"
+   ],
+   "links": [
+    {
+     "source": "page:dev.events hackathons",
+     "url": "https://dev.events/conferences/infini-synapse-vibe-coding-hackathon-2026-3gh6wjqh"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03",
+   "id": "infinisynapse-vibe-coding-hackathon-2026-2026-10-5bac"
+  },
+  {
    "title": "RESPAWN",
    "url": "https://respawn.devpost.com/",
    "start": "2026-10-12",
@@ -1454,7 +1479,8 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "the-hack-summit-2026-2026-10-e790"
+   "id": "the-hack-summit-2026-2026-10-e790",
+   "stale": true
   },
   {
    "title": "Warsaw Demo Day",
@@ -1482,7 +1508,8 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "warsaw-demo-day-2026-10-cf2a"
+   "id": "warsaw-demo-day-2026-10-cf2a",
+   "stale": true
   },
   {
    "title": "Film Spring Open Hackathon 2026",
@@ -1594,7 +1621,8 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "wud-szczecin-2026-konferencja-ux-ui-nocny-hackat-2026-10-71e6"
+   "id": "wud-szczecin-2026-konferencja-ux-ui-nocny-hackat-2026-10-71e6",
+   "stale": true
   },
   {
    "title": "STEMergent Hacks 2026",
@@ -1807,7 +1835,6 @@
    "summary": "Masz pomysł, jak ułatwić młodym osobom wejście w dorosłość? A może dopiero chcesz go znaleźć? Dołącz solo lub z zespołem - udział jest bezpłatny.",
    "audience": "open",
    "sources": [
-    "crossweb",
     "manual",
     "series:growup"
    ],
@@ -1815,10 +1842,6 @@
     {
      "source": "manual",
      "url": "https://growuphackathon.pl/"
-    },
-    {
-     "source": "crossweb",
-     "url": "https://crossweb.pl/wydarzenia/growup-hackathon-2026/"
     }
    ],
    "series": "growup",
@@ -1953,17 +1976,12 @@
    "summary": "Cybersecurity / InfoSec conference in Warsaw, Poland",
    "audience": "open",
    "sources": [
-    "crossweb",
     "page:dev.events PL"
    ],
    "links": [
     {
      "source": "page:dev.events PL",
      "url": "https://dev.events/conferences/oh-my-hack-2026-xigqjzxk"
-    },
-    {
-     "source": "crossweb",
-     "url": "https://crossweb.pl/wydarzenia/oh-my-hack-2026/"
     }
    ],
    "series": null,
