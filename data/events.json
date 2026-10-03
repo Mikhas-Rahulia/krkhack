@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T00:17:35+00:00",
+ "generated": "2026-10-03T00:28:01+00:00",
  "events": [
   {
    "title": "MDBA Youth Blockchain Hackathon",
@@ -1265,7 +1265,7 @@
    "online": false,
    "kind": "hackathon",
    "status": "confirmed",
-   "summary": "Code-optimisation hackathon on HPC systems.",
+   "summary": "Hackathon optymalizacji kodu na superkomputerach HPC.",
    "audience": "open",
    "sources": [
     "manual"
@@ -1524,7 +1524,7 @@
    "online": false,
    "kind": "hackathon",
    "status": "confirmed",
-   "summary": "Film-tech hackathon (Microsoft, Lenovo, AB S.A.).",
+   "summary": "Hackathon technologii filmowych (Microsoft, Lenovo, AB S.A.).",
    "audience": "open",
    "sources": [
     "manual"
@@ -1569,7 +1569,7 @@
    "id": "neighborhood-hacks-2026-10-f3c0"
   },
   {
-   "title": "Blockchain Hack Kraków (autumn)",
+   "title": "Blockchain Hack Kraków (jesień)",
    "url": "https://crossweb.pl/wydarzenia/blockchain-hack-krakow-pazdziernik-2026/",
    "start": "2026-10-17",
    "end": "2026-10-18",
@@ -1594,7 +1594,7 @@
    "series": "blockchainhack",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "blockchain-hack-krakow-autumn-2026-10-88d0"
+   "id": "blockchain-hack-krakow-jesien-2026-10-88d0"
   },
   {
    "title": "WUD Szczecin 2026 – Konferencja UX/UI & Nocny Hackathon",
@@ -1748,7 +1748,7 @@
    "online": false,
    "kind": "hackathon",
    "status": "confirmed",
-   "summary": "Free, English, limited spots. ISPE Poland + AGH, powered by AWS.",
+   "summary": "Bezpłatny, po angielsku, ograniczona liczba miejsc. ISPE Poland + AGH, powered by AWS.",
    "audience": "students",
    "sources": [
     "manual"
@@ -1827,7 +1827,7 @@
    "end": "2027-01-14",
    "all_day": true,
    "precision": "day",
-   "location": "Online rounds + live final in Kraków (14 Jan 2027)",
+   "location": "Rundy online + finał na żywo w Krakowie (14 stycznia 2027)",
    "tier": "krakow",
    "online": true,
    "kind": "hackathon",
@@ -1911,7 +1911,7 @@
    "id": "kuk-virtual-hackathon-2026-11-0fe1"
   },
   {
-   "title": "AGH Cyber Kampus 4.0 (CTF + conference)",
+   "title": "AGH Cyber Kampus 4.0 (CTF + konferencja)",
    "url": "https://www.informatyka.agh.edu.pl/en/blog/save-the-date-agh-cyber-kampus-returns-this-november/",
    "start": "2026-11-25",
    "end": null,
@@ -1936,10 +1936,10 @@
    "series": "aghcyber",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "agh-cyber-kampus-4-0-ctf-conference-2026-11-b0b1"
+   "id": "agh-cyber-kampus-4-0-ctf-konferencja-2026-11-b0b1"
   },
   {
-   "title": "Mobilna pomoc - prosty robot ratunkowy (vocational school pupils only)",
+   "title": "Mobilna pomoc — prosty robot ratunkowy (tylko uczniowie szkół zawodowych)",
    "url": "https://malopolskauczy.pl/festiwal-uczelni/hackathon",
    "start": "2026-12-01",
    "end": "2026-12-02",
@@ -1950,7 +1950,7 @@
    "online": false,
    "kind": "hackathon",
    "status": "confirmed",
-   "summary": "Only vocational secondary-school students from Małopolska.",
+   "summary": "Tylko dla uczniów małopolskich szkół zawodowych.",
    "audience": "pupils",
    "sources": [
     "manual"
@@ -1964,7 +1964,7 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "mobilna-pomoc-prosty-robot-ratunkowy-vocational--2026-12-ebe5"
+   "id": "mobilna-pomoc-prosty-robot-ratunkowy-tylko-uczni-2026-12-ebe5"
   },
   {
    "title": "Oh My Hack 2026",
@@ -2178,7 +2178,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Sustainability challenge, Oct-Dec.",
+   "summary": "Wyzwanie zrównoważonego rozwoju, październik–grudzień.",
    "audience": "students",
    "sources": [
     "series"
@@ -2206,7 +2206,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Health/life-science innovation hackathon.",
+   "summary": "Hackathon innowacji w zdrowiu i naukach o życiu.",
    "audience": "open",
    "sources": [
     "series"
@@ -2224,17 +2224,17 @@
    "all_day": true
   },
   {
-   "title": "NASA Space Apps Challenge (check for a Kraków node)",
+   "title": "NASA Space Apps Challenge (sprawdź, czy jest węzeł w Krakowie)",
    "url": "https://www.spaceappschallenge.org/",
    "start": "2026-10-01",
    "end": "2026-10-31",
    "precision": "month",
-   "location": "Check local events page",
+   "location": "Sprawdź stronę wydarzeń lokalnych",
    "tier": "poland",
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Global weekend hackathon; Polish nodes vary per year.",
+   "summary": "Globalny weekendowy hackathon; polskie lokalizacje zmieniają się co roku.",
    "audience": "open",
    "sources": [
     "series"
@@ -2246,7 +2246,7 @@
     }
    ],
    "series": "spaceapps",
-   "id": "nasa-space-apps-challenge-check-for-a-krakow-nod-2026-10-972c",
+   "id": "nasa-space-apps-challenge-sprawdz-czy-jest-wezel-2026-10-972c",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
    "all_day": true
@@ -2262,7 +2262,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "EU space-data hackathon.",
+   "summary": "Europejski hackathon danych kosmicznych.",
    "audience": "open",
    "sources": [
     "series"
@@ -2285,12 +2285,12 @@
    "start": "2026-11-01",
    "end": "2026-11-30",
    "precision": "month",
-   "location": "Poland / online",
+   "location": "Polska / online",
    "tier": "poland",
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "For school students.",
+   "summary": "Dla uczniów szkół.",
    "audience": "pupils",
    "sources": [
     "series"
@@ -2318,7 +2318,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "National GovTech hackathon.",
+   "summary": "Ogólnopolski hackathon GovTech.",
    "audience": "open",
    "sources": [
     "series"
@@ -2346,7 +2346,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Regional-government civic hackathon with KPT.",
+   "summary": "Hackathon obywatelski Urzędu Marszałkowskiego z KPT.",
    "audience": "open",
    "sources": [
     "series"
@@ -2374,7 +2374,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Student hackathon by BEST AGH, usually January.",
+   "summary": "Studencki hackathon BEST AGH, zwykle w styczniu.",
    "audience": "students",
    "sources": [
     "series"
@@ -2397,12 +2397,12 @@
    "start": "2027-01-01",
    "end": "2027-01-31",
    "precision": "month",
-   "location": "Kraków (several sites)",
+   "location": "Kraków (kilka lokalizacji)",
    "tier": "krakow",
    "kind": "gamejam",
    "status": "expected",
    "online": false,
-   "summary": "Last weekend of January. KrakJam (KPT/Digital Dragons) and Zabłocie Space are the usual hosts.",
+   "summary": "Ostatni weekend stycznia. Gospodarze — KrakJam (KPT/Digital Dragons) i Zabłocie Space.",
    "audience": "open",
    "sources": [
     "series"
@@ -2430,7 +2430,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Defence-tech hackathon with Krakow Technology Park (check Taikai listing).",
+   "summary": "Hackathon technologii obronnych z Krakowskim Parkiem Technologicznym (listing na Taikai).",
    "audience": "open",
    "sources": [
     "series"
@@ -2453,12 +2453,12 @@
    "start": "2027-03-01",
    "end": "2027-03-31",
    "precision": "month",
-   "location": "Kraków / Warszawa (alternates)",
+   "location": "Kraków / Warszawa (na zmianę)",
    "tier": "poland",
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "AI/ML hackathon; was in Kraków in 2025, alternates with Warsaw.",
+   "summary": "Hackathon AI/ML; w 2025 w Krakowie, edycje na zmianę z Warszawą.",
    "audience": "open",
    "sources": [
     "series"
@@ -2486,7 +2486,7 @@
    "kind": "ctf",
    "status": "expected",
    "online": false,
-   "summary": "CTF for school students.",
+   "summary": "CTF dla uczniów szkół.",
    "audience": "pupils",
    "sources": [
     "series"
@@ -2514,7 +2514,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Business-services hackathon with the City of Kraków.",
+   "summary": "Hackathon sektora usług biznesowych z Miastem Kraków.",
    "audience": "students",
    "sources": [
     "series"
@@ -2542,7 +2542,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Irregular; spring editions seen.",
+   "summary": "Nieregularnie; widziane edycje wiosenne.",
    "audience": "open",
    "sources": [
     "series"
@@ -2570,7 +2570,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Spring hackathon run by EESTEC LC Kraków; also listed on Devpost.",
+   "summary": "Wiosenny hackathon EESTEC LC Kraków; wpisy także na Devpost.",
    "audience": "students",
    "sources": [
     "series"
@@ -2598,7 +2598,7 @@
    "kind": "hackathon",
    "status": "expected",
    "online": false,
-   "summary": "Hardware/FPGA hackathon at Nokia Kraków.",
+   "summary": "Hackathon sprzętowy FPGA w krakowskim Nokii.",
    "audience": "open",
    "sources": [
     "series"
