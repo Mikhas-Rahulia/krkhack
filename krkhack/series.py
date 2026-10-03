@@ -81,7 +81,7 @@ def check_pages(series: list[dict], warn) -> list[Cand]:
     out = []
     for s in series:
         for u in ([s["url"]] if s.get("url") else []) + list(s.get("check", [])):
-            if any(h in u for h in ("linkedin.com", "facebook.com", "crossweb.pl")):
+            if any(h in u for h in ("linkedin.com", "facebook.com", "crossweb.pl", "globalgamejam.org")):
                 continue  # login walls / Cloudflare-blocked from the cloud: covered by other paths
             try:
                 for c in events_from_html(http(u, timeout=20, retries=1).text, u, f"series:{s['id']}"):
