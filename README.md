@@ -36,14 +36,14 @@ GitHub's datacenter IPs are blocked by several things we'd like to use, so:
 | Piece | Runs in the cloud? | Notes |
 |---|---|---|
 | Devpost, Luma, MLH, Devfolio, CTFtime, GDG, Meetup iCal, JSON-LD pages, series, manual | ✅ fully automatic | zero upkeep |
-| **Crossweb** (biggest Polish source) | ⚠️ blocked by Cloudflare from GitHub (403 even with a real headless Chrome) | a tiny job on **your PC** refreshes `data/crossweb_snapshot.json` daily (`scripts/install_task.ps1`). If it stops, the build raises an issue after 8 days. |
-| **Web-search discovery** | ⚠️ DuckDuckGo/Brave/Mojeek block datacenter IPs | needs the free **`TAVILY_API_KEY`** secret (1000 searches/mo, no card). Without it the build flags it in the health table / issue. |
+| **Crossweb** (biggest Polish source) | ⚠️ direct fetch blocked by Cloudflare from GitHub (403 even with a real headless Chrome) | **cloud route:** with `TAVILY_API_KEY`, Crossweb-restricted searches are read through Tavily's crawler. The repo ships a one-off snapshot (`data/crossweb_snapshot.json`, 3 Oct 2026) as a fallback; it goes stale after ~8 days and the build then opens an issue until you add the key. *(Optional alternative: `scripts/install_task.ps1` refreshes the snapshot from a home PC.)* |
+| **Web-search discovery** | ⚠️ DuckDuckGo/Brave/Mojeek block datacenter IPs | needs the free **`TAVILY_API_KEY`** secret (1000 searches/mo, no card; the config uses ~15/day). Without it the build flags it in the health table / issue. |
 | LLM date extraction | best effort | uses `LLM_API_KEY` if set, else tries GitHub's free Models endpoint with the built-in token (untested; failure is non-fatal) |
 
 ## Setup
 1. Repo is public (unlimited free Actions + Pages). *Settings → Pages → Source: GitHub Actions*.
 2. *Actions → update → Run workflow* (then it runs daily at 05:17 UTC).
-3. **Recommended:** add secret `TAVILY_API_KEY` (tavily.com, free) and run `scripts\install_task.ps1` once on your PC.
+3. **Needed for full coverage:** add secret `TAVILY_API_KEY` (tavily.com, free) — this single key powers web discovery *and* the cloud route to Crossweb. Add an LLM key too (below) so discovered pages can be dated.
 4. Optional: `LLM_API_KEY` (+ `LLM_BASE_URL`, variable `LLM_MODEL`; e.g. a free Gemini key), `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` for push digests.
 
 ## Everyday use

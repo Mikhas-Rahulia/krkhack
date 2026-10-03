@@ -184,3 +184,16 @@ def test_flagged_warning_marks_source_unhealthy():
     out = pipeline.update_health(res, {}, {"health": {"degraded_after_runs": 1}}, {})
     assert out["sources"]["discovery"]["status"] == "degraded"
     assert out["sources"]["discovery"]["flag"] == "add TAVILY key"
+
+
+def test_discovery_uses_search_api_text_when_page_blocked(monkeypatch, tmp_path):
+    """Crossweb 403s us, but Tavily already crawled the page: LLM extraction must run on that text."""
+    page = "GrowUp Hackathon 2026 odbędzie się 12 grudnia 2026 w Krakowie. Zapisy trwają."
+    monkeypatch.setattr(discovery, "CACHE", tmp_path / "cache.json")
+    monkeypatch.setattr(discovery, "search", lambda q, n, domains=None: [
+        {"title": "GrowUp", "url": "https://crossweb.pl/wydarzenia/new-hack/", "snippet": "", "text": page}])
+    monkeypatch.setattr(discovery, "extract", lambda url: (_ for _ in ()).throw(RuntimeError("403 Cloudflare")))
+    monkeypatch.setenv("LLM_API_KEY", "x")
+    monkeypatch.setattr(discovery, "_llm", lambda prompt: '{"events":[{"title":"New Hack Kraków","start":"2026-12-12","location":"Kraków","online":false,"evidence":"GrowUp Hackathon 2026 odbędzie się 12 grudnia 2026 w Krakowie"}]}')
+    out = discovery.run({"queries": [], "domain_queries": [{"q": "hackathon Kraków", "domains": ["crossweb.pl"]}]}, lambda w: None, set())
+    assert [c.title for c in out] == ["New Hack Kraków"]

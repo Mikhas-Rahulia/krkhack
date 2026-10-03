@@ -53,6 +53,13 @@ discovery:
     - "game jam Kraków {next_year}"
     - "CTF Kraków {next_year}"
     - "hackathon Poland {next_year} register"
+  # Site-restricted searches. With a Tavily key these reach Cloudflare-protected sites (Crossweb)
+  # from the cloud, because Tavily's crawler fetches the page, not us. ~15 searches/day total.
+  domain_queries:
+    - {q: "hackathon Kraków",   domains: ["crossweb.pl"]}
+    - {q: "hakaton Kraków",     domains: ["crossweb.pl"]}
+    - {q: "game jam Kraków",    domains: ["crossweb.pl"]}
+    - {q: "hackathon Polska",   domains: ["crossweb.pl"]}
 
 # Health/alerts
 health:

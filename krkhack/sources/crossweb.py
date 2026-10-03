@@ -110,8 +110,12 @@ def fetch(cfg: dict, warn) -> list[Cand]:
     by_url = {c.url: c for c in cands}
     for c in live:  # RSS rows are fresher than the snapshot
         by_url[c.url] = c
-    if age > 8:
-        warn(f"! Crossweb is blocked here and the snapshot is {age:.0f} days old - the home refresh job has stopped")
+    import os
+    if age > 8 and not os.getenv("TAVILY_API_KEY"):
+        warn(f"! Crossweb is blocked from the cloud and the snapshot is {age:.0f} days old - add the free "
+             "TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1")
+    elif age > 8:
+        warn(f"Crossweb blocked from this network; snapshot is {age:.0f} days old (Tavily discovery covers new listings)")
     else:
         warn(f"Crossweb blocked from this network; using {age:.1f}-day-old snapshot ({len(cands)} items)")
     return list(by_url.values())

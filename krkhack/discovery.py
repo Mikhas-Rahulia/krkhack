@@ -27,13 +27,19 @@ SKIP_DOMAINS = ("facebook.com", "instagram.com", "linkedin.com", "x.com", "twitt
 
 
 # ------------------------------------------------------------------ search
-def search(query: str, n: int = 8) -> list[dict]:
+def search(query: str, n: int = 8, domains: list[str] | None = None) -> list[dict]:
+    """Tavily when keyed (its crawler reaches Cloudflare-protected sites and returns page text, so
+    blocked sites like Crossweb stay usable from the cloud), else keyless DuckDuckGo."""
     key = os.getenv("TAVILY_API_KEY")
     if key:
-        r = http("https://api.tavily.com/search", method="POST", headers={"Authorization": f"Bearer {key}"},
-                 json={"query": query, "max_results": n, "search_depth": "basic", "topic": "general"}).json()
-        return [{"title": x.get("title", ""), "url": x["url"], "snippet": x.get("content", "")} for x in r.get("results", [])]
-    return _ddg(query, n)
+        body = {"query": query, "max_results": n, "search_depth": "basic", "topic": "general",
+                "include_raw_content": True}
+        if domains:
+            body["include_domains"] = domains
+        r = http("https://api.tavily.com/search", method="POST", headers={"Authorization": f"Bearer {key}"}, json=body).json()
+        return [{"title": x.get("title", ""), "url": x["url"], "snippet": x.get("content", ""),
+                 "text": x.get("raw_content") or x.get("content") or ""} for x in r.get("results", [])]
+    return _ddg(f"{query} site:{domains[0]}" if domains else query, n)
 
 
 def _ddg(query: str, n: int) -> list[dict]:
@@ -126,7 +132,14 @@ def extract(url: str) -> list[Cand]:
     soup = BeautifulSoup(html, "lxml")
     for t in soup(["script", "style", "nav", "footer", "noscript"]):
         t.decompose()
-    text = re.sub(r"\s+", " ", soup.get_text(" ")).strip()[:14000]
+    return extract_text(re.sub(r"\s+", " ", soup.get_text(" ")).strip(), url)
+
+
+def extract_text(text: str, url: str) -> list[Cand]:
+    """LLM extraction from already-fetched page text (also used for search-API page content)."""
+    if not llm_available() or not text.strip():
+        return []
+    text = re.sub(r"\s+", " ", text).strip()[:14000]
     global _llm_failures
     try:
         raw = _llm(_PROMPT.format(today=today().isoformat(), url=url, text=text))
@@ -146,7 +159,8 @@ def _load_cache() -> dict:
 
 
 def run(cfg: dict, warn, known_urls: set[str], extra_queries: list[str] | None = None) -> list[Cand]:
-    queries = list(cfg.get("queries", [])) + list(extra_queries or [])
+    queries = [(q, None) for q in cfg.get("queries", []) + list(extra_queries or [])]
+    queries += [(d["q"], d.get("domains")) for d in cfg.get("domain_queries", [])]
     max_pages = int(cfg.get("max_pages", 25))
     ttl = int(cfg.get("recheck_days", 7))
     cache = _load_cache()
@@ -154,9 +168,9 @@ def run(cfg: dict, warn, known_urls: set[str], extra_queries: list[str] | None =
     out: list[Cand] = []
     fetched = 0
     total_results, failed = 0, 0
-    for q in queries:
+    for q, domains in queries:
         try:
-            results = search(q, int(cfg.get("results_per_query", 8)))
+            results = search(q, int(cfg.get("results_per_query", 8)), domains)
         except Exception as ex:  # noqa: BLE001
             failed += 1
             if failed <= 2:
@@ -177,8 +191,12 @@ def run(cfg: dict, warn, known_urls: set[str], extra_queries: list[str] | None =
             try:
                 got = extract(url)
             except Exception as ex:  # noqa: BLE001
-                warn(f"extract {url}: {ex}")
-                got = []
+                # direct fetch blocked (e.g. Cloudflare)? use the text the search API already crawled
+                try:
+                    got = extract_text(r.get("text", ""), url)
+                except Exception as ex2:  # noqa: BLE001
+                    warn(f"extract {url}: {str(ex2)[:100]}")
+                    got = []
             cache[url] = {"ts": now.isoformat(), "n": len(got)}
             out += got
     if queries and total_results == 0 and not os.getenv("TAVILY_API_KEY"):
