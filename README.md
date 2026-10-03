@@ -30,14 +30,21 @@ So the feed is layered, and each layer covers for the others:
   turns `degraded`, and the workflow opens (and later auto-closes) a GitHub issue **"Hackathon sources need attention"**.
 * Committing `data/` every run stops GitHub from disabling the schedule after 60 inactive days.
 
-## Setup (once, ~3 minutes)
-1. Push this folder to a **public** GitHub repo (public = unlimited free Actions minutes + Pages).
-2. Repo → *Settings → Pages → Source: GitHub Actions*.
-3. *Actions → update → Run workflow*. Done; it then runs daily at 05:17 UTC.
+## What runs where (verified, not assumed)
+GitHub's datacenter IPs are blocked by several things we'd like to use, so:
 
-Optional secrets (Settings → Secrets and variables → Actions) — all improve recall, none are required:
-`TAVILY_API_KEY` (1000 free searches/mo), `LLM_API_KEY` + `LLM_BASE_URL` + variable `LLM_MODEL` (e.g. a free Gemini key),
-`TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID`. Without `LLM_API_KEY` the workflow tries GitHub's free Models endpoint with the built-in token.
+| Piece | Runs in the cloud? | Notes |
+|---|---|---|
+| Devpost, Luma, MLH, Devfolio, CTFtime, GDG, Meetup iCal, JSON-LD pages, series, manual | ✅ fully automatic | zero upkeep |
+| **Crossweb** (biggest Polish source) | ⚠️ blocked by Cloudflare from GitHub (403 even with a real headless Chrome) | a tiny job on **your PC** refreshes `data/crossweb_snapshot.json` daily (`scripts/install_task.ps1`). If it stops, the build raises an issue after 8 days. |
+| **Web-search discovery** | ⚠️ DuckDuckGo/Brave/Mojeek block datacenter IPs | needs the free **`TAVILY_API_KEY`** secret (1000 searches/mo, no card). Without it the build flags it in the health table / issue. |
+| LLM date extraction | best effort | uses `LLM_API_KEY` if set, else tries GitHub's free Models endpoint with the built-in token (untested; failure is non-fatal) |
+
+## Setup
+1. Repo is public (unlimited free Actions + Pages). *Settings → Pages → Source: GitHub Actions*.
+2. *Actions → update → Run workflow* (then it runs daily at 05:17 UTC).
+3. **Recommended:** add secret `TAVILY_API_KEY` (tavily.com, free) and run `scripts\install_task.ps1` once on your PC.
+4. Optional: `LLM_API_KEY` (+ `LLM_BASE_URL`, variable `LLM_MODEL`; e.g. a free Gemini key), `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` for push digests.
 
 ## Everyday use
 * Just open the page / subscribe to the `.ics`. Nothing to do.
