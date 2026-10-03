@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T00:30:09+00:00",
+ "generated": "2026-10-03T10:28:03+00:00",
  "events": [
   {
    "title": "MDBA Youth Blockchain Hackathon",
@@ -27,7 +27,8 @@
    "series": "blockchainhack",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "mdba-youth-blockchain-hackathon-2026-01-bf01"
+   "id": "mdba-youth-blockchain-hackathon-2026-01-bf01",
+   "stale": true
   },
   {
    "title": "BLI Legal Tech Hackathon 2",
@@ -55,7 +56,8 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "bli-legal-tech-hackathon-2-2026-01-6d5c"
+   "id": "bli-legal-tech-hackathon-2-2026-01-6d5c",
+   "stale": true
   },
   {
    "title": "DSH Hacks V2 ($100k+ in prizes!)",
@@ -858,27 +860,22 @@
   },
   {
    "title": "Qloo Agentic Hackathon",
-   "url": "https://dev.events/conferences/qloo-agentic-hackathon-yxpe8cod",
-   "start": "2026-09-30T02:00",
-   "end": "2026-10-30T01:00",
-   "all_day": false,
+   "url": "https://qloo.devpost.com/",
+   "start": "2026-09-30",
+   "end": "2026-10-30",
+   "all_day": true,
    "precision": "day",
    "location": "Online",
    "tier": "online",
    "online": true,
    "kind": "hackathon",
    "status": "confirmed",
-   "summary": "Machine Learning (ML) hackathon Online",
+   "summary": "Machine Learning/AI · Prize: $ 25,000",
    "audience": "open",
    "sources": [
-    "devpost",
-    "page:dev.events hackathons"
+    "devpost"
    ],
    "links": [
-    {
-     "source": "page:dev.events hackathons",
-     "url": "https://dev.events/conferences/qloo-agentic-hackathon-yxpe8cod"
-    },
     {
      "source": "devpost",
      "url": "https://qloo.devpost.com/"
@@ -887,35 +884,7 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "qloo-agentic-hackathon-2026-09-c25a"
-  },
-  {
-   "title": "ForgeHacks Online 2026",
-   "url": "https://forgehacks-2026.devpost.com/",
-   "start": "2026-10-01",
-   "end": "2026-10-10",
-   "all_day": true,
-   "precision": "day",
-   "location": "Online",
-   "tier": "online",
-   "online": true,
-   "kind": "hackathon",
-   "status": "confirmed",
-   "summary": "Beginner Friendly, Lifehacks, Machine Learning/AI · Prize: $ 773,950",
-   "audience": "open",
-   "sources": [
-    "devpost"
-   ],
-   "links": [
-    {
-     "source": "devpost",
-     "url": "https://forgehacks-2026.devpost.com/"
-    }
-   ],
-   "series": null,
-   "first_seen": "2026-10-03",
-   "last_seen": "2026-10-03",
-   "id": "forgehacks-online-2026-2026-10-30ed"
+   "id": "qloo-agentic-hackathon-2026-09-b18f"
   },
   {
    "title": "Hyperbloom October- UI/UX and Web Design",
@@ -946,34 +915,6 @@
    "id": "hyperbloom-october-ui-ux-and-web-design-2026-10-f24a"
   },
   {
-   "title": "ImpactHack 2026",
-   "url": "https://impacthack26.devpost.com/",
-   "start": "2026-10-01",
-   "end": "2026-10-08",
-   "all_day": true,
-   "precision": "day",
-   "location": "Online",
-   "tier": "online",
-   "online": true,
-   "kind": "hackathon",
-   "status": "confirmed",
-   "summary": "Beginner Friendly, Education, Social Good · Prize: $ 0",
-   "audience": "open",
-   "sources": [
-    "devpost"
-   ],
-   "links": [
-    {
-     "source": "devpost",
-     "url": "https://impacthack26.devpost.com/"
-    }
-   ],
-   "series": null,
-   "first_seen": "2026-10-03",
-   "last_seen": "2026-10-03",
-   "id": "impacthack-2026-2026-10-4561"
-  },
-  {
    "title": "PayPal AI Hackathon",
    "url": "https://paypalaihackathon.devpost.com/",
    "start": "2026-10-01",
@@ -1000,6 +941,100 @@
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
    "id": "paypal-ai-hackathon-2026-10-b41b"
+  },
+  {
+   "title": "ForgeHacks Online 2026",
+   "url": "https://dev.events/conferences/forge-hacks-online-2026-whltvnnd",
+   "start": "2026-10-01T02:00",
+   "end": "2026-10-10T02:00",
+   "all_day": false,
+   "precision": "day",
+   "location": "Online",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Artificial Intelligence (AI) hackathon Online",
+   "audience": "open",
+   "sources": [
+    "devpost",
+    "page:dev.events hackathons"
+   ],
+   "links": [
+    {
+     "source": "page:dev.events hackathons",
+     "url": "https://dev.events/conferences/forge-hacks-online-2026-whltvnnd"
+    },
+    {
+     "source": "devpost",
+     "url": "https://forgehacks-2026.devpost.com/"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03",
+   "id": "forgehacks-online-2026-2026-10-d94c"
+  },
+  {
+   "title": "Hack Apertus",
+   "url": "https://dev.events/conferences/hack-apertus-jc9fxgy7",
+   "start": "2026-10-01T02:00",
+   "end": "2026-10-16T02:00",
+   "all_day": false,
+   "precision": "day",
+   "location": "",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Large Language Model (LLM) hackathon Online",
+   "audience": "open",
+   "sources": [
+    "page:dev.events hackathons"
+   ],
+   "links": [
+    {
+     "source": "page:dev.events hackathons",
+     "url": "https://dev.events/conferences/hack-apertus-jc9fxgy7"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03",
+   "id": "hack-apertus-2026-10-a342"
+  },
+  {
+   "title": "ImpactHack 2026",
+   "url": "https://dev.events/conferences/impact-hack-2026-1f6k7qsb",
+   "start": "2026-10-01T02:00",
+   "end": "2026-10-08T02:00",
+   "all_day": false,
+   "precision": "day",
+   "location": "Online",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Tech hackathon Online",
+   "audience": "open",
+   "sources": [
+    "devpost",
+    "page:dev.events hackathons"
+   ],
+   "links": [
+    {
+     "source": "page:dev.events hackathons",
+     "url": "https://dev.events/conferences/impact-hack-2026-1f6k7qsb"
+    },
+    {
+     "source": "devpost",
+     "url": "https://impacthack26.devpost.com/"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03",
+   "id": "impacthack-2026-2026-10-7513"
   },
   {
    "title": "Future innovators hackothon",
@@ -1426,7 +1461,8 @@
    "series": null,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "id": "infinisynapse-vibe-coding-hackathon-2026-2026-10-5bac"
+   "id": "infinisynapse-vibe-coding-hackathon-2026-2026-10-5bac",
+   "stale": true
   },
   {
    "title": "RESPAWN",
@@ -1595,6 +1631,34 @@
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
    "id": "blockchain-hack-krakow-jesien-2026-10-88d0"
+  },
+  {
+   "title": "HEALTHHACK 48",
+   "url": "https://healthhack-48.devpost.com/",
+   "start": "2026-10-17",
+   "end": "2026-10-19",
+   "all_day": true,
+   "precision": "day",
+   "location": "Online",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Beginner Friendly, Health, Productivity · Prize: $ 0",
+   "audience": "open",
+   "sources": [
+    "devpost"
+   ],
+   "links": [
+    {
+     "source": "devpost",
+     "url": "https://healthhack-48.devpost.com/"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03",
+   "id": "healthhack-48-2026-10-94d0"
   },
   {
    "title": "WUD Szczecin 2026 – Konferencja UX/UI & Nocny Hackathon",
