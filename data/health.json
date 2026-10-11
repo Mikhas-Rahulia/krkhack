@@ -18,23 +18,24 @@
     173,
     173,
     173,
+    173,
     173
    ],
-   "bad_streak": 0,
+   "bad_streak": 1,
    "raw": 173,
    "kept": 14,
    "error": null,
    "warnings": [
+    "! Crossweb is blocked from the cloud and the snapshot is 8 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1",
     "/wyszukiwarka/?fraza=hackathon: GET https://crossweb.pl/wyszukiwarka/?fraza=hackathon: HTTP Error 403: ",
-    "/wyszukiwarka/?fraza=hakaton: GET https://crossweb.pl/wyszukiwarka/?fraza=hakaton: HTTP Error 403: ",
-    "Crossweb blocked from this network; using 7.5-day-old snapshot (173 items)"
+    "/wyszukiwarka/?fraza=hakaton: GET https://crossweb.pl/wyszukiwarka/?fraza=hakaton: HTTP Error 403: "
    ],
-   "secs": 32.4,
+   "secs": 33.0,
    "median": 173.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
    "last_ok": "2026-10-10T11:13:46+00:00",
-   "status": "ok",
-   "flag": ""
+   "status": "warning",
+   "flag": "Crossweb is blocked from the cloud and the snapshot is 8 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1"
   },
   "devpost": {
    "history": [
@@ -54,17 +55,18 @@
     127,
     130,
     59,
-    60
+    60,
+    59
    ],
    "bad_streak": 0,
-   "raw": 60,
+   "raw": 59,
    "kept": 57,
    "error": null,
    "warnings": [],
-   "secs": 1.2,
+   "secs": 1.5,
    "median": 60.5,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -86,17 +88,18 @@
     310,
     312,
     312,
-    314
+    314,
+    309
    ],
    "bad_streak": 0,
-   "raw": 314,
+   "raw": 309,
    "kept": 2,
    "error": null,
    "warnings": [],
-   "secs": 2.2,
-   "median": 309.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "secs": 2.5,
+   "median": 309.5,
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -118,17 +121,18 @@
     115,
     117,
     119,
-    119
+    119,
+    117
    ],
    "bad_streak": 0,
-   "raw": 119,
+   "raw": 117,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 1.4,
-   "median": 118.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "secs": 1.6,
+   "median": 119.0,
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -150,22 +154,24 @@
     18,
     18,
     18,
-    16
+    16,
+    17
    ],
    "bad_streak": 0,
-   "raw": 16,
+   "raw": 17,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 1.4,
+   "secs": 1.9,
    "median": 18.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
   "gdg": {
    "history": [
+    68,
     68,
     68,
     68,
@@ -191,8 +197,8 @@
    "warnings": [],
    "secs": 0.6,
    "median": 68.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -214,17 +220,18 @@
     44,
     43,
     43,
-    46
+    46,
+    41
    ],
    "bad_streak": 0,
-   "raw": 46,
+   "raw": 41,
    "kept": 0,
    "error": null,
    "warnings": [],
    "secs": 0.6,
-   "median": 43.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "median": 43.5,
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -246,6 +253,7 @@
     12,
     13,
     13,
+    13,
     13
    ],
    "bad_streak": 0,
@@ -253,10 +261,10 @@
    "kept": 10,
    "error": null,
    "warnings": [],
-   "secs": 1.1,
+   "secs": 1.2,
    "median": 12.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -278,22 +286,24 @@
     66,
     66,
     64,
-    64
+    64,
+    63
    ],
    "bad_streak": 0,
-   "raw": 64,
-   "kept": 19,
+   "raw": 63,
+   "kept": 20,
    "error": null,
    "warnings": [],
    "secs": 2.3,
    "median": 66.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
   "manual": {
    "history": [
+    7,
     7,
     7,
     7,
@@ -319,13 +329,14 @@
    "warnings": [],
    "secs": 0.0,
    "median": 7.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
   "series_pages": {
    "history": [
+    1,
     1,
     1,
     1,
@@ -350,12 +361,14 @@
    "error": null,
    "warnings": [
     "sdg-city-challenge https://pkw.uj.edu.pl/aktualnosci: GET https://pkw.uj.edu.pl/aktualnosci: HTTPSConnectionPool(host='pkw.uj.edu.pl', port=443): Max retries exceeded with ur",
-    "spaceapps https://www.spaceappschallenge.org/: GET https://www.spaceappschallenge.org/: HTTPSConnectionPool(host='www.spaceappschallenge.org', port=443): Max retries e"
+    "here-krakow https://www.innoagh.pl/en/wydarzenia/: GET https://www.innoagh.pl/en/wydarzenia/: HTTPSConnectionPool(host='www.innoagh.pl', port=443): Max retries exceeded wi",
+    "spaceapps https://www.spaceappschallenge.org/: GET https://www.spaceappschallenge.org/: HTTPSConnectionPool(host='www.spaceappschallenge.org', port=443): Max retries e",
+    "hackheroes https://hackheroes.pl/: GET https://hackheroes.pl/: HTTPSConnectionPool(host='hackheroes.pl', port=443): Max retries exceeded with url: / (Cause"
    ],
    "secs": 0,
    "median": 1.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
-   "last_ok": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
+   "last_ok": "2026-10-11T11:28:47+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -375,9 +388,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "bad_streak": 14,
+   "bad_streak": 15,
    "raw": 0,
    "kept": 0,
    "error": null,
@@ -388,11 +402,11 @@
    ],
    "secs": 0,
    "median": 0.0,
-   "last_run": "2026-10-10T11:13:46+00:00",
+   "last_run": "2026-10-11T11:28:47+00:00",
    "last_ok": "2026-10-02T23:59:18+00:00",
    "status": "degraded",
    "flag": "web search returns nothing from this network (DuckDuckGo blocks datacenter IPs) - add the free TAVILY_API_KEY repo secret to enable discovery"
   }
  },
- "generated": "2026-10-10T11:13:46+00:00"
+ "generated": "2026-10-11T11:28:47+00:00"
 }
