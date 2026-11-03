@@ -33,25 +33,24 @@
     173,
     173
    ],
-   "bad_streak": 23,
+   "bad_streak": 24,
    "raw": 173,
    "kept": 7,
    "error": null,
    "warnings": [
-    "! Crossweb is blocked from the cloud and the snapshot is 31 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1",
+    "! Crossweb is blocked from the cloud and the snapshot is 32 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1",
     "/wyszukiwarka/?fraza=hackathon: GET https://crossweb.pl/wyszukiwarka/?fraza=hackathon: HTTP Error 403: ",
     "/wyszukiwarka/?fraza=hakaton: GET https://crossweb.pl/wyszukiwarka/?fraza=hakaton: HTTP Error 403: "
    ],
-   "secs": 33.6,
+   "secs": 32.5,
    "median": 173.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
    "last_ok": "2026-10-10T11:13:46+00:00",
    "status": "degraded",
-   "flag": "Crossweb is blocked from the cloud and the snapshot is 31 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1"
+   "flag": "Crossweb is blocked from the cloud and the snapshot is 32 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1"
   },
   "devpost": {
    "history": [
-    62,
     55,
     61,
     127,
@@ -80,23 +79,23 @@
     73,
     72,
     71,
-    69
+    69,
+    70
    ],
    "bad_streak": 0,
-   "raw": 69,
-   "kept": 68,
+   "raw": 70,
+   "kept": 69,
    "error": null,
    "warnings": [],
-   "secs": 1.4,
+   "secs": 1.2,
    "median": 73.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
   "luma": {
    "history": [
-    308,
     309,
     310,
     310,
@@ -125,23 +124,23 @@
     313,
     313,
     315,
-    313
+    313,
+    317
    ],
    "bad_streak": 0,
-   "raw": 313,
+   "raw": 317,
    "kept": 2,
    "error": null,
    "warnings": [],
-   "secs": 2.3,
+   "secs": 2.8,
    "median": 312.5,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
   "mlh": {
    "history": [
-    358,
     115,
     115,
     115,
@@ -170,23 +169,23 @@
     112,
     113,
     113,
-    112
+    112,
+    113
    ],
    "bad_streak": 0,
-   "raw": 112,
+   "raw": 113,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 2.3,
-   "median": 112.5,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "secs": 0.6,
+   "median": 112.0,
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
   "devfolio": {
    "history": [
-    20,
     18,
     17,
     18,
@@ -215,17 +214,18 @@
     10,
     9,
     10,
-    9
+    9,
+    10
    ],
    "bad_streak": 0,
-   "raw": 9,
+   "raw": 10,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 1.9,
-   "median": 12.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "secs": 0.6,
+   "median": 11.0,
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -269,14 +269,13 @@
    "warnings": [],
    "secs": 0.5,
    "median": 68.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
   "ctftime": {
    "history": [
-    45,
     44,
     44,
     44,
@@ -305,17 +304,18 @@
     37,
     34,
     30,
-    30
+    30,
+    31
    ],
    "bad_streak": 0,
-   "raw": 30,
+   "raw": 31,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.4,
+   "secs": 0.5,
    "median": 39.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -324,7 +324,6 @@
     12,
     12,
     12,
-    12,
     13,
     13,
     13,
@@ -350,24 +349,24 @@
     11,
     11,
     11,
-    11
+    11,
+    12
    ],
    "bad_streak": 0,
-   "raw": 11,
+   "raw": 12,
    "kept": 10,
    "error": null,
    "warnings": [],
-   "secs": 1.2,
+   "secs": 0.9,
    "median": 12.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
   "pages": {
    "history": [
     67,
-    67,
     66,
     66,
     66,
@@ -395,17 +394,18 @@
     64,
     64,
     64,
-    64
+    64,
+    65
    ],
    "bad_streak": 0,
-   "raw": 64,
-   "kept": 22,
+   "raw": 65,
+   "kept": 20,
    "error": null,
    "warnings": [],
-   "secs": 1.1,
+   "secs": 0.7,
    "median": 64.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -449,8 +449,8 @@
    "warnings": [],
    "secs": 0.0,
    "median": 7.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -498,8 +498,8 @@
    ],
    "secs": 0,
    "median": 1.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
-   "last_ok": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
+   "last_ok": "2026-11-03T12:52:40+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -536,7 +536,7 @@
     0,
     0
    ],
-   "bad_streak": 37,
+   "bad_streak": 38,
    "raw": 0,
    "kept": 0,
    "error": null,
@@ -547,11 +547,11 @@
    ],
    "secs": 0,
    "median": 0.0,
-   "last_run": "2026-11-02T13:36:08+00:00",
+   "last_run": "2026-11-03T12:52:40+00:00",
    "last_ok": "2026-10-02T23:59:18+00:00",
    "status": "degraded",
    "flag": "web search returns nothing from this network (DuckDuckGo blocks datacenter IPs) - add the free TAVILY_API_KEY repo secret to enable discovery"
   }
  },
- "generated": "2026-11-02T13:36:08+00:00"
+ "generated": "2026-11-03T12:52:40+00:00"
 }
