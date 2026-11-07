@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T13:00:24+00:00",
+ "generated": "2026-11-07T11:47:20+00:00",
  "events": [
   {
    "title": "DSH Hacks V2 ($100k+ in prizes!)",
@@ -26,7 +26,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "dsh-hacks-v2-100k-in-prizes-2026-06-e914"
   },
   {
@@ -54,7 +54,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "code-for-humanity-2026-07-6442"
   },
   {
@@ -82,7 +82,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "syntax-summit-2026-07-d719"
   },
   {
@@ -110,7 +110,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "innovart-2027-art-and-technology-hack-day-2026-08-9e45"
   },
   {
@@ -138,7 +138,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "meta-vr-start-developer-competition-2026-2026-09-8257"
   },
   {
@@ -171,7 +171,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "paypal-ai-hackathon-2026-10-4ad2"
   },
   {
@@ -199,7 +199,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "hackathon-ag-ntico-softwarechido-2026b-2026-10-1928"
   },
   {
@@ -227,65 +227,8 @@
    ],
    "series": null,
    "first_seen": "2026-10-06",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "next-byte-hacks-v5-2026-10-86af"
-  },
-  {
-   "title": "Pumpkin Playground",
-   "url": "https://pumpkin-playground.devpost.com/",
-   "start": "2026-10-12",
-   "end": "2026-11-06",
-   "all_day": true,
-   "precision": "day",
-   "location": "Online",
-   "tier": "online",
-   "online": true,
-   "kind": "hackathon",
-   "status": "confirmed",
-   "summary": "Design, Gaming, Web · Prize: $ 50",
-   "audience": "open",
-   "sources": [
-    "devpost"
-   ],
-   "links": [
-    {
-     "source": "devpost",
-     "url": "https://pumpkin-playground.devpost.com/"
-    }
-   ],
-   "series": null,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-11-05",
-   "id": "pumpkin-playground-2026-10-3c93",
-   "stale": true
-  },
-  {
-   "title": "Portaldot Hacker house 2026",
-   "url": "https://dev.events/conferences/portaldot-hacker-house-2026-x8rzjmex",
-   "start": "2026-10-14T02:00",
-   "end": "2026-11-06T01:00",
-   "all_day": false,
-   "precision": "day",
-   "location": "",
-   "tier": "online",
-   "online": true,
-   "kind": "hackathon",
-   "status": "confirmed",
-   "summary": "Web / Frontend hackathon Online",
-   "audience": "open",
-   "sources": [
-    "page:dev.events hackathons"
-   ],
-   "links": [
-    {
-     "source": "page:dev.events hackathons",
-     "url": "https://dev.events/conferences/portaldot-hacker-house-2026-x8rzjmex"
-    }
-   ],
-   "series": null,
-   "first_seen": "2026-10-09",
-   "last_seen": "2026-11-06",
-   "id": "portaldot-hacker-house-2026-2026-10-e542"
   },
   {
    "title": "Learn AR with SPECS",
@@ -312,36 +255,8 @@
    ],
    "series": null,
    "first_seen": "2026-10-16",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "learn-ar-with-specs-2026-10-9025"
-  },
-  {
-   "title": "HackWithAditya",
-   "url": "https://hackwithaditya.devpost.com/",
-   "start": "2026-10-16",
-   "end": "2026-11-25",
-   "all_day": true,
-   "precision": "day",
-   "location": "Online",
-   "tier": "online",
-   "online": true,
-   "kind": "hackathon",
-   "status": "confirmed",
-   "summary": "Education, Health, Machine Learning/AI · Prize: ₹ 500,000",
-   "audience": "open",
-   "sources": [
-    "devpost"
-   ],
-   "links": [
-    {
-     "source": "devpost",
-     "url": "https://hackwithaditya.devpost.com/"
-    }
-   ],
-   "series": null,
-   "first_seen": "2026-10-16",
-   "last_seen": "2026-11-06",
-   "id": "hackwithaditya-2026-10-06f0"
   },
   {
    "title": "Mathematics for systems security",
@@ -368,8 +283,41 @@
    ],
    "series": null,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "mathematics-for-systems-security-2026-10-cffd"
+  },
+  {
+   "title": "HackWithAditya",
+   "url": "https://dev.events/conferences/hack-with-aditya-5bcnow43",
+   "start": "2026-10-16T02:00",
+   "end": "2026-11-25T01:00",
+   "all_day": false,
+   "precision": "day",
+   "location": "Online",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Machine Learning (ML) hackathon Online",
+   "audience": "open",
+   "sources": [
+    "devpost",
+    "page:dev.events hackathons"
+   ],
+   "links": [
+    {
+     "source": "page:dev.events hackathons",
+     "url": "https://dev.events/conferences/hack-with-aditya-5bcnow43"
+    },
+    {
+     "source": "devpost",
+     "url": "https://hackwithaditya.devpost.com/"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-11-07",
+   "id": "hackwithaditya-2026-10-0aa5"
   },
   {
    "title": "LaunchPad Hacks",
@@ -401,7 +349,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-16",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "launchpad-hacks-2026-10-057f"
   },
   {
@@ -429,7 +377,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "taskforge-2026-10-116d"
   },
   {
@@ -462,7 +410,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "accessed-hacks-2026-10-0898"
   },
   {
@@ -495,7 +443,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "herhack-2026-10-9f0a"
   },
   {
@@ -528,7 +476,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "stem2connect-ai-hackathon-2026-10-8e1a"
   },
   {
@@ -561,7 +509,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "safespace-hacks-2026-10-6259"
   },
   {
@@ -594,7 +542,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "green-shift-hacks-2026-10-7085"
   },
   {
@@ -622,7 +570,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "arbiter-hacks-v1-2026-10-58ee"
   },
   {
@@ -650,7 +598,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "code-for-dfw-2026-10-6c06"
   },
   {
@@ -683,7 +631,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ugreen-hackathon-2026-on-ai-nas-2026-10-8bda"
   },
   {
@@ -711,7 +659,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "datanova-2026-global-data-thon-2026-10-a458"
   },
   {
@@ -744,7 +692,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "dakar-bitcoin-hack-by-btrust-2026-10-dcaf"
   },
   {
@@ -772,7 +720,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "build-your-first-ai-app-2026-10-51aa"
   },
   {
@@ -800,7 +748,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "codegeist-2026-build-with-context-ship-with-conf-2026-10-2f8c"
   },
   {
@@ -828,7 +776,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "csc-winter-sparkathon-2026-10-4705"
   },
   {
@@ -856,7 +804,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "mozilla-open-source-ai-hackathon-devs-wilding-2026-10-1b05"
   },
   {
@@ -884,7 +832,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "kiroween-2026-2026-10-be6d"
   },
   {
@@ -912,7 +860,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "mozilla-otari-hackathon-devs-wilding-online-2026-10-4b15"
   },
   {
@@ -945,7 +893,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "stemergent-hacks-2026-2026-10-86ef"
   },
   {
@@ -973,7 +921,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "stranger-builds-halloween-ai-hackathon-online-2026-10-3346"
   },
   {
@@ -1001,7 +949,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "305-veterans-hackathon-edition-november-2026-305-2026-11-0beb"
   },
   {
@@ -1029,7 +977,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "agentic-hackathon-2026-11-a4a4"
   },
   {
@@ -1057,7 +1005,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "genhacks-2026-11-6d02"
   },
   {
@@ -1085,7 +1033,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ml-empowerment-build-challenge-4-0-2026-11-c25a"
   },
   {
@@ -1114,7 +1062,8 @@
    "series": null,
    "first_seen": "2026-10-30",
    "last_seen": "2026-11-06",
-   "id": "2026-uxc-nyu-fall-design-a-thon-2026-11-47ec"
+   "id": "2026-uxc-nyu-fall-design-a-thon-2026-11-47ec",
+   "stale": true
   },
   {
    "title": "AWS MSP AI Hackathon",
@@ -1141,7 +1090,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "aws-msp-ai-hackathon-2026-11-6de6"
   },
   {
@@ -1169,7 +1118,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "qnx-global-hackathon-2026-11-68cd"
   },
   {
@@ -1202,7 +1151,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ethnohack-2026-11-67c8"
   },
   {
@@ -1230,7 +1179,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "hackout-2027-2026-11-26c5"
   },
   {
@@ -1258,7 +1207,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ai-agents-for-founders-challenge-hetic-2026-2026-11-7ecf"
   },
   {
@@ -1286,7 +1235,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ai-for-medicine-a-global-student-hackathon-on-th-2026-11-1e07"
   },
   {
@@ -1314,7 +1263,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "idealab-hacks-2026-11-c40a"
   },
   {
@@ -1342,7 +1291,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "phystech-2027-physical-activity-and-technology-h-2026-11-889a"
   },
   {
@@ -1370,7 +1319,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ai-openbuild-2026-11-8349"
   },
   {
@@ -1398,7 +1347,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "code-for-change-2026-11-33c8"
   },
   {
@@ -1426,7 +1375,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ibm-db2hack-2026-2026-11-ee02"
   },
   {
@@ -1454,7 +1403,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "inceptrix-3-0-2026-11-8c76"
   },
   {
@@ -1482,7 +1431,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ctrl-v-hackathon-2026-11-0439"
   },
   {
@@ -1510,7 +1459,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-25",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "hackthefashion-global-26-2026-11-1569"
   },
   {
@@ -1542,7 +1491,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "qux-design-a-thon-2026-2026-11-5101"
   },
   {
@@ -1570,43 +1519,8 @@
    ],
    "series": null,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "solana-hackathon-2026-11-4eff"
-  },
-  {
-   "title": "Nighthack - wpadnij razem z nami ciąć, lutować i kodować!",
-   "url": "https://www.meetup.com/hackerspacekrakow/events/317026522/",
-   "start": "2026-11-06T20:00",
-   "end": "2026-11-06T23:59",
-   "all_day": false,
-   "precision": "day",
-   "location": "Fundacja Hackerspace Kraków, ul. Limanowskiego 46/LU1, Kraków",
-   "tier": "krakow",
-   "online": false,
-   "kind": "hacknight",
-   "status": "confirmed",
-   "summary": "Nightack to wydarzenie w którym uczestniczą osoby zarówno będące aktywnymi członkami hackerspace, jak i te które chciałyby dowiedzieć się jak hackerspace działa i co tutaj robimy. Jesteśmy dla Was dostępni od 20:00, ale nie musicie wcale przchodzić punktualnie! == Co robimy na nighackach? == Pracujemy nad własnymi projektami - np. ktoś frezuje radiator do komputera aby mógł w nim zmieścić rezystor…",
-   "audience": "open",
-   "sources": [
-    "crossweb",
-    "ics:Hackerspace Kraków",
-    "page:Hackerspace Kraków"
-   ],
-   "links": [
-    {
-     "source": "page:Hackerspace Kraków",
-     "url": "https://www.meetup.com/hackerspacekrakow/events/317026522/"
-    },
-    {
-     "source": "crossweb",
-     "url": "https://crossweb.pl/wydarzenia/nighthack-wpadnij-razem-z-nami-ciac-lutowac-i-kodowac-listopad-2026/"
-    }
-   ],
-   "series": null,
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-11-06",
-   "more": 9,
-   "id": "nighthack-wpadnij-razem-z-nami-ciac-lutowac-i-ko-2026-11-47f5"
   },
   {
    "title": "GullHacks",
@@ -1633,7 +1547,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "gullhacks-2026-11-8c1e"
   },
   {
@@ -1690,8 +1604,36 @@
    ],
    "series": null,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "slay-hacks-2026-11-5282"
+  },
+  {
+   "title": "WQCC Qiskit Fall Fest 2026",
+   "url": "https://wqcc-qiskit-fall-fest-2026.devpost.com/",
+   "start": "2026-11-07",
+   "end": "2026-11-19",
+   "all_day": true,
+   "precision": "day",
+   "location": "Online",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Quantum · Prize: $ 0",
+   "audience": "open",
+   "sources": [
+    "devpost"
+   ],
+   "links": [
+    {
+     "source": "devpost",
+     "url": "https://wqcc-qiskit-fall-fest-2026.devpost.com/"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
+   "id": "wqcc-qiskit-fall-fest-2026-2026-11-c93b"
   },
   {
    "title": "Hacking & Grill — Hacker House BBQ (Autumn Edition)",
@@ -1718,7 +1660,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "hacking-grill-hacker-house-bbq-autumn-edition-2026-11-8730"
   },
   {
@@ -1746,7 +1688,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-10",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "icehacks-2026-11-9c3d"
   },
   {
@@ -1774,7 +1716,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "buildhybridai-2026-2026-11-ef37"
   },
   {
@@ -1802,7 +1744,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-12",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "the-atomiq-hackathon-qiskit-fall-fest-2026-at-ie-2026-11-93db"
   },
   {
@@ -1830,7 +1772,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "civic-hack-2026-2026-11-85d6"
   },
   {
@@ -1859,7 +1801,7 @@
    ],
    "series": "growup",
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "growup-hackathon-2026-2026-11-d518"
   },
   {
@@ -1887,8 +1829,43 @@
    ],
    "series": null,
    "first_seen": "2026-10-25",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "norcal-hacks-27-2026-11-aaa9"
+  },
+  {
+   "title": "Nighthack - wpadnij razem z nami ciąć, lutować i kodować!",
+   "url": "https://www.meetup.com/hackerspacekrakow/events/317122324/",
+   "start": "2026-11-13T20:00",
+   "end": "2026-11-13T23:59",
+   "all_day": false,
+   "precision": "day",
+   "location": "Fundacja Hackerspace Kraków, ul. Limanowskiego 46/LU1, Kraków",
+   "tier": "krakow",
+   "online": false,
+   "kind": "hacknight",
+   "status": "confirmed",
+   "summary": "Nightack to wydarzenie w którym uczestniczą osoby zarówno będące aktywnymi członkami hackerspace, jak i te które chciałyby dowiedzieć się jak hackerspace działa i co tutaj robimy. Jesteśmy dla Was dostępni od 20:00, ale nie musicie wcale przchodzić punktualnie! == Co robimy na nighackach? == Pracujemy nad własnymi projektami - np. ktoś frezuje radiator do komputera aby mógł w nim zmieścić rezystor…",
+   "audience": "open",
+   "sources": [
+    "crossweb",
+    "ics:Hackerspace Kraków",
+    "page:Hackerspace Kraków"
+   ],
+   "links": [
+    {
+     "source": "page:Hackerspace Kraków",
+     "url": "https://www.meetup.com/hackerspacekrakow/events/317122324/"
+    },
+    {
+     "source": "crossweb",
+     "url": "https://crossweb.pl/wydarzenia/nighthack-wpadnij-razem-z-nami-ciac-lutowac-i-kodowac-13-listopad-2026/"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
+   "more": 9,
+   "id": "nighthack-wpadnij-razem-z-nami-ciac-lutowac-i-ko-2026-11-d127"
   },
   {
    "title": "LPC Hacks",
@@ -1915,7 +1892,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "lpc-hacks-2026-11-0bf0"
   },
   {
@@ -1943,7 +1920,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "bridge-the-gap-hacks-2026-11-84c7"
   },
   {
@@ -1971,7 +1948,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "kuk-virtual-hackathon-2026-11-0fe1"
   },
   {
@@ -1999,7 +1976,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "buildyourownwebsite-2026-11-8032"
   },
   {
@@ -2027,7 +2004,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-25",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "obscura-satellite-ai-research-challenge-2026-11-2e45"
   },
   {
@@ -2055,7 +2032,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "crosspointx-2026-2026-11-4b24"
   },
   {
@@ -2083,7 +2060,7 @@
    ],
    "series": null,
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "evohacks-2026-11-39df"
   },
   {
@@ -2111,7 +2088,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "global-ai-builder-s-challenge-2026-11-4835"
   },
   {
@@ -2144,7 +2121,7 @@
    ],
    "series": "aghcyber",
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "agh-cyber-kampus-4-0-ctf-konferencja-2026-11-b0b1"
   },
   {
@@ -2172,7 +2149,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "hackrise-26-2026-11-9cbf"
   },
   {
@@ -2200,7 +2177,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "305-codefest-edition-december-2026-305hackathons-2026-12-19e7"
   },
   {
@@ -2228,7 +2205,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "mobilna-pomoc-prosty-robot-ratunkowy-tylko-uczni-2026-12-ebe5"
   },
   {
@@ -2261,7 +2238,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "oh-my-hack-2026-2026-12-5e84"
   },
   {
@@ -2289,7 +2266,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "build-4-all-2026-12-281b"
   },
   {
@@ -2317,7 +2294,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "cosmo-hacks-2026-2026-12-e34b"
   },
   {
@@ -2345,7 +2322,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "evensonarisnord-2026-12-b0a5"
   },
   {
@@ -2373,7 +2350,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "united-hacks-v8-2027-01-32a4"
   },
   {
@@ -2401,7 +2378,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "checkpoint-1-games-for-good-2027-01-99e1"
   },
   {
@@ -2429,7 +2406,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "gnec-hackathon-2027-winter-compete-for-un-affili-2027-01-1598"
   },
   {
@@ -2457,7 +2434,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "hacktitan-2027-02-83ba"
   },
   {
@@ -2485,7 +2462,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "ai-for-human-impact-a-global-basis-hackathon-2027-02-6fe9"
   },
   {
@@ -2513,7 +2490,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "mega-hackathon-2027-2027-02-4e59"
   },
   {
@@ -2541,7 +2518,7 @@
    ],
    "series": null,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "wics-hackathon-2027-02-7b84"
   },
   {
@@ -2569,8 +2546,36 @@
    ],
    "series": null,
    "first_seen": "2026-10-06",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "id": "build-beyond-hackathon-2027-03-84d1"
+  },
+  {
+   "title": "KeanUHackThis 2027",
+   "url": "https://keauhackthis-2027.devpost.com/",
+   "start": "2027-04-02",
+   "end": "2027-04-03",
+   "all_day": true,
+   "precision": "day",
+   "location": "Online",
+   "tier": "online",
+   "online": true,
+   "kind": "hackathon",
+   "status": "confirmed",
+   "summary": "Machine Learning/AI, Web · Prize: $ 0",
+   "audience": "open",
+   "sources": [
+    "devpost"
+   ],
+   "links": [
+    {
+     "source": "devpost",
+     "url": "https://keauhackthis-2027.devpost.com/"
+    }
+   ],
+   "series": null,
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
+   "id": "keanuhackthis-2027-2027-04-98ce"
   },
   {
    "title": "#SDG City Challenge (UJ)",
@@ -2596,8 +2601,8 @@
    ],
    "series": "sdg-city-challenge",
    "id": "sdg-city-challenge-uj-2026-11-daf9",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2624,8 +2629,8 @@
    ],
    "series": "cassini",
    "id": "cassini-hackathon-poland-2026-11-32f7",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2652,8 +2657,8 @@
    ],
    "series": "idays",
    "id": "eit-health-i-days-krakow-2026-11-1d8e",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2680,8 +2685,8 @@
    ],
    "series": "hackheroes",
    "id": "hack-heroes-2026-11-64c0",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2708,8 +2713,8 @@
    ],
    "series": "hacknation",
    "id": "hacknation-ministry-of-digital-affairs-2026-11-ce73",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2736,8 +2741,8 @@
    ],
    "series": "hackathon-malopolska",
    "id": "hackathon-dla-malopolski-2026-11-b09e",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2764,8 +2769,8 @@
    ],
    "series": "spaceapps",
    "id": "nasa-space-apps-challenge-sprawdz-czy-jest-wezel-2026-11-972c",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2792,8 +2797,8 @@
    ],
    "series": "bitehack",
    "id": "bitehack-best-agh-2026-12-8b55",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2820,8 +2825,8 @@
    ],
    "series": "ggj",
    "id": "global-game-jam-krakow-sites-2027-01-14af",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2848,8 +2853,8 @@
    ],
    "series": "eudis",
    "id": "eudis-defence-hackathon-kpt-2027-03-7be1",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2876,8 +2881,8 @@
    ],
    "series": "ensembleai",
    "id": "ensembleai-hackathon-2027-03-563a",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2904,8 +2909,8 @@
    ],
    "series": "hack4krak",
    "id": "hack4krak-ctf-2027-03-7305",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2932,8 +2937,8 @@
    ],
    "series": "gbs-hackathon",
    "id": "hackathon-gbs-uniwersytet-ekonomiczny-2027-03-fde1",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2960,8 +2965,8 @@
    ],
    "series": "swmansion",
    "id": "software-mansion-hackathon-2027-03-8edd",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -2988,8 +2993,8 @@
    ],
    "series": "hacknarok",
    "id": "hacknarok-eestec-agh-2027-04-4885",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -3016,8 +3021,8 @@
    ],
    "series": "fpga",
    "id": "nokia-fpga-hackathon-2027-04-6e47",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   },
   {
@@ -3044,8 +3049,8 @@
    ],
    "series": "kosciuszkon",
    "id": "kosciuszkon-politechnika-krakowska-2027-05-c84f",
-   "first_seen": "2026-11-06",
-   "last_seen": "2026-11-06",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
    "all_day": true
   }
  ]
