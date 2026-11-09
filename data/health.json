@@ -33,25 +33,24 @@
     173,
     173
    ],
-   "bad_streak": 29,
+   "bad_streak": 30,
    "raw": 173,
    "kept": 6,
    "error": null,
    "warnings": [
-    "! Crossweb is blocked from the cloud and the snapshot is 36 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1",
+    "! Crossweb is blocked from the cloud and the snapshot is 38 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1",
     "/wyszukiwarka/?fraza=hackathon: GET https://crossweb.pl/wyszukiwarka/?fraza=hackathon: HTTP Error 403: ",
     "/wyszukiwarka/?fraza=hakaton: GET https://crossweb.pl/wyszukiwarka/?fraza=hakaton: HTTP Error 403: "
    ],
-   "secs": 32.5,
+   "secs": 32.6,
    "median": 173.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
    "last_ok": "2026-10-10T11:13:46+00:00",
    "status": "degraded",
-   "flag": "Crossweb is blocked from the cloud and the snapshot is 36 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1"
+   "flag": "Crossweb is blocked from the cloud and the snapshot is 38 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1"
   },
   "devpost": {
    "history": [
-    60,
     59,
     56,
     58,
@@ -80,6 +79,7 @@
     78,
     78,
     79,
+    78,
     78
    ],
    "bad_streak": 0,
@@ -87,16 +87,15 @@
    "kept": 76,
    "error": null,
    "warnings": [],
-   "secs": 1.2,
-   "median": 73.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "secs": 1.8,
+   "median": 74.0,
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
   "luma": {
    "history": [
-    314,
     309,
     310,
     316,
@@ -125,6 +124,7 @@
     322,
     322,
     322,
+    321,
     321
    ],
    "bad_streak": 0,
@@ -132,16 +132,15 @@
    "kept": 2,
    "error": null,
    "warnings": [],
-   "secs": 2.5,
-   "median": 316.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "secs": 2.8,
+   "median": 319.0,
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
   "mlh": {
    "history": [
-    119,
     117,
     108,
     109,
@@ -170,23 +169,23 @@
     116,
     72,
     72,
+    72,
     72
    ],
    "bad_streak": 0,
    "raw": 72,
-   "kept": 1,
+   "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.5,
+   "secs": 0.4,
    "median": 112.5,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
   "devfolio": {
    "history": [
-    16,
     17,
     17,
     16,
@@ -215,17 +214,18 @@
     10,
     9,
     10,
-    11
+    11,
+    15
    ],
    "bad_streak": 0,
-   "raw": 11,
+   "raw": 15,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.6,
+   "secs": 0.8,
    "median": 10.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -267,16 +267,15 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.9,
+   "secs": 0.4,
    "median": 68.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
   "ctftime": {
    "history": [
-    46,
     41,
     41,
     41,
@@ -305,17 +304,18 @@
     32,
     32,
     29,
-    28
+    28,
+    27
    ],
    "bad_streak": 0,
-   "raw": 28,
+   "raw": 27,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.4,
-   "median": 32.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "secs": 0.3,
+   "median": 31.5,
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -323,7 +323,6 @@
    "history": [
     13,
     13,
-    13,
     12,
     12,
     12,
@@ -345,6 +344,7 @@
     11,
     11,
     11,
+    12,
     12,
     12,
     12,
@@ -357,16 +357,15 @@
    "kept": 10,
    "error": null,
    "warnings": [],
-   "secs": 0.9,
+   "secs": 1.1,
    "median": 12.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
   "pages": {
    "history": [
-    64,
     63,
     64,
     64,
@@ -392,6 +391,7 @@
     64,
     65,
     65,
+    64,
     64,
     64,
     64,
@@ -399,13 +399,13 @@
    ],
    "bad_streak": 0,
    "raw": 64,
-   "kept": 22,
+   "kept": 21,
    "error": null,
    "warnings": [],
-   "secs": 1.9,
+   "secs": 2.0,
    "median": 64.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -449,8 +449,8 @@
    "warnings": [],
    "secs": 0.0,
    "median": 7.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -493,13 +493,12 @@
    "error": null,
    "warnings": [
     "sdg-city-challenge https://pkw.uj.edu.pl/aktualnosci: GET https://pkw.uj.edu.pl/aktualnosci: 404 Client Error: Not Found for url: https://pkw.uj.edu.pl/aktualnosci",
-    "gbs-hackathon https://gbs.uek.krakow.pl/: GET https://gbs.uek.krakow.pl/: 503 Server Error: Service Unavailable for url: https://gbs.uek.krakow.pl/",
     "spaceapps https://www.spaceappschallenge.org/: GET https://www.spaceappschallenge.org/: HTTPSConnectionPool(host='www.spaceappschallenge.org', port=443): Max retries e"
    ],
    "secs": 0,
    "median": 1.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
-   "last_ok": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
+   "last_ok": "2026-11-09T13:58:36+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -536,7 +535,7 @@
     0,
     0
    ],
-   "bad_streak": 43,
+   "bad_streak": 44,
    "raw": 0,
    "kept": 0,
    "error": null,
@@ -547,11 +546,11 @@
    ],
    "secs": 0,
    "median": 0.0,
-   "last_run": "2026-11-08T11:58:55+00:00",
+   "last_run": "2026-11-09T13:58:36+00:00",
    "last_ok": "2026-10-02T23:59:18+00:00",
    "status": "degraded",
    "flag": "web search returns nothing from this network (DuckDuckGo blocks datacenter IPs) - add the free TAVILY_API_KEY repo secret to enable discovery"
   }
  },
- "generated": "2026-11-08T11:58:55+00:00"
+ "generated": "2026-11-09T13:58:36+00:00"
 }
