@@ -33,25 +33,24 @@
     173,
     173
    ],
-   "bad_streak": 33,
+   "bad_streak": 34,
    "raw": 173,
    "kept": 6,
    "error": null,
    "warnings": [
-    "! Crossweb is blocked from the cloud and the snapshot is 41 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1",
+    "! Crossweb is blocked from the cloud and the snapshot is 42 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1",
     "/wyszukiwarka/?fraza=hackathon: GET https://crossweb.pl/wyszukiwarka/?fraza=hackathon: HTTP Error 403: ",
     "/wyszukiwarka/?fraza=hakaton: GET https://crossweb.pl/wyszukiwarka/?fraza=hakaton: HTTP Error 403: "
    ],
-   "secs": 33.4,
+   "secs": 32.3,
    "median": 173.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
    "last_ok": "2026-10-10T11:13:46+00:00",
    "status": "degraded",
-   "flag": "Crossweb is blocked from the cloud and the snapshot is 41 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1"
+   "flag": "Crossweb is blocked from the cloud and the snapshot is 42 days old - add the free TAVILY_API_KEY secret (discovery then reads Crossweb via Tavily) or run scripts/local_refresh.ps1"
   },
   "devpost": {
    "history": [
-    61,
     61,
     61,
     62,
@@ -80,23 +79,23 @@
     78,
     77,
     76,
-    81
+    81,
+    80
    ],
    "bad_streak": 0,
-   "raw": 81,
-   "kept": 79,
+   "raw": 80,
+   "kept": 78,
    "error": null,
    "warnings": [],
-   "secs": 2.2,
-   "median": 77.5,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "secs": 1.0,
+   "median": 78.0,
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
   "luma": {
    "history": [
-    312,
     316,
     321,
     314,
@@ -125,23 +124,23 @@
     321,
     326,
     325,
-    326
+    326,
+    329
    ],
    "bad_streak": 0,
-   "raw": 326,
-   "kept": 3,
+   "raw": 329,
+   "kept": 2,
    "error": null,
    "warnings": [],
-   "secs": 2.4,
-   "median": 321.5,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "secs": 2.8,
+   "median": 322.0,
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
   "mlh": {
    "history": [
-    111,
     114,
     116,
     118,
@@ -170,6 +169,7 @@
     72,
     72,
     72,
+    72,
     72
    ],
    "bad_streak": 0,
@@ -177,16 +177,15 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.8,
+   "secs": 0.5,
    "median": 72.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
   "devfolio": {
    "history": [
-    15,
     13,
     13,
     13,
@@ -215,17 +214,18 @@
     15,
     16,
     18,
-    19
+    19,
+    20
    ],
    "bad_streak": 0,
-   "raw": 19,
+   "raw": 20,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 1.8,
-   "median": 10.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "secs": 1.4,
+   "median": 10.5,
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -267,16 +267,15 @@
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.6,
+   "secs": 0.5,
    "median": 68.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
   "ctftime": {
    "history": [
-    41,
     41,
     41,
     42,
@@ -305,24 +304,24 @@
     27,
     26,
     26,
-    26
+    26,
+    25
    ],
    "bad_streak": 0,
-   "raw": 26,
+   "raw": 25,
    "kept": 0,
    "error": null,
    "warnings": [],
-   "secs": 0.7,
-   "median": 29.5,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "secs": 0.3,
+   "median": 28.5,
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
   "ics": {
    "history": [
     12,
-    12,
     11,
     11,
     11,
@@ -350,23 +349,23 @@
     12,
     12,
     12,
-    12
+    12,
+    11
    ],
    "bad_streak": 0,
-   "raw": 12,
+   "raw": 11,
    "kept": 10,
    "error": null,
    "warnings": [],
-   "secs": 1.4,
+   "secs": 1.0,
    "median": 12.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
   "pages": {
    "history": [
-    64,
     66,
     65,
     66,
@@ -395,17 +394,18 @@
     64,
     64,
     64,
-    64
+    64,
+    62
    ],
    "bad_streak": 0,
-   "raw": 64,
-   "kept": 19,
+   "raw": 62,
+   "kept": 17,
    "error": null,
    "warnings": [],
-   "secs": 2.8,
+   "secs": 0.6,
    "median": 64.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -449,8 +449,8 @@
    "warnings": [],
    "secs": 0.0,
    "median": 7.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
-   "last_ok": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
+   "last_ok": "2026-11-13T13:11:12+00:00",
    "status": "ok",
    "flag": ""
   },
@@ -485,11 +485,11 @@
     1,
     1,
     1,
-    1
+    0
    ],
-   "bad_streak": 0,
-   "raw": 1,
-   "kept": 1,
+   "bad_streak": 1,
+   "raw": 0,
+   "kept": 0,
    "error": null,
    "warnings": [
     "sdg-city-challenge https://pkw.uj.edu.pl/aktualnosci: GET https://pkw.uj.edu.pl/aktualnosci: 404 Client Error: Not Found for url: https://pkw.uj.edu.pl/aktualnosci",
@@ -497,9 +497,9 @@
    ],
    "secs": 0,
    "median": 1.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
    "last_ok": "2026-11-12T13:49:48+00:00",
-   "status": "ok",
+   "status": "warning",
    "flag": ""
   },
   "discovery": {
@@ -535,7 +535,7 @@
     0,
     0
    ],
-   "bad_streak": 47,
+   "bad_streak": 48,
    "raw": 0,
    "kept": 0,
    "error": null,
@@ -546,11 +546,11 @@
    ],
    "secs": 0,
    "median": 0.0,
-   "last_run": "2026-11-12T13:49:48+00:00",
+   "last_run": "2026-11-13T13:11:12+00:00",
    "last_ok": "2026-10-02T23:59:18+00:00",
    "status": "degraded",
    "flag": "web search returns nothing from this network (DuckDuckGo blocks datacenter IPs) - add the free TAVILY_API_KEY repo secret to enable discovery"
   }
  },
- "generated": "2026-11-12T13:49:48+00:00"
+ "generated": "2026-11-13T13:11:12+00:00"
 }
